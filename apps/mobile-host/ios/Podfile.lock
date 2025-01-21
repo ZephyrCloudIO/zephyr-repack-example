@@ -1649,7 +1649,7 @@ PODS:
     - React-logger (= 0.76.1)
     - React-perflogger (= 0.76.1)
     - React-utils (= 0.76.1)
-  - RNBootSplash (6.3.1):
+  - RNBootSplash (6.3.2):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1998,7 +1998,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   boost: 1dca942403ed9342f98334bf4c3621f011aa7946
-  callstack-repack: 2123b3815ead4c2586f8c11e9c1160fd7435df03
+  callstack-repack: 7d849db927a543350a9f2d06a2de8bd501d2a4d7
   DoubleConversion: f16ae600a246532c4020132d54af21d0ddb2a385
   FBLazyVector: 7075bb12898bc3998fd60f4b7ca422496cc2cdf7
   fmt: 10c6e61f4be25dc963c36bd73fc7b1705fe975be
@@ -2067,7 +2067,7 @@ SPEC CHECKSUMS:
   React-utils: 0c825829a8e2ca39bb049d95f270a2dbf39ecb05
   ReactCodegen: 3b0ff1c9015e3ebcf2bd2f8559995c74bfacf8a1
   ReactCommon: c21a3d6a8d3e98b6e99730139a52f59f0beea89d
-  RNBootSplash: 2f3d6c7dd96a2f145b96bd741ce8e170714e0514
+  RNBootSplash: b699ef992152e6f85403e9c308f690a7baf384a6
   RNLocalize: 176bce32b3f2a3ce7ad318acd677badcbfd1e9df
   RNScreens: 74536418fef8086457d39df36a55b36efd5329c9
   RNVectorIcons: a24016b773380b1aa37fca501ec6b94a951890a0

@@ -65,7 +65,7 @@
     "react-test-renderer": "^18.3.1",
     "typescript": "^5.6.3",
     "webpack": "^5.95.0",
-    "zephyr-repack-plugin": "0.0.0-canary-20241121202227"
+    "zephyr-repack-plugin": "0.0.0-canary-20250121175535"
   },
   "rnx-kit": {
     "kitType": "app",
