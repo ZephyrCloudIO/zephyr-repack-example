@@ -53,8 +53,8 @@
     "mprocs": "^0.7.1",
     "nx": "20.2.0-beta.2",
     "prettier": "^3.4.2",
-    "zephyr-agent": "0.0.0-canary-20241122011536",
-    "zephyr-rspack-plugin": "0.0.0-canary-20241122175815"
+    "zephyr-agent": "0.0.0-canary-20250121101024",
+    "zephyr-rspack-plugin": "0.0.0-canary-20250121101024"
   },
   "pnpm": {
     "overrides": {

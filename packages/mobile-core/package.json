@@ -37,7 +37,7 @@
     "react-native-paper": "5.12.5"
   },
   "devDependencies": {
-    "@callstack/eslint-config": "^15.0.0",
+    "@callstack/eslint-config": "^13.0.0",
     "@react-native/eslint-config": "0.76.1",
     "@react-native/typescript-config": "0.76.1",
     "@swc/helpers": "0.5.13",

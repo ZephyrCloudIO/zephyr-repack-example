@@ -46,7 +46,7 @@
     "@babel/plugin-transform-react-jsx": "^7.25.9",
     "@babel/preset-env": "^7.25.3",
     "@babel/runtime": "^7.25.0",
-    "@callstack/eslint-config": "^15.0.0",
+    "@callstack/eslint-config": "^13.0.0",
     "@callstack/repack": "5.0.0-rc.7",
     "@react-native-community/cli": "^15.1.2",
     "@react-native/babel-plugin-codegen": "0.76.5",
