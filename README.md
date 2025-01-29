@@ -27,6 +27,11 @@ We use `pnpm` to manage dependencies. Learn how to install `pnpm` [here](https:/
 
 ### Setup
 
+#### Ruby Version
+We recommend using ruby version 3.3.0. As it can be tough to manage multiple versions of ruby we recommend using a ruby version manager like [rbenv](https://github.com/rbenv/rbenv).
+
+#### Install Deps
+
 Install dependencies for all apps:
 
 ```
