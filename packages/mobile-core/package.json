@@ -21,7 +21,7 @@
   "dependencies": {
     "@tanstack/react-query": "^5.64.2",
     "axios": "^1.7.9",
-    "i18next": "24.0.2",
+    "i18next": "24.2.1",
     "react-hook-form": "^7.54.2",
     "react-i18next": "15.1.2",
     "react-native-localize": "3.3.0",
