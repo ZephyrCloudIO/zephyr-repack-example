@@ -18,7 +18,7 @@
     "adbreverse": "adb reverse tcp:8081 tcp:8081"
   },
   "dependencies": {
-    "@module-federation/enhanced": "0.6.13",
+    "@module-federation/enhanced": "0.9.0",
     "@react-native-community/netinfo": "11.4.1",
     "@react-navigation/native": "6.1.18",
     "@react-navigation/native-stack": "6.11.0",
