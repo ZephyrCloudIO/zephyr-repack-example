@@ -1,24 +1,6 @@
-import React from 'react';
-import {StyleSheet, View} from 'react-native';
+function VersionSwitcher() {
 
-import {Button, Icon, Text} from 'react-native-paper';
-
-import {useTheme} from '../hooks';
-import {ModuleBoundary} from './ModuleBoundary';
-
-import {init, registerRemotes} from '@module-federation/runtime';
-import mfConfig from '../../../../../apps/mobile-host/module-federation.config.v1.mjs';
-
-type Props = {
-  icon: string;
-  title: string;
-  boundaryColor: string;
-};
-
-export function EmptyScreen({icon, title, boundaryColor}: Props) {
-  const theme = useTheme();
-
-  const switchRemotes = () => {
+const switchRemotes = () => {
     // global.window.location = {
     //   href: '', //  window.location.href returns the href (URL) of the current page
     //   hostname: '', //window.location.hostname returns the domain name of the web host
@@ -39,28 +21,18 @@ export function EmptyScreen({icon, title, boundaryColor}: Props) {
     //
     // init({...mfConfig, force: true});
   };
+}
 
   return (
-    <ModuleBoundary withTopRadius color={boundaryColor}>
       <View
         style={[styles.container, {backgroundColor: theme.colors.background}]}>
+            <Text>Current version is: ???</Text>
         <Button onPress={switchRemotes}>Switch Remotes</Button>
         {/* <Icon source={icon} size={100} />
         <Text style={styles.title} variant="titleLarge">
           {title}
         </Text> */}
       </View>
-    </ModuleBoundary>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    marginTop: 16,
-  },
-});
+}

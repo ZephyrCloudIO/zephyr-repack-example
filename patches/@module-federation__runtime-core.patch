@@ -1,0 +1,26 @@
+diff --git a/dist/index.cjs.js b/dist/index.cjs.js
+index 73b5de0f701651b66e29bd074a0198e8eab14288..84c90d915911282ffe5432de4aa332ed632fa3f5 100644
+--- a/dist/index.cjs.js
++++ b/dist/index.cjs.js
+@@ -2693,7 +2693,7 @@ class RemoteHandler {
+             }
+             // Set the remote entry to a complete path
+             if ('entry' in remote) {
+-                if (sdk.isBrowserEnv() && !remote.entry.startsWith('http')) {
++                if (sdk.isBrowserEnv() && window.location && !remote.entry.startsWith('http')) {
+                     remote.entry = new URL(remote.entry, window.location.origin).href;
+                 }
+             }
+diff --git a/dist/index.esm.mjs b/dist/index.esm.mjs
+index bf90e142b3a7357b468ad7d89399d166d96745ef..63bc64be969a79ddffbe373dbf462cbdff8928b6 100644
+--- a/dist/index.esm.mjs
++++ b/dist/index.esm.mjs
+@@ -2692,7 +2692,7 @@ class RemoteHandler {
+             }
+             // Set the remote entry to a complete path
+             if ('entry' in remote) {
+-                if (isBrowserEnv() && !remote.entry.startsWith('http')) {
++                if (isBrowserEnv() && window.location && !remote.entry.startsWith('http')) {
+                     remote.entry = new URL(remote.entry, window.location.origin).href;
+                 }
+             }

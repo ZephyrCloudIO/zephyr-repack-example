@@ -60,7 +60,8 @@
     "patchedDependencies": {
       "react-native-paper": "patches/react-native-paper.patch",
       "react-native": "patches/react-native.patch",
-      "webpack-bundle-analyzer": "patches/webpack-bundle-analyzer.patch"
+      "webpack-bundle-analyzer": "patches/webpack-bundle-analyzer.patch",
+      "@module-federation/runtime-core": "patches/@module-federation__runtime-core.patch"
     },
     "packageExtensions": {
       "@module-federation/data-prefetch": {

@@ -6,16 +6,8 @@
     "incremental": true
   },
   "resolve": {
-    "mainFields": [
-      "react-native",
-      "browser",
-      "main"
-    ],
-    "aliasFields": [
-      "react-native",
-      "browser",
-      "main"
-    ],
+    "mainFields": ["react-native", "browser", "main"],
+    "aliasFields": ["react-native", "browser", "main"],
     "conditionNames": [],
     "exportsFields": [],
     "extensions": [
@@ -365,10 +357,7 @@
             },
             "plugins": [
               "babel-plugin-syntax-hermes-parser",
-              [
-                "@babel/plugin-syntax-typescript",
-                false
-              ],
+              ["@babel/plugin-syntax-typescript", false],
               "@react-native/babel-plugin-codegen"
             ],
             "overrides": [
@@ -470,7 +459,7 @@
           "@module-federation/enhanced": {
             "singleton": true,
             "eager": true,
-            "requiredVersion": "0.6.13"
+            "requiredVersion": "0.9.1"
           },
           "react-native-mmkv": {
             "singleton": true,
@@ -596,7 +585,7 @@
               "adbreverse": "adb reverse tcp:8081 tcp:8081"
             },
             "dependencies": {
-              "@module-federation/enhanced": "0.6.13",
+              "@module-federation/enhanced": "0.91",
               "@react-native-community/netinfo": "11.4.1",
               "@react-navigation/native": "6.1.18",
               "@react-navigation/native-stack": "6.11.0",
@@ -658,15 +647,9 @@
             "rnx-kit": {
               "kitType": "app",
               "alignDeps": {
-                "presets": [
-                  "./node_modules/mobile-sdk/preset"
-                ],
-                "requirements": [
-                  "mobile-sdk@0.0.1"
-                ],
-                "capabilities": [
-                  "super-app"
-                ]
+                "presets": ["./node_modules/mobile-sdk/preset"],
+                "requirements": ["mobile-sdk@0.0.1"],
+                "capabilities": ["super-app"]
               }
             }
           },
@@ -747,7 +730,7 @@
                 "@module-federation/enhanced": {
                   "singleton": true,
                   "eager": true,
-                  "requiredVersion": "0.6.13"
+                  "requiredVersion": "0.9.1"
                 },
                 "react-native-mmkv": {
                   "singleton": true,

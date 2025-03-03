@@ -470,7 +470,7 @@
           "@module-federation/enhanced": {
             "singleton": true,
             "eager": true,
-            "requiredVersion": "0.6.13"
+            "requiredVersion": "0.9.1"
           },
           "react-native-mmkv": {
             "singleton": true,

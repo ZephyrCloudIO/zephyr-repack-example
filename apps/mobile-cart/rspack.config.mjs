@@ -56,7 +56,7 @@ export default env => {
         filename: 'MobileCart.container.js.bundle',
         dts: false,
         remotes: {
-          MobileCheckout: `MobileCheckout@http://localhost:9002/${platform}/MobileCheckout.container.js.bundle`,
+          MobileCheckout: `MobileCheckout@http://localhost:9002/${platform}/mf-manifest.json`,
         },
         exposes: STANDALONE
           ? undefined
