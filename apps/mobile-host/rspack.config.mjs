@@ -56,7 +56,7 @@ export default env => {
       new Repack.plugins.ModuleFederationPluginV2({
         name: 'MobileHost',
         dts: false,
-        remotes: RemotesLocal, // USE_ZEPHYR ? RemotesV1 : RemotesLocal,
+        // remotes: RemotesLocal, // USE_ZEPHYR ? RemotesV1 : RemotesLocal,
         shared: getSharedDependencies({eager: true}),
         runtimePlugins: [
           path.resolve(__dirname, './src/custom-runtime-plugin.ts'),

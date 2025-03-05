@@ -1,7 +1,9 @@
 // ./src/App.tsx
 import React from 'react';
+
 import {createRemoteComponent} from '@module-federation/bridge-react';
 import {loadRemote} from '@module-federation/enhanced/runtime';
+
 import styles from './index.module.less';
 
 // define FallbackErrorComp Component

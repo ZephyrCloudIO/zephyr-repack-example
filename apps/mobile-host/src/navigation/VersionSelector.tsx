@@ -3,7 +3,7 @@ import {StyleSheet, Text, View} from 'react-native';
 
 import {Button} from 'react-native-paper';
 
-import {useOtaVersion} from '../OtaProvider';
+import {useVersion} from '../VersionProvider';
 
 type Props = {
   version: string;
@@ -11,7 +11,7 @@ type Props = {
 };
 
 export default function VersionSelector({version, onSelect}: Props) {
-  const contextVersion = useOtaVersion();
+  const contextVersion = useVersion();
   return (
     <View style={styles.row}>
       <Text>Version is: {contextVersion}</Text>
@@ -37,8 +37,10 @@ const styles = StyleSheet.create({
   row: {
     flex: 1,
     gap: 20,
-    height: 40,
-    paddingVertical: 10,
+    maxHeight: 60,
+    paddingBottom: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
     flexDirection: 'row',
   },
   selected: {

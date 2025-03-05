@@ -3,16 +3,16 @@ import React from 'react';
 import ErrorBoundary from '../components/ErrorBoundary';
 import Placeholder from '../components/Placeholder';
 import {CartNavigationProps} from '../navigation/types';
-
-const CartScreen = React.lazy(async () => {
-  // @ts-ignore federated dts not enabled yet
-  // eslint-disable-next-line import/no-unresolved
-  return await import('MobileCart/CartScreen');
-});
+import useRemote from '../useRemote';
 
 type Props = CartNavigationProps;
 
 const LazyLoadedCartScreen = ({navigation}: Props) => {
+  const CartScreen = useRemote({
+    scope: 'MobileCart',
+    module: 'CartScreen',
+  });
+
   const handleCheckoutSuccess = () => {
     navigation.navigate('CheckoutSuccess');
   };

@@ -1,19 +1,18 @@
 import React from 'react';
 
-import {RemotesLocal, RemotesV1, RemotesV2} from '../../mock-zephyr-api.mjs';
 import ErrorBoundary from '../components/ErrorBoundary';
 import Placeholder from '../components/Placeholder';
 import {ProductDetailsNavigationProps} from '../navigation/types';
-
-const ProductDetailsScreen = React.lazy(async () => {
-  // @ts-ignore federated dts not enabled yet
-  // eslint-disable-next-line import/no-unresolved
-  return await import('MobileInventory/ProductDetailsScreen');
-});
+import useRemote from '../useRemote';
 
 type Props = ProductDetailsNavigationProps;
 
 const LazyLoadedProductDetailsScreen = ({navigation, route}: Props) => {
+  const ProductDetailsScreen = useRemote({
+    scope: 'MobileInventory',
+    module: 'ProductDetailsScreen',
+  });
+
   const goBack = () => {
     navigation.goBack();
   };

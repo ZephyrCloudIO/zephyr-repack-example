@@ -13,7 +13,7 @@ import {
 import AnimatedBootSplash from './components/AnimatedBootSplash';
 import MainNavigator from './navigation/MainNavigator';
 import VersionSelector from './navigation/VersionSelector';
-import {OtaProvider} from './OtaProvider';
+import {VersionProvider} from './VersionProvider';
 
 // import {init} from '@module-federation/runtime';
 // import mfConfig from '../module-federation.config.mjs';
@@ -31,7 +31,7 @@ const App = () => {
   };
 
   return (
-    <OtaProvider currentVersion={version}>
+    <VersionProvider currentVersion={version}>
       <View style={StyleSheet.absoluteFill}>
         {isSplashVisible ? (
           <AnimatedBootSplash onAnimationEnd={hideSplashScreen} />
@@ -53,7 +53,7 @@ const App = () => {
           onSelect={setVersion}
         />
       </View>
-    </OtaProvider>
+    </VersionProvider>
   );
 };
 
