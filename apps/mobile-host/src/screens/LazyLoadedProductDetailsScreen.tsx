@@ -1,5 +1,6 @@
 import React from 'react';
 
+import {RemotesLocal, RemotesV1, RemotesV2} from '../../mock-zephyr-api.mjs';
 import ErrorBoundary from '../components/ErrorBoundary';
 import Placeholder from '../components/Placeholder';
 import {ProductDetailsNavigationProps} from '../navigation/types';

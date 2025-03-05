@@ -1,4 +1,5 @@
 import type {FederationRuntimePlugin} from '@module-federation/enhanced/runtime';
+
 import {RemotesLocal} from '../mock-zephyr-api.mjs';
 
 function log(eventName: string, obj: Record<string, unknown>) {

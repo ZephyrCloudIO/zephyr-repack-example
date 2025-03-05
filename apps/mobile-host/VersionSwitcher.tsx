@@ -16,7 +16,7 @@ const switchRemotes = () => {
             'https://boris-yankov-jfrpliow5v-138-mobileinventory-zephy-521bff6e6-ze.zephyrcloud.app/mf-manifest.json',
         },
       ],
-      {force: true},
+      // {force: true},
     );
     //
     // init({...mfConfig, force: true});

@@ -1,8 +1,8 @@
 import type {ScriptLocator, StorageApi} from '@callstack/repack/client';
 // import type {FederationRuntimePlugin} from '@module-federation/enhanced/runtime';
 import type {
-  RemoteInfo,
   FederationRuntimePlugin,
+  RemoteInfo,
 } from '@module-federation/runtime/types';
 
 // TODO: Check if something stored in MMKV

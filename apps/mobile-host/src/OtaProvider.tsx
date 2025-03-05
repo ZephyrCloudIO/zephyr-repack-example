@@ -1,15 +1,9 @@
 import React, {createContext, useContext} from 'react';
 
-type OtaContextType = {
-  currentVersion: string;
-};
+const OtaContext = createContext<string>('Untouched');
 
-const OtaContext = createContext<OtaContextType>({
-  currentVersion: '1.0.0', // Default version
-});
-
-export const useOta = () => {
-  const context = useContext(OtaContext);
+export const useOtaVersion = (): string => {
+  const context = useContext<string>(OtaContext);
   if (!context) {
     throw new Error('useOta must be used within an OtaProvider');
   }
@@ -26,8 +20,6 @@ export const OtaProvider: React.FC<OtaProviderProps> = ({
   currentVersion,
 }) => {
   return (
-    <OtaContext.Provider value={{currentVersion}}>
-      {children}
-    </OtaContext.Provider>
+    <OtaContext.Provider value={currentVersion}>{children}</OtaContext.Provider>
   );
 };

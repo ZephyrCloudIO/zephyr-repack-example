@@ -1,13 +1,12 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
 
+import {init, registerRemotes} from '@module-federation/runtime';
 import {Button, Icon, Text} from 'react-native-paper';
 
+import mfConfig from '../../../../../apps/mobile-host/module-federation.config.v1.mjs';
 import {useTheme} from '../hooks';
 import {ModuleBoundary} from './ModuleBoundary';
-
-import {init, registerRemotes} from '@module-federation/runtime';
-import mfConfig from '../../../../../apps/mobile-host/module-federation.config.v1.mjs';
 
 type Props = {
   icon: string;
@@ -30,6 +29,7 @@ export function EmptyScreen({icon, title, boundaryColor}: Props) {
       [
         {
           name: 'MobileInventory',
+          version: '1.0',
           entry:
             'https://boris-yankov-jfrpliow5v-138-mobileinventory-zephy-521bff6e6-ze.zephyrcloud.app/mf-manifest.json',
         },

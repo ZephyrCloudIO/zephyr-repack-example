@@ -25,8 +25,8 @@ const HomeScreen = ({onProductPress}: Props) => {
     <ModuleBoundary withTopRadius color={colors.moduleBoundaries.inventory}>
       <View style={styles.container}>
         <Navbar testID="homeScreen.navbar" />
-        <Text style={styles.hi}>This is a new version!!!</Text>
-        {/* <FlatList
+        <Text style={styles.hi}>This is a new version. Local!!!</Text>
+        <FlatList
           testID="homeScreen.productsList"
           style={styles.listContainer}
           contentContainerStyle={styles.contentContainer}
@@ -51,7 +51,7 @@ const HomeScreen = ({onProductPress}: Props) => {
               onPress={() => onProductPress(item.id)}
             />
           )}
-        /> */}
+        />
       </View>
     </ModuleBoundary>
   );
