@@ -33,7 +33,7 @@
   },
   "@module-federation/enhanced": {
     "name": "@module-federation/enhanced",
-    "version": "0.6.13"
+    "version": "0.10.0"
   },
   "react-native-mmkv": {
     "name": "react-native-mmkv",
