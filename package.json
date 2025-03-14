@@ -58,7 +58,9 @@
     "patchedDependencies": {
       "react-native-paper": "patches/react-native-paper.patch",
       "react-native": "patches/react-native.patch",
-      "webpack-bundle-analyzer": "patches/webpack-bundle-analyzer.patch"
+      "webpack-bundle-analyzer": "patches/webpack-bundle-analyzer.patch",
+      "zephyr-repack-plugin": "patches/zephyr-repack-plugin.patch",
+      "zephyr-xpack-internal": "patches/zephyr-xpack-internal.patch"
     },
     "packageExtensions": {
       "@module-federation/data-prefetch": {

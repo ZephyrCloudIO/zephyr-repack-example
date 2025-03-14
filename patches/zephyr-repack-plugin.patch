@@ -1,0 +1,30 @@
+diff --git a/dist/delegate-module/delegate-module-template.d.ts b/dist/delegate-module/delegate-module-template.d.ts
+deleted file mode 100644
+index bb9f35deaf6358fe3997eaf7dc225efbb042f5f4..0000000000000000000000000000000000000000
+diff --git a/dist/delegate-module/delegate-module-template.js b/dist/delegate-module/delegate-module-template.js
+deleted file mode 100644
+index 5042d05389087ef7d8a209fa7bf093d1b4258838..0000000000000000000000000000000000000000
+diff --git a/dist/delegate-module/delegate-module-template.js.map b/dist/delegate-module/delegate-module-template.js.map
+deleted file mode 100644
+index ccb58b8ed53198f81db42ffc0546ba713b06ccb1..0000000000000000000000000000000000000000
+diff --git a/dist/lib/with-zephyr.js b/dist/lib/with-zephyr.js
+index 813a882abb0d77fd1e6c648ad83d214cdb17307b..e16f17b9c908d000d3fbc25a4804920fc18d0172 100644
+--- a/dist/lib/with-zephyr.js
++++ b/dist/lib/with-zephyr.js
+@@ -5,7 +5,6 @@ const zephyr_agent_1 = require("zephyr-agent");
+ const ze_repack_plugin_1 = require("./ze-repack-plugin");
+ const get_platform_1 = require("./utils/get-platform");
+ const zephyr_xpack_internal_1 = require("zephyr-xpack-internal");
+-const delegate_module_template_1 = require("../delegate-module/delegate-module-template");
+ const ze_util_verification_1 = require("./utils/ze-util-verification");
+ function withZephyr(zephyrPluginOptions) {
+     return (config) => _zephyr_configuration(config, zephyrPluginOptions);
+@@ -23,7 +22,7 @@ _zephyrOptions) {
+     (0, zephyr_agent_1.ze_log)('Deploy build target: ', target);
+     const dependency_pairs = (0, zephyr_xpack_internal_1.extractFederatedDependencyPairs)(config);
+     const resolved_dependency_pairs = await zephyr_engine.resolve_remote_dependencies(dependency_pairs, target);
+-    (0, zephyr_xpack_internal_1.mutWebpackFederatedRemotesConfig)(zephyr_engine, config, resolved_dependency_pairs, delegate_module_template_1.repack_delegate_module_template);
++    (0, zephyr_xpack_internal_1.mutWebpackFederatedRemotesConfig)(zephyr_engine, config, resolved_dependency_pairs);
+     (0, zephyr_agent_1.ze_log)('dependency resolution completed successfully...or at least trying to...');
+     const mf_configs = (0, zephyr_xpack_internal_1.makeCopyOfModuleFederationOptions)(config);
+     // const app_config = await zephyr_engine.application_configuration;

@@ -1,0 +1,31 @@
+diff --git a/dist/xpack-extract/mut-webpack-federated-remotes-config.js b/dist/xpack-extract/mut-webpack-federated-remotes-config.js
+index b8c0a2f1559f2785cc577a4bf7c51631fc4536d5..7a81d38247d15ec27a6a05d9808ea735bc9be37d 100644
+--- a/dist/xpack-extract/mut-webpack-federated-remotes-config.js
++++ b/dist/xpack-extract/mut-webpack-federated-remotes-config.js
+@@ -4,7 +4,7 @@ exports.mutWebpackFederatedRemotesConfig = mutWebpackFederatedRemotesConfig;
+ const index_1 = require("./index");
+ const zephyr_agent_1 = require("zephyr-agent");
+ const iterate_federated_remote_config_1 = require("./iterate-federated-remote-config");
+-function mutWebpackFederatedRemotesConfig(zephyr_engine, config, resolvedDependencyPairs, delegate_module_template = index_1.xpack_delegate_module_template) {
++function mutWebpackFederatedRemotesConfig(zephyr_engine, config, resolvedDependencyPairs, delegate_module_template) {
+     if (!resolvedDependencyPairs?.length) {
+         (0, zephyr_agent_1.ze_log)(`No resolved dependency pairs found, skipping...`);
+         return;
+@@ -39,9 +39,14 @@ function mutWebpackFederatedRemotesConfig(zephyr_engine, config, resolvedDepende
+             // @ts-expect-error - TS7053: Element implicitly has an any type because expression of type string can't be used to index type RemotesObject | (string | RemotesObject)[]
+             // No index signature with a parameter of type string was found on type RemotesObject | (string | RemotesObject)[]
+             if (remotes[remote_name]) {
+-                // @ts-expect-error - read above
+-                remotes[remote_name] = (0, index_1.createMfRuntimeCode)(resolved_dep, delegate_module_template);
+-                (0, zephyr_agent_1.ze_log)(`Setting runtime code for remote: ${remotes}`);
++                if (delegate_module_template) {
++                    // @ts-expect-error - read above
++                    remotes[remote_name] = (0, index_1.createMfRuntimeCode)(resolved_dep, delegate_module_template);
++                    (0, zephyr_agent_1.ze_log)(`Setting runtime code for remote: ${remote_name}`);
++                } else {
++                    remotes[remote_name] = resolved_dep.remote_entry_url;
++                    (0, zephyr_agent_1.ze_log)(`Replacing remote entry URL for remote: ${remote_name}`);
++                }
+             }
+         });
+     });
