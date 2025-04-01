@@ -44,14 +44,14 @@
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
-    "@nx/eslint": "20.2.0-beta.2",
-    "@nx/eslint-plugin": "20.2.0-beta.2",
-    "@nx/jest": "20.2.0-beta.2",
-    "@nx/plugin": "20.2.0-beta.2",
+    "@nx/eslint": "20.7.0",
+    "@nx/eslint-plugin": "20.7.0",
+    "@nx/jest": "20.7.0",
+    "@nx/plugin": "20.7.0",
     "eslint": "~8.57.1",
     "husky": "^9.1.7",
     "mprocs": "^0.7.1",
-    "nx": "20.2.0-beta.2",
+    "nx": "20.7.0",
     "prettier": "^3.4.2"
   },
   "pnpm": {
