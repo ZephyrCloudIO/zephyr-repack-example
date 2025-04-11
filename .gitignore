@@ -30,3 +30,5 @@ vite.config.*.timestamp*
 
 # aws sam
 .aws-sam/*
+
+.rnef

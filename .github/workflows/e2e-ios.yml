@@ -19,8 +19,8 @@ jobs:
     env:
       RUBY_VERSION: 2.7.6
       MAESTRO_VERSION: 1.39.4
-      SIMULATOR_NAME: "iPhone 15 Pro Max"
       MAESTRO_DRIVER_STARTUP_TIMEOUT: 240000
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -56,6 +56,14 @@ jobs:
 
       - name: Install Pods
         run: pnpm --filter MobileHost pods
+
+      - uses: callstackincubator/ios@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          destination: 'simulator' # or 'device'
+          scheme: 'host'
+          configuration: 'Release'
+          working-directory: './apps/mobile-host'
 
       - name: Run iOS E2E Tests on Release Mode
         env:

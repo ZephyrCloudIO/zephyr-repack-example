@@ -25,7 +25,7 @@ const USE_ZEPHYR = Boolean(process.env.ZC);
  * You can also export a static object or a function returning a Promise.
  *
  * @param env Environment options passed from either Webpack CLI or React Native Community CLI
- *            when running with `react-native start/bundle`.
+ *            when running with `rnef start/bundle`.
  */
 export default env => {
   const {mode} = env;

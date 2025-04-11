@@ -16,7 +16,7 @@
   },
   "@callstack/repack": {
     "name": "@callstack/repack",
-    "version": "5.0.3",
+    "version": "5.0.6",
     "devOnly": true
   },
   "@react-native/babel-preset": {
@@ -34,9 +34,24 @@
     "version": "0.76.6",
     "devOnly": true
   },
-  "@react-native-community/cli": {
-    "name": "@react-native-community/cli",
-    "version": "^15.1.2",
+  "@rnef/cli": {
+    "name": "@rnef/cli",
+    "version": "^0.5.0",
+    "devOnly": true
+  },
+  "@rnef/platform-android": {
+    "name": "@rnef/platform-android",
+    "version": "^0.5.0",
+    "devOnly": true
+  },
+  "@rnef/platform-ios": {
+    "name": "@rnef/platform-ios",
+    "version": "^0.5.0",
+    "devOnly": true
+  },
+  "@rnef/plugin-repack": {
+    "name": "@rnef/plugin-repack",
+    "version": "^0.5.0",
     "devOnly": true
   },
   "@rspack/core": {

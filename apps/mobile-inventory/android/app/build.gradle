@@ -5,7 +5,7 @@ apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.grad
 
 // pnpm compliant way to resolve node modules path
 apply from: "../../node_modules/mobile-sdk/android/resolveNodePackage.gradle"
-    
+
 def reactNativePath = resolveNodePackage('react-native', rootDir)
 def codegenPath = resolveNodePackage('@react-native/codegen', reactNativePath)
 
@@ -22,7 +22,7 @@ react {
     //   The folder where the react-native Codegen package is. Default is ../../node_modules/@react-native/codegen
     codegenDir = codegenPath
     //   The cli.js file which is the React Native CLI entrypoint. Default is ../../node_modules/react-native/cli.js
-    // cliFile = file("../../node_modules/react-native/cli.js")
+    cliFile = file("../../node_modules/@rnef/cli/dist/src/bin.js")
 
     /* Variants */
     //   The list of variants to that are debuggable. For those we're going to
