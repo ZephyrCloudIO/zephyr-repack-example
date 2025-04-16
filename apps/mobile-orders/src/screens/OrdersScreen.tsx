@@ -1,5 +1,5 @@
-import React, {useMemo} from 'react';
-import {FlatList, StyleSheet, View} from 'react-native';
+import React, { useMemo } from 'react';
+import { FlatList, StyleSheet, View } from 'react-native';
 
 import {
   colors,
@@ -10,15 +10,15 @@ import {
   useOrderStore,
   useTranslation,
 } from 'mobile-core';
-import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import {OrderItem} from '../components/OrderItem';
+import { OrderItem } from '../components/OrderItem';
 
 export default function CartScreen() {
-  const {t} = useTranslation('orders');
-  const {top} = useSafeAreaInsets();
-  const {orders} = useOrderStore();
-  const {user} = useAuthStore();
+  const { t } = useTranslation('orders');
+  const { top } = useSafeAreaInsets();
+  const { orders } = useOrderStore();
+  const { user } = useAuthStore();
 
   const currentOrders = useMemo(
     () => orders.filter(order => order.user === user),
@@ -36,8 +36,12 @@ export default function CartScreen() {
   }
 
   return (
-    <ModuleBoundary withTopRadius color={colors.moduleBoundaries.orders}>
-      <View style={[styles.container, {paddingTop: top}]}>
+    <ModuleBoundary
+      badgeText="OrdersModule/OrdersScreen"
+      badgePosition={{ top: '34%', right: '4%' }}
+      withTopRadius
+      color={colors.moduleBoundaries.orders}>
+      <View style={[styles.container, { paddingTop: top }]}>
         <View style={styles.headerContainer}>
           <Text variant="headlineLarge">{t('list.headline')}</Text>
         </View>
@@ -45,7 +49,7 @@ export default function CartScreen() {
           style={styles.list}
           data={currentOrders}
           keyExtractor={item => item.id}
-          renderItem={({item, index}) => (
+          renderItem={({ item, index }) => (
             <OrderItem
               testID={`ordersScreen.ordersListItem.${index}`}
               order={item}

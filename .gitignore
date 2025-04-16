@@ -35,3 +35,5 @@ vite.config.*.timestamp*
 *.log
 *.txt
 *.json
+index (1).bundle
+index (2).bundle 

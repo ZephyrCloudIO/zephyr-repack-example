@@ -15,14 +15,22 @@ import MainNavigator from './navigation/MainNavigator';
 
 LogBox.ignoreAllLogs();
 
-const BUILD_ID = ZE_BUILD_ID;
+import { ZephyrSdk } from 'mobile-core';
+
+const zeSDK = new ZephyrSdk();
+
+zeSDK.verifyValues();
 
 
+//const BUILD_ID = ZE_BUILD_ID;
 
 const App = () => {
   const [isSplashVisible, setSplashVisible] = useState(true);
   const queryClient = new QueryClient();
-  console.log('BUILD_ID', BUILD_ID);
+
+  //  console.log('ZE_EDGE_URL', process.env.ZE_EDGE_URL || ZE_EDGE_URL);
+  console.log('ZE_BUILD_ID', ZE_BUILD_ID);
+
   const hideSplashScreen = () => {
     setSplashVisible(false);
   };

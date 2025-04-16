@@ -1,5 +1,5 @@
 import React from 'react';
-import {FlatList, StyleSheet, View} from 'react-native';
+import { FlatList, StyleSheet, View } from 'react-native';
 
 import {
   ActivityIndicator,
@@ -9,7 +9,7 @@ import {
   useCartStore,
   useTranslation,
 } from 'mobile-core';
-import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import CartItem from '../components/CartItem';
 import ErrorBoundary from '../components/ErrorBoundary';
@@ -24,10 +24,10 @@ type Props = {
   onCheckoutSuccess: () => void;
 };
 
-export default function CartScreen({onCheckoutSuccess}: Props) {
-  const {t} = useTranslation('cart');
-  const {top} = useSafeAreaInsets();
-  const {items} = useCartStore();
+export default function CartScreen({ onCheckoutSuccess }: Props) {
+  const { t } = useTranslation('cart');
+  const { top } = useSafeAreaInsets();
+  const { items } = useCartStore();
 
   if (items.length === 0) {
     return (
@@ -40,14 +40,18 @@ export default function CartScreen({onCheckoutSuccess}: Props) {
   }
 
   return (
-    <ModuleBoundary withTopRadius color={colors.moduleBoundaries.cart}>
+    <ModuleBoundary
+      badgeText="CartModule/CartScreen"
+      badgePosition={{ top: '34%', right: '20%' }}
+      withTopRadius
+      color={colors.moduleBoundaries.cart}>
       <View style={[styles.container]}>
         <FlatList
           style={styles.list}
-          contentContainerStyle={[styles.listContainer, {paddingTop: top}]}
+          contentContainerStyle={[styles.listContainer, { paddingTop: top }]}
           data={items}
           keyExtractor={item => item.id}
-          renderItem={({item}) => (
+          renderItem={({ item }) => (
             <CartItem
               itemId={item.id}
               quantity={item.quantity}

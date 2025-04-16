@@ -1,5 +1,5 @@
 import React from 'react';
-import {FlatList, StyleSheet, View} from 'react-native';
+import { FlatList, StyleSheet, Text, View } from 'react-native';
 
 import {
   ActivityIndicator,
@@ -16,15 +16,20 @@ type Props = {
   onProductPress: (productId: string) => void;
 };
 
-const HomeScreen = ({onProductPress}: Props) => {
+const HomeScreen = ({ onProductPress }: Props) => {
   const styles = useStyles();
 
-  const {data, isLoading} = useProducts();
+  const { data, isLoading } = useProducts();
 
   return (
-    <ModuleBoundary withTopRadius color={colors.moduleBoundaries.inventory}>
+    <ModuleBoundary
+      withTopRadius
+      badgeText="InventoryModule/HomeScreen"
+      badgePosition={{ bottom: '2%', left: '40%' }}
+      color={colors.moduleBoundaries.inventory}>
       <View style={styles.container}>
         <Navbar testID="homeScreen.navbar" />
+
         <FlatList
           testID="homeScreen.productsList"
           style={styles.listContainer}
@@ -43,7 +48,7 @@ const HomeScreen = ({onProductPress}: Props) => {
 
             return null;
           }}
-          renderItem={({item, index}) => (
+          renderItem={({ item, index }) => (
             <HomeProduct
               testID={`homeScreen.productsListItem.${index}`}
               item={item}
@@ -56,7 +61,7 @@ const HomeScreen = ({onProductPress}: Props) => {
   );
 };
 const useStyles = () => {
-  const {rem} = useResponsiveSizes();
+  const { rem } = useResponsiveSizes();
 
   const styles = StyleSheet.create({
     container: {

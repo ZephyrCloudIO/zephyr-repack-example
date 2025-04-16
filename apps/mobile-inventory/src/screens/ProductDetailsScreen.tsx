@@ -1,5 +1,5 @@
-import React, {Suspense, useEffect} from 'react';
-import {StyleSheet, View} from 'react-native';
+import React, { Suspense, useEffect } from 'react';
+import { StyleSheet, View } from 'react-native';
 
 import {
   Card,
@@ -9,7 +9,7 @@ import {
   Text,
   useProducts,
 } from 'mobile-core';
-import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import ProductDetails from '../components/ProductDetails';
 import ProductDetailsNavbar from '../components/ProductDetailsNavbar';
@@ -24,9 +24,9 @@ type Props = {
   productId: string;
 };
 
-export default ({goBack, goToCart, productId}: Props) => {
+export default ({ goBack, goToCart, productId }: Props) => {
   const styles = useStyles();
-  const {data, isLoading} = useProducts();
+  const { data, isLoading } = useProducts();
 
   const [selectedColor, setSelectedColor] = React.useState<string>();
   const [selectedSize, setSelectedSize] = React.useState<string>();
@@ -42,6 +42,8 @@ export default ({goBack, goToCart, productId}: Props) => {
 
   return (
     <ModuleBoundary
+      badgeText="InventoryModule/ProductDetailsScreen"
+      badgePosition={{ bottom: '16%', left: '30%' }}
       withBottomRadius
       withTopRadius
       color={colors.moduleBoundaries.inventory}>
@@ -73,7 +75,7 @@ export default ({goBack, goToCart, productId}: Props) => {
 };
 
 const useStyles = () => {
-  const {bottom} = useSafeAreaInsets();
+  const { bottom } = useSafeAreaInsets();
 
   const styles = StyleSheet.create({
     container: {

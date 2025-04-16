@@ -1,10 +1,10 @@
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
-import {Icon, Text} from 'react-native-paper';
+import { Icon, Text } from 'react-native-paper';
 
-import {useTheme} from '../hooks';
-import {ModuleBoundary} from './ModuleBoundary';
+import { useTheme } from '../hooks';
+import { ModuleBoundary } from './ModuleBoundary';
 
 type Props = {
   icon: string;
@@ -12,13 +12,16 @@ type Props = {
   boundaryColor: string;
 };
 
-export function EmptyScreen({icon, title, boundaryColor}: Props) {
+export function EmptyScreen({ icon, title, boundaryColor }: Props) {
   const theme = useTheme();
 
   return (
-    <ModuleBoundary withTopRadius color={boundaryColor}>
+    <ModuleBoundary
+      hidden={true}
+      withTopRadius
+      color={boundaryColor}>
       <View
-        style={[styles.container, {backgroundColor: theme.colors.background}]}>
+        style={[styles.container, { backgroundColor: theme.colors.background }]}>
         <Icon source={icon} size={100} />
         <Text style={styles.title} variant="titleLarge">
           {title}

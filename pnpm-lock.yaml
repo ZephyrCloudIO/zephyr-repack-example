@@ -8,6 +8,8 @@ overrides:
   esbuild: ^0.25.0
   '@babel/runtime': ^7.26.10
   '@babel/helpers': ^7.26.10
+  zephyr-repack-plugin: link:../../repos/zephyr-packages/libs/zephyr-repack-plugin
+  '@react-native/dev-middleware': ^0.76.6
 
 packageExtensionsChecksum: 8ef419e19eaecb914266a5018a46b582
 
@@ -41,6 +43,9 @@ importers:
       '@nx/jest':
         specifier: 20.7.0
         version: 20.7.0(@babel/traverse@7.26.5)(@types/node@22.10.7)(babel-plugin-macros@3.1.0)(nx@20.7.0)(typescript@5.7.3)
+      '@nx/js':
+        specifier: 20.7.0
+        version: 20.7.0(@babel/traverse@7.26.5)(nx@20.7.0)
       '@nx/plugin':
         specifier: 20.7.0
         version: 20.7.0(@babel/traverse@7.26.5)(@types/node@22.10.7)(@zkochan/js-yaml@0.0.7)(babel-plugin-macros@3.1.0)(eslint@8.57.1)(nx@20.7.0)(typescript@5.7.3)
@@ -121,8 +126,8 @@ importers:
         specifier: ^15.0.0
         version: 15.0.0(@types/eslint@9.6.1)(eslint@8.57.1)(jest@29.7.0(@types/node@22.10.7)(babel-plugin-macros@3.1.0))(typescript@5.7.3)
       '@callstack/repack':
-        specifier: 5.0.3
-        version: 5.0.3(@babel/core@7.26.0)(@module-federation/enhanced@0.10.0(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(react@18.3.1))(webpack@5.97.1)
+        specifier: 5.0.6
+        version: 5.0.6(@babel/core@7.26.0)(@module-federation/enhanced@0.10.0(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(react@18.3.1))(webpack@5.97.1)
       '@react-native-community/cli':
         specifier: ^15.1.2
         version: 15.1.3(typescript@5.7.3)
@@ -193,11 +198,8 @@ importers:
         specifier: ^5.95.0
         version: 5.97.1
       zephyr-repack-plugin:
-        specifier: 0.0.36
-        version: 0.0.36(webpack@5.97.1)
-      zephyr-rspack-plugin:
-        specifier: 0.0.36
-        version: 0.0.36(@swc/helpers@0.5.15)(webpack@5.97.1)
+        specifier: link:../../../zephyr-packages/libs/zephyr-repack-plugin
+        version: link:../../../zephyr-packages/libs/zephyr-repack-plugin
 
   apps/mobile-checkout:
     dependencies:
@@ -260,8 +262,8 @@ importers:
         specifier: ^15.0.0
         version: 15.0.0(@types/eslint@9.6.1)(eslint@8.57.1)(jest@29.7.0(@types/node@22.10.7)(babel-plugin-macros@3.1.0))(typescript@5.7.3)
       '@callstack/repack':
-        specifier: 5.0.3
-        version: 5.0.3(@babel/core@7.26.0)(@module-federation/enhanced@0.10.0(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(react@18.3.1))(webpack@5.97.1)
+        specifier: 5.0.6
+        version: 5.0.6(@babel/core@7.26.0)(@module-federation/enhanced@0.10.0(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(react@18.3.1))(webpack@5.97.1)
       '@react-native-community/cli':
         specifier: ^15.1.2
         version: 15.1.3(typescript@5.7.3)
@@ -332,11 +334,8 @@ importers:
         specifier: ^5.95.0
         version: 5.97.1
       zephyr-repack-plugin:
-        specifier: 0.0.36
-        version: 0.0.36(webpack@5.97.1)
-      zephyr-rspack-plugin:
-        specifier: 0.0.36
-        version: 0.0.36(@swc/helpers@0.5.15)(webpack@5.97.1)
+        specifier: link:../../../zephyr-packages/libs/zephyr-repack-plugin
+        version: link:../../../zephyr-packages/libs/zephyr-repack-plugin
 
   apps/mobile-e2e: {}
 
@@ -413,8 +412,8 @@ importers:
         specifier: ^15.0.0
         version: 15.0.0(@types/eslint@9.6.1)(eslint@8.57.1)(jest@29.7.0(@types/node@22.10.7)(babel-plugin-macros@3.1.0))(typescript@5.7.3)
       '@callstack/repack':
-        specifier: 5.0.3
-        version: 5.0.3(@babel/core@7.26.0)(@module-federation/enhanced@0.10.0(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(react@18.3.1))(webpack@5.97.1)
+        specifier: 5.0.6
+        version: 5.0.6(@babel/core@7.26.0)(@module-federation/enhanced@0.10.0(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(react@18.3.1))(webpack@5.97.1)
       '@react-native-community/cli':
         specifier: ^15.1.2
         version: 15.1.3(typescript@5.7.3)
@@ -494,11 +493,8 @@ importers:
         specifier: ^5.95.0
         version: 5.97.1
       zephyr-repack-plugin:
-        specifier: 0.0.36
-        version: 0.0.36(webpack@5.97.1)
-      zephyr-rspack-plugin:
-        specifier: 0.0.36
-        version: 0.0.36(@swc/helpers@0.5.15)(webpack@5.97.1)
+        specifier: link:../../../zephyr-packages/libs/zephyr-repack-plugin
+        version: link:../../../zephyr-packages/libs/zephyr-repack-plugin
     dependenciesMeta:
       mobile-core:
         injected: true
@@ -564,8 +560,8 @@ importers:
         specifier: ^15.0.0
         version: 15.0.0(@types/eslint@9.6.1)(eslint@8.57.1)(jest@29.7.0(@types/node@22.10.7)(babel-plugin-macros@3.1.0))(typescript@5.7.3)
       '@callstack/repack':
-        specifier: 5.0.3
-        version: 5.0.3(@babel/core@7.26.0)(@module-federation/enhanced@0.10.0(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(react@18.3.1))(webpack@5.97.1)
+        specifier: 5.0.6
+        version: 5.0.6(@babel/core@7.26.0)(@module-federation/enhanced@0.10.0(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(react@18.3.1))(webpack@5.97.1)
       '@react-native-community/cli':
         specifier: ^15.1.2
         version: 15.1.3(typescript@5.7.3)
@@ -636,8 +632,8 @@ importers:
         specifier: ^5.95.0
         version: 5.97.1
       zephyr-repack-plugin:
-        specifier: 0.0.36
-        version: 0.0.36(webpack@5.97.1)
+        specifier: link:../../../zephyr-packages/libs/zephyr-repack-plugin
+        version: link:../../../zephyr-packages/libs/zephyr-repack-plugin
       zephyr-rspack-plugin:
         specifier: 0.0.36
         version: 0.0.36(@swc/helpers@0.5.15)(webpack@5.97.1)
@@ -706,8 +702,8 @@ importers:
         specifier: ^15.0.0
         version: 15.0.0(@types/eslint@9.6.1)(eslint@8.57.1)(jest@29.7.0(@types/node@22.10.7)(babel-plugin-macros@3.1.0))(typescript@5.7.3)
       '@callstack/repack':
-        specifier: 5.0.3
-        version: 5.0.3(@babel/core@7.26.0)(@module-federation/enhanced@0.10.0(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(react@18.3.1))(webpack@5.97.1)
+        specifier: 5.0.6
+        version: 5.0.6(@babel/core@7.26.0)(@module-federation/enhanced@0.10.0(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(react@18.3.1))(webpack@5.97.1)
       '@react-native-community/cli':
         specifier: ^15.1.2
         version: 15.1.3(typescript@5.7.3)
@@ -778,11 +774,8 @@ importers:
         specifier: ^5.95.0
         version: 5.97.1
       zephyr-repack-plugin:
-        specifier: 0.0.36
-        version: 0.0.36(webpack@5.97.1)
-      zephyr-rspack-plugin:
-        specifier: 0.0.36
-        version: 0.0.36(@swc/helpers@0.5.15)(webpack@5.97.1)
+        specifier: link:../../../zephyr-packages/libs/zephyr-repack-plugin
+        version: link:../../../zephyr-packages/libs/zephyr-repack-plugin
 
   packages/mobile-core:
     dependencies:
@@ -813,6 +806,9 @@ importers:
       react-native-vector-icons:
         specifier: 10.2.0
         version: 10.2.0
+      zephyr-edge-contract:
+        specifier: ^0.0.38
+        version: 0.0.38
       zustand:
         specifier: ^5.0.3
         version: 5.0.3(@types/react@18.3.18)(react@18.3.1)
@@ -820,6 +816,12 @@ importers:
       '@callstack/eslint-config':
         specifier: ^15.0.0
         version: 15.0.0(@types/eslint@9.6.1)(eslint@8.57.1)(jest@29.7.0(@types/node@22.10.7)(babel-plugin-macros@3.1.0))(typescript@5.7.3)
+      '@module-federation/core':
+        specifier: 1.0.0-canary.1
+        version: 1.0.0-canary.1(webpack@5.97.1)
+      '@module-federation/sdk':
+        specifier: ^0.12.0
+        version: 0.12.0
       '@react-native/eslint-config':
         specifier: 0.76.6
         version: 0.76.6(eslint@8.57.1)(jest@29.7.0(@types/node@22.10.7)(babel-plugin-macros@3.1.0))(prettier@3.4.2)(typescript@5.7.3)
@@ -1613,12 +1615,12 @@ packages:
     peerDependencies:
       react: '>=16.3.0'
 
-  '@callstack/repack-dev-server@5.0.3':
-    resolution: {integrity: sha512-APZW9r/3sw21au/YE9sfGMb9aBomhREFhSbXJH7jo+2rPEGIsqfou8lf7Wjaj4sEa9yjdTcM/G/IwryD3yz9WA==}
+  '@callstack/repack-dev-server@5.0.6':
+    resolution: {integrity: sha512-IRg9Utc5pWfC6lxWDhc+jUNbfQrDdzLeLoTlx1RSgS8nvKhybLCKCZ3chkkhDH9x5nEiJgP2aqCGDauq/oKwew==}
     engines: {node: '>=18'}
 
-  '@callstack/repack@5.0.3':
-    resolution: {integrity: sha512-+cMsBw9X9hE7+zi34l0N15Lx/OPjW3nc3r4CSFnNgtz626adSXEk5I0LII1Mnvz7urZuR+vfg/CF3/enaTiegA==}
+  '@callstack/repack@5.0.6':
+    resolution: {integrity: sha512-JuxcBwdQsasDkI39h93uyv4Kx5R7dnb/oh0f1q9Jf+jArxPwiY1PHBhAfqmOdJg3KZgPo1R/6i4snW0VOTnazg==}
     engines: {node: '>=18'}
     peerDependencies:
       '@module-federation/enhanced': '>=0.6.10'
@@ -2144,6 +2146,11 @@ packages:
   '@module-federation/bridge-react-webpack-plugin@0.10.0':
     resolution: {integrity: sha512-wvqsjqqVXNI36Q98zFFK4saBFH3M+kJC9c/UZfGIWC86kBVRgWDOKphP4nF+cpjJsFEexoGCNefUswqsx14Y1Q==}
 
+  '@module-federation/core@1.0.0-canary.1':
+    resolution: {integrity: sha512-UE7gs5oNzm4nra3lDYmrBvVOe4PrAmkREHNnW4dAXoFsBw1b+pssgSN+G87swGm1UnSHzdLOJhgtjf2QZRA+8w==}
+    peerDependencies:
+      webpack: ^5.40.0
+
   '@module-federation/data-prefetch@0.10.0':
     resolution: {integrity: sha512-aXomkuNNTNhJmU9TQALvvRbf8NlDkPd3Q3iGJ817qAwnHIXAQ3x9nRtWqhAIovQra3R7i3u3KI1hIe0ivTIrNg==}
     peerDependencies:
@@ -2222,6 +2229,9 @@ packages:
 
   '@module-federation/sdk@0.10.0':
     resolution: {integrity: sha512-enS4rKLSsoLCB6RxmRgcIdPRiRLgk94qtT2x0CKYhsqz3OJmHVkD0c6Pt5dMgSyLd+1Uo83d9rI492YqzuxO6Q==}
+
+  '@module-federation/sdk@0.12.0':
+    resolution: {integrity: sha512-vh3GcG90fxjbkMghK7iSWcMayi/y8U5DxI6mhEFuz11St3y1UgQO2TZYephL8nISFBld7DdiqAkimx+6Hb3hjQ==}
 
   '@module-federation/sdk@0.8.4':
     resolution: {integrity: sha512-waABomIjg/5m1rPDBWYG4KUhS5r7OUUY7S+avpaVIY/tkPWB3ibRDKy2dNLLAMaLKq0u+B1qIdEp4NIWkqhqpg==}
@@ -2516,16 +2526,8 @@ packages:
     resolution: {integrity: sha512-kP97xMQjiANi5/lmf8MakS7d8FTJl+BqYHQMqyvNiY+eeWyKnhqW2GL2v3eEUBAuyPBgJGivuuO4RvjZujduJg==}
     engines: {node: '>=18'}
 
-  '@react-native/debugger-frontend@0.78.0':
-    resolution: {integrity: sha512-KQYD9QlxES/VdmXh9EEvtZCJK1KAemLlszQq4dpLU1stnue5N8dnCY6A7PpStMf5UtAMk7tiniQhaicw0uVHgQ==}
-    engines: {node: '>=18'}
-
   '@react-native/dev-middleware@0.76.6':
     resolution: {integrity: sha512-1bAyd2/X48Nzb45s5l2omM75vy764odx/UnDs4sJfFCuK+cupU4nRPgl0XWIqgdM/2+fbQ3E4QsVS/WIKTFxvQ==}
-    engines: {node: '>=18'}
-
-  '@react-native/dev-middleware@0.78.0':
-    resolution: {integrity: sha512-zEafAZdOz4s37Jh5Xcv4hJE5qZ6uNxgrTLcpjDOJnQG6dO34/BoZeXvDrjomQFNn6ogdysR51mKJStaQ3ixp5A==}
     engines: {node: '>=18'}
 
   '@react-native/eslint-config@0.76.6':
@@ -7654,8 +7656,8 @@ packages:
   zephyr-edge-contract@0.0.36:
     resolution: {integrity: sha512-0BRDgwDbxOsS4N9qycFlwo1shZlEW4WwLTH2nNLRMnRSl4zVQv3VFvryV8eFZIiB6Sb2VMWBxUE2fAfRAkyAyQ==}
 
-  zephyr-repack-plugin@0.0.36:
-    resolution: {integrity: sha512-IKXpQ06Nj+cTXq2G/pHIm4mxTd6nHdOZRgAFULQBWaszEow8TWY+sm/Zbvpo1iMtkS3DWIBbCgrsMTb4Y/Hv+g==}
+  zephyr-edge-contract@0.0.38:
+    resolution: {integrity: sha512-R8aOKrsKjUYLfdWa0YiV71cneV13Oii6TT4COvVpVd7n8yLUgSLqfvDnNCrUi9equaYLh4YA0wYlO5JtiWquNw==}
 
   zephyr-rspack-plugin@0.0.36:
     resolution: {integrity: sha512-FGQW+4QjP2Smu5eFPQz7mv8WvUKhqnfwXICQ4cs8ApjOF4CZgul1DeZ9InP3YrtvEfo9Fd/aQh5naHnRfeOdeQ==}
@@ -8628,12 +8630,12 @@ snapshots:
       hoist-non-react-statics: 3.3.2
       react: 18.3.1
 
-  '@callstack/repack-dev-server@5.0.3':
+  '@callstack/repack-dev-server@5.0.6':
     dependencies:
       '@babel/code-frame': 7.26.2
       '@fastify/middie': 8.3.3
       '@fastify/sensible': 5.6.0
-      '@react-native/dev-middleware': 0.78.0
+      '@react-native/dev-middleware': 0.76.6
       fastify: 4.29.0
       fastify-favicon: 4.3.0
       fastify-plugin: 4.5.1
@@ -8647,9 +8649,9 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@callstack/repack@5.0.3(@babel/core@7.26.0)(@module-federation/enhanced@0.10.0(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(react@18.3.1))(webpack@5.97.1)':
+  '@callstack/repack@5.0.6(@babel/core@7.26.0)(@module-federation/enhanced@0.10.0(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(react@18.3.1))(webpack@5.97.1)':
     dependencies:
-      '@callstack/repack-dev-server': 5.0.3
+      '@callstack/repack-dev-server': 5.0.6
       '@discoveryjs/json-ext': 0.5.7
       '@rspack/plugin-react-refresh': 1.0.0(react-refresh@0.14.2)
       babel-loader: 9.2.1(@babel/core@7.26.0)(webpack@5.97.1)
@@ -9290,6 +9292,10 @@ snapshots:
       '@types/semver': 7.5.8
       semver: 7.6.3
 
+  '@module-federation/core@1.0.0-canary.1(webpack@5.97.1)':
+    dependencies:
+      webpack: 5.97.1
+
   '@module-federation/data-prefetch@0.10.0(react@18.3.1)':
     dependencies:
       '@module-federation/runtime': 0.10.0
@@ -9422,6 +9428,8 @@ snapshots:
       '@module-federation/sdk': 0.8.4
 
   '@module-federation/sdk@0.10.0': {}
+
+  '@module-federation/sdk@0.12.0': {}
 
   '@module-federation/sdk@0.8.4':
     dependencies:
@@ -9973,8 +9981,6 @@ snapshots:
 
   '@react-native/debugger-frontend@0.76.6': {}
 
-  '@react-native/debugger-frontend@0.78.0': {}
-
   '@react-native/dev-middleware@0.76.6':
     dependencies:
       '@isaacs/ttlcache': 1.4.1
@@ -9983,25 +9989,6 @@ snapshots:
       chromium-edge-launcher: 0.2.0
       connect: 3.7.0
       debug: 2.6.9
-      nullthrows: 1.1.1
-      open: 7.4.2
-      selfsigned: 2.4.1
-      serve-static: 1.16.2
-      ws: 6.2.3
-    transitivePeerDependencies:
-      - bufferutil
-      - supports-color
-      - utf-8-validate
-
-  '@react-native/dev-middleware@0.78.0':
-    dependencies:
-      '@isaacs/ttlcache': 1.4.1
-      '@react-native/debugger-frontend': 0.78.0
-      chrome-launcher: 0.15.2
-      chromium-edge-launcher: 0.2.0
-      connect: 3.7.0
-      debug: 2.6.9
-      invariant: 2.2.4
       nullthrows: 1.1.1
       open: 7.4.2
       selfsigned: 2.4.1
@@ -14074,6 +14061,7 @@ snapshots:
       react-native-safe-area-context: 4.12.0(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(react@18.3.1))(react@18.3.1)
       react-native-screen-corner-radius: 0.2.2(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(react@18.3.1))(react@18.3.1)
       react-native-vector-icons: 10.2.0
+      zephyr-edge-contract: 0.0.38
       zustand: 5.0.3(@types/react@18.3.18)(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
@@ -16088,17 +16076,9 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  zephyr-repack-plugin@0.0.36(webpack@5.97.1):
+  zephyr-edge-contract@0.0.38:
     dependencies:
-      zephyr-agent: 0.0.36
-      zephyr-xpack-internal: 0.0.36(webpack@5.97.1)
-    transitivePeerDependencies:
-      - '@cloudflare/workers-types'
-      - bufferutil
-      - encoding
-      - supports-color
-      - utf-8-validate
-      - webpack
+      tslib: 2.8.1
 
   zephyr-rspack-plugin@0.0.36(@swc/helpers@0.5.15)(webpack@5.97.1):
     dependencies:

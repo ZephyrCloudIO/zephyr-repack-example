@@ -1,10 +1,10 @@
-import React, {useContext} from 'react';
-import {SafeAreaView, StyleSheet} from 'react-native';
+import React, { useContext } from 'react';
+import { SafeAreaView, StyleSheet } from 'react-native';
 
-import {useTranslation} from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
-import {LocalizationContext} from '../../i18n';
-import {SUPPORTED_LANGUAGES} from '../../i18n/constants.ts';
+import { LocalizationContext } from '../../i18n';
+import { SUPPORTED_LANGUAGES } from '../../i18n/constants.ts';
 import {
   Button,
   Checkbox,
@@ -15,20 +15,20 @@ import {
   Text,
   VStack,
 } from '../../ui';
-import {useModuleBoundaryStore} from '../../utils';
-import {useAuthStore} from '../store/useAuthStore';
+import { useModuleBoundaryStore } from '../../utils';
+import { useAuthStore } from '../store/useAuthStore';
 
 interface Props {
   appVersion: string;
   onLoginPress: () => void;
 }
 
-export const AccountScreen = ({onLoginPress, appVersion}: Props) => {
-  const {logout, user} = useAuthStore();
-  const {language, updateLanguage} = useContext(LocalizationContext);
-  const {t} = useTranslation('account');
+export const AccountScreen = ({ onLoginPress, appVersion }: Props) => {
+  const { logout, user } = useAuthStore();
+  const { language, updateLanguage } = useContext(LocalizationContext);
+  const { t } = useTranslation('account');
 
-  const {toggle, isEnabled} = useModuleBoundaryStore();
+  const { toggle, isEnabled } = useModuleBoundaryStore();
 
   const handleLogout = () => {
     logout();
@@ -62,7 +62,7 @@ export const AccountScreen = ({onLoginPress, appVersion}: Props) => {
           )}
           {user ? (
             <Text testID="accountScreen.userLabel">
-              {t('account.user_label', {user})}
+              {t('account.user_label', { user })}
             </Text>
           ) : null}
           <VStack style={styles.settingsShadowContainer}>
@@ -81,7 +81,7 @@ export const AccountScreen = ({onLoginPress, appVersion}: Props) => {
                 <RadioButton.Group
                   value={language}
                   onValueChange={handleLanguageChange}>
-                  {SUPPORTED_LANGUAGES.map(({code, title}) => (
+                  {SUPPORTED_LANGUAGES.map(({ code, title }) => (
                     <RadioButton.Item key={code} label={title} value={code} />
                   ))}
                 </RadioButton.Group>
@@ -90,7 +90,7 @@ export const AccountScreen = ({onLoginPress, appVersion}: Props) => {
           </VStack>
         </VStack>
         <Text style={styles.version}>
-          {t('account.version', {version: appVersion})}
+          {t('account.version', { version: appVersion })}
         </Text>
       </VStack>
     </SafeAreaView>

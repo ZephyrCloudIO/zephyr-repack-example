@@ -62,8 +62,8 @@ export const theme = {
 
 export const moduleBoundaries = {
   cart: '#A1151A',
-  inventory: '#05547F',
-  checkout: '#538B5F',
+  inventory: '#B0045F',
+  checkout: '#C38B5F',
   orders: '#2A2E4D',
 };
 

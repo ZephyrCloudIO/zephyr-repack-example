@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 import {
   Button,
@@ -18,7 +18,7 @@ import {
 } from 'mobile-core';
 
 function calculateTotal(cart: Array<CartItem>, products?: Array<Product>) {
-  return cart.reduce((acc, {id, quantity}) => {
+  return cart.reduce((acc, { id, quantity }) => {
     const product = products?.find(p => p.id === id);
     if (!product) {
       return acc;
@@ -32,14 +32,14 @@ type Props = {
   onCheckoutSuccess: () => void;
 };
 
-const CheckoutSection = ({onCheckoutSuccess}: Props) => {
-  const {t} = useTranslation('checkout');
-  const {user} = useAuthStore();
-  const {items, reset} = useCartStore();
-  const {addOrder} = useOrderStore();
-  const {data} = useProducts();
+const CheckoutSection = ({ onCheckoutSuccess }: Props) => {
+  const { t } = useTranslation('checkout');
+  const { user } = useAuthStore();
+  const { items, reset } = useCartStore();
+  const { addOrder } = useOrderStore();
+  const { data } = useProducts();
 
-  const {showSnackbar} = useSnackbar();
+  const { showSnackbar } = useSnackbar();
 
   const handleCheckout = () => {
     if (user) {
@@ -53,10 +53,13 @@ const CheckoutSection = ({onCheckoutSuccess}: Props) => {
   };
 
   return (
-    <ModuleBoundary color={colors.moduleBoundaries.checkout}>
+    <ModuleBoundary
+      badgeText="CheckoutModule/CheckoutSection"
+      badgePosition={{ top: '-30%', left: '10%' }}
+      color={colors.moduleBoundaries.checkout}>
       <VStack style={styles.container}>
         <Text variant="titleLarge" style={styles.price}>
-          {t('total_price', {price: calculateTotal(items, data).toFixed(2)})}
+          {t('total_price', { price: calculateTotal(items, data).toFixed(2) })}
         </Text>
         <Button
           testID="cartScreen.checkoutButton"
