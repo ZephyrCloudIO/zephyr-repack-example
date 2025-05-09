@@ -20,7 +20,7 @@ const MainNavigator = () => {
     <Main.Navigator
       screenOptions={{
         headerShown: false,
-        headerBackTitleVisible: false,
+        headerBackVisible: false,
         headerTintColor: colors.grayscale.darkGray,
         headerTransparent: true,
       }}>

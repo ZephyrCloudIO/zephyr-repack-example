@@ -16,42 +16,42 @@
   },
   "@callstack/repack": {
     "name": "@callstack/repack",
-    "version": "5.0.6",
+    "version": "5.1.0-rc.0",
     "devOnly": true
   },
   "@react-native/babel-preset": {
     "name": "@react-native/babel-preset",
-    "version": "0.76.6",
+    "version": "0.79.0",
     "devOnly": true
   },
   "@react-native/eslint-config": {
     "name": "@react-native/eslint-config",
-    "version": "0.76.6",
+    "version": "0.79.0",
     "devOnly": true
   },
   "@react-native/typescript-config": {
     "name": "@react-native/typescript-config",
-    "version": "0.76.6",
+    "version": "0.79.0",
     "devOnly": true
   },
   "@rnef/cli": {
     "name": "@rnef/cli",
-    "version": "^0.5.2",
+    "version": "^0.7.5",
     "devOnly": true
   },
   "@rnef/platform-android": {
     "name": "@rnef/platform-android",
-    "version": "^0.5.2",
+    "version": "^0.7.5",
     "devOnly": true
   },
   "@rnef/platform-ios": {
     "name": "@rnef/platform-ios",
-    "version": "^0.5.2",
+    "version": "^0.7.5",
     "devOnly": true
   },
   "@rnef/plugin-repack": {
     "name": "@rnef/plugin-repack",
-    "version": "^0.5.2",
+    "version": "^0.7.5",
     "devOnly": true
   },
   "@rspack/core": {
@@ -105,3 +105,4 @@
     "devOnly": true
   }
 }
+

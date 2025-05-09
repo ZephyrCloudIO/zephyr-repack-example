@@ -10,5 +10,4 @@ export default {
   },
   // remoteCacheProvider: 'github-actions',
   remoteCacheProvider: null,
-  root: process.env.PROJECT_ROOT_PATH ?? './',
 };

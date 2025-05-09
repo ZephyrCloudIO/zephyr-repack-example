@@ -60,7 +60,7 @@ const config = env => {
               './CartScreen': './src/screens/CartScreen',
               './AddToCart': './src/components/AddToCart',
             },
-        shared: getSharedDependencies({eager: STANDALONE}),
+        shared: getSharedDependencies({eager: true}),
       }),
       new rspack.IgnorePlugin({
         resourceRegExp: /^@react-native-masked-view/,

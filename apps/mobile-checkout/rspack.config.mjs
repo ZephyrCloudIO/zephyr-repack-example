@@ -58,7 +58,7 @@ const config = env => {
           './CheckoutSection': './src/components/CheckoutSection',
           './CheckoutSuccessScreen': './src/screens/CheckoutSuccessScreen',
         },
-        shared: getSharedDependencies({eager: STANDALONE}),
+        shared: getSharedDependencies({eager: true}),
       }),
       new rspack.IgnorePlugin({
         resourceRegExp: /^@react-native-masked-view/,

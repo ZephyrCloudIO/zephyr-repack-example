@@ -32,3 +32,4 @@ vite.config.*.timestamp*
 
 .rnef
 
+.kotlin/
