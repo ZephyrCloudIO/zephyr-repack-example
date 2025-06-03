@@ -28,12 +28,10 @@ mprocs.log
 .xcode.env.local
 vite.config.*.timestamp*
 
-# aws sam
 .aws-sam/*
 
 # logs
-*.log
-*.txt
-*.json
-index (1).bundle
-index (2).bundle 
+
+.rnef
+
+.kotlin/

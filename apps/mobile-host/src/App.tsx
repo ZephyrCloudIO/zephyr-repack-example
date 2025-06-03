@@ -1,7 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { LogBox, View, Button, Text } from 'react-native';
+import React, {useEffect, useState} from 'react';
+import {
+  LogBox,
+  Platform,
+  SafeAreaView,
+  StatusBar,
+  StyleSheet,
+} from 'react-native';
 
-import { NavigationContainer } from '@react-navigation/native';
+import {NavigationContainer} from '@react-navigation/native';
 import {
   LocalizationContextProvider,
   QueryClient,
@@ -15,7 +21,7 @@ import MainNavigator from './navigation/MainNavigator';
 
 LogBox.ignoreAllLogs();
 
-import { ZephyrRepackSdk } from 'mobile-core';
+import {ZephyrRepackSdk} from 'mobile-core';
 
 const zeSDK = new ZephyrRepackSdk();
 
@@ -26,34 +32,13 @@ const App = () => {
   const [isSplashVisible, setSplashVisible] = useState(true);
   const [updateAvailable, setUpdateAvailable] = useState(false);
   const [updateUrl, setUpdateUrl] = useState<string | null>(null);
-  const [updateProgress, setUpdateProgress] = useState(zeSDK.getUpdateProgress());
-  const [previousVersion, setPreviousVersion] = useState(zeSDK.getPreviousVersion());
+  const [updateProgress, setUpdateProgress] = useState(
+    zeSDK.getUpdateProgress(),
+  );
+  const [previousVersion, setPreviousVersion] = useState(
+    zeSDK.getPreviousVersion(),
+  );
   const queryClient = new QueryClient();
-
-  // Check for updates on initial load
-  useEffect(() => {
-    const checkForUpdates = async () => {
-      const updateResult = await zeSDK.confirmUpdate({ app: 'MobileCart' });
-      if (updateResult?.updated && updateResult.remote_url) {
-        setUpdateAvailable(true);
-        setUpdateUrl(updateResult.remote_url);
-      }
-    };
-
-    checkForUpdates();
-  }, []);
-
-  // Poll for update progress info (no need to poll the server here, the SDK handles that)
-  useInterval(() => {
-    setUpdateProgress(zeSDK.getUpdateProgress());
-  }, 1000);
-
-  // Log previous version
-  useEffect(() => {
-    if (previousVersion) {
-      console.log('Previous version:', previousVersion);
-    }
-  }, [previousVersion]);
 
   const hideSplashScreen = () => {
     setSplashVisible(false);
@@ -86,22 +71,23 @@ const App = () => {
   // Update UI if update is available
   if (updateAvailable) {
     return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', padding: 20 }}>
-        <Text style={{ marginBottom: 20 }}>
+      <View
+        style={{
+          flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center',
+          padding: 20,
+        }}>
+        <Text style={{marginBottom: 20}}>
           Update available. Current version: {updateProgress.currentVersion}
         </Text>
         {previousVersion && (
-          <Text style={{ marginBottom: 20 }}>
+          <Text style={{marginBottom: 20}}>
             Previous version: {previousVersion}
           </Text>
         )}
-        <Text style={{ marginBottom: 20 }}>
-          Status: {updateProgress.status}
-        </Text>
-        <Button
-          title="Update Now"
-          onPress={handleUpdate}
-        />
+        <Text style={{marginBottom: 20}}>Status: {updateProgress.status}</Text>
+        <Button title="Update Now" onPress={handleUpdate} />
       </View>
     );
   }
@@ -111,22 +97,31 @@ const App = () => {
 
   return (
     <>
-      {isSplashVisible ? (
-        <AnimatedBootSplash onAnimationEnd={hideSplashScreen} />
-      ) : null}
-      <ThemeProvider>
-        <LocalizationContextProvider>
-          <QueryClientProvider client={queryClient}>
-            <SnackbarContextProvider>
-              <NavigationContainer>
-                <MainNavigator />
-              </NavigationContainer>
-            </SnackbarContextProvider>
-          </QueryClientProvider>
-        </LocalizationContextProvider>
-      </ThemeProvider>
+      <SafeAreaView style={styles.AndroidSafeArea}>
+        {isSplashVisible ? (
+          <AnimatedBootSplash onAnimationEnd={hideSplashScreen} />
+        ) : null}
+        <ThemeProvider>
+          <LocalizationContextProvider>
+            <QueryClientProvider client={queryClient}>
+              <SnackbarContextProvider>
+                <NavigationContainer>
+                  <MainNavigator />
+                </NavigationContainer>
+              </SnackbarContextProvider>
+            </QueryClientProvider>
+          </LocalizationContextProvider>
+        </ThemeProvider>
+      </SafeAreaView>
     </>
   );
 };
+
+const styles = StyleSheet.create({
+  AndroidSafeArea: {
+    flex: 1,
+    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
+  },
+});
 
 export default App;

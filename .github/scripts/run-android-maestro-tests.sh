@@ -28,9 +28,15 @@ echo "🔄 Running adbreverse scripts to set up port forwarding..."
 pnpm adbreverse
 echo "✅ adbreverse executed successfully."
 
+echo "Setup local rnef config"
+RNEF_PATH="apps/mobile-host/.rnef/cache"
+mkdir -p "$RNEF_PATH"
+echo "Write github token into project.json"
+echo "{\"githubToken\": \"$GITHUB_TOKEN\"}" > "$RNEF_PATH/project.json"
+
 # Build and install the mobile app on the device
 echo "📱 Building and installing the app on the device..."
-pnpm run:mobile-host:android --mode="$MODE"
+pnpm run:mobile-host:android --variant="$MODE"
 echo "✅ App built and installed successfully."
 
 # Run the end-to-end test scripts

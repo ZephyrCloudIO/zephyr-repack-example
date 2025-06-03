@@ -9,7 +9,7 @@ const getSharedDependencies = ({eager = true}) => {
   const dependencies = require('./dependencies.json');
 
   const shared = Object.entries(dependencies).map(([dep, {version}]) => {
-    return [dep, {singleton: true, eager, requiredVersion: version}];
+    return [dep, {singleton: true, eager, requiredVersion: version, version}];
   });
 
   return Object.fromEntries(shared);
