@@ -1,9 +1,8 @@
 # React Native super app
 
-| iOS | Android |
-| --- | --- |
+| iOS                                                        | Android                                                            |
+| ---------------------------------------------------------- | ------------------------------------------------------------------ |
 | <img src="./docs/ios_demo.gif" alt="iOS Demo" width="300"> | <img src="./docs/android_demo.gif" alt="Android Demo" width="300"> |
-
 
 ## Architecture Overview
 
@@ -100,3 +99,18 @@ Run type check for all apps:
 ```
 pnpm typecheck
 ```
+
+### Notes for maintainers
+
+#### Potential resolution to pod install error
+
+1. Clear CocoaPods cache: rm -rf ~/Library/Caches/CocoaPods
+2. Fix ffi gem: gem pristine ffi --version 1.17.0
+3. Clean individual app pods: Remove Pods directory and Podfile.lock from the failing app
+4. Nuclear reset Pods: `pod deintegrate`:
+
+- Removes all CocoaPods integration from your Xcode project
+  - Removes the .xcworkspace file
+  - Removes CocoaPods-generated build settings from your .xcodeproj
+  - Removes references to Pods in your project
+  - Essentially reverts your project to its pre-CocoaPods state

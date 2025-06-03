@@ -35,5 +35,25 @@ target 'host' do
       :mac_catalyst_enabled => false,
       # :ccache_enabled => true
     )
+
+    # Fix for JWTDecode compilation issues 
+    
+    
+    # Fix for RCT-Folly compilation issues
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['CLANG_CXX_LANGUAGE_STANDARD'] = 'c++20'
+        config.build_settings['CLANG_CXX_LIBRARY'] = 'libc++'
+        if target.name == 'RCT-Folly'
+          config.build_settings['HEADER_SEARCH_PATHS'] = '$(inherited) ${PODS_ROOT}/RCT-Folly'
+        end
+        ## Fix for JWTDecode compilation issues 
+        if target.name == 'JWTDecode'
+          target.build_configurations.each do |config| 
+            config.build_settings['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
+          end
+        end
+      end
+    end
   end
 end
