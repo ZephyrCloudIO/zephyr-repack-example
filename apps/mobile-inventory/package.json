@@ -84,5 +84,8 @@
         "super-app"
       ]
     }
+  },
+  "zephyr:dependencies": {
+    "MobileCart": "1.0.0"
   }
 }

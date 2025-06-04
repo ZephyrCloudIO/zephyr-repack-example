@@ -27,7 +27,7 @@
     "run:mobile-inventory:android": "pnpm --filter MobileInventory android",
     "run:mobile-orders:ios": "pnpm --filter MobileOrders ios",
     "run:mobile-orders:android": "pnpm --filter MobileOrders android",
-    "pods": "nx run-many --parallel=1 -t pods",
+    "pods": "pnpm -r pods",
     "pods:update": "pnpm nx run-many --parallel=1 -t pods:update",
     "start:mobile:concurrently": "concurrently -n HOST,CART,INVENTORY,CHECKOUT,ORDERS -c green,blue,yellow,magenta \"pnpm run start:mobile-host\" \"pnpm run start:mobile-cart\" \"pnpm run start:mobile-inventory\" \"pnpm run start:mobile-checkout\" \"pnpm run start:mobile-orders\" || true",
     "start": "mprocs",
@@ -79,7 +79,11 @@
     },
     "overrides": {
       "image-size": ">=1.2.1",
-      "zephyr-repack-plugin": "link:../../repos/zephyr-packages/libs/zephyr-repack-plugin",
+      "zephyr-repack-plugin": "link:../zephyr-packages/libs/zephyr-repack-plugin",
+      "zephyr-agent": "link:../zephyr-packages/libs/zephyr-agent",
+      "zephyr-xpack-internal": "link:../zephyr-packages/libs/zephyr-xpack-internal",
+      "zephyr-edge-contract": "link:../zephyr-packages/libs/zephyr-edge-contract",
+      "react-native-zephyr-sdk": "link:../react-native-zephyr-sdk",
       "@react-native/dev-middleware": "^0.76.6"
     }
   },

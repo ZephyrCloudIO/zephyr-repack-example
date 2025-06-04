@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "android": "rnef run:android",
-    "ios": "rnef run:ios",
+    "ios": "ZE_API=http://localhost:3333 ZE_API_GATE=http://zeapi.zephyr.local ZC=1 DEBUG=zephyr:* rnef run:ios",
     "start": "rnef start",
+    "start:ios": "ZE_API=http://localhost:3333 ZE_API_GATE=http://zeapi.zephyr.local ZC=1 DEBUG=zephyr:* STANDALONE=1 react-native start --port 8081 --platform ios",
+    "start:android": "ZE_API=http://localhost:3333 ZE_API_GATE=http://zeapi.zephyr.local ZC=1 DEBUG=zephyr:* STANDALONE=1 react-native start --port 8081 --platform android",
     "test": "nx jest:test --passWithNoTests",
     "lint": "nx eslint:lint --ext .js,.jsx,.ts,.tsx",
     "typecheck": "tsc",
@@ -19,6 +21,7 @@
   },
   "dependencies": {
     "@module-federation/enhanced": "0.13.1",
+    "@module-federation/runtime": "^0.14.3",
     "@react-native-community/netinfo": "11.4.1",
     "@react-navigation/native": "7.1.8",
     "@react-navigation/native-stack": "7.3.12",
@@ -33,8 +36,8 @@
     "react-native-paper": "5.12.5",
     "react-native-safe-area-context": "5.4.0",
     "react-native-screen-corner-radius": "0.2.2",
-    "react-native-screens": "4.10.0",
-    "react-native-vector-icons": "10.2.0"
+    "react-native-vector-icons": "10.2.0",
+    "react-native-screens": "4.10.0"
   },
   "dependenciesMeta": {
     "mobile-core": {
@@ -88,5 +91,11 @@
         "super-app"
       ]
     }
+  },
+  "zephyr:dependencies": {
+    "MobileCart": "1.0.0",
+    "MobileInventory": "1.0.0",
+    "MobileCheckout": "1.0.0",
+    "MobileOrders": "1.0.0"
   }
 }

@@ -79,5 +79,8 @@
         "super-app"
       ]
     }
+  },
+  "zephyr:dependencies": {
+    "MobileCheckout": "1.0.0"
   }
 }

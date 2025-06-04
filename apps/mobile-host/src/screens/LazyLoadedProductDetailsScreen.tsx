@@ -3,11 +3,31 @@ import React from 'react';
 import ErrorBoundary from '../components/ErrorBoundary';
 import Placeholder from '../components/Placeholder';
 import {ProductDetailsNavigationProps} from '../navigation/types';
+import {init, preloadRemote} from '@module-federation/enhanced/runtime';
+import {ScriptManager} from '@callstack/repack/client';
+import {loadRemote, registerRemotes} from '@module-federation/runtime';
 
-const ProductDetailsScreen = React.lazy(async () => {
+interface RemoteInventory {
+  inject: (parentElementId: string) => void;
+  unmount: () => void;
+}
+
+const remoteName = 'MobileInventory';
+const remoteEntry =
+  'http://lois-10-mobileinventory-zephyr-repack-example-zep-1d1b5315b-ze.zephyr.local/MobileInventory.container.js.bundle';
+
+// @ts-ignore
+const ProductDetailsScreen = React.lazy(() => {
   // @ts-ignore federated dts not enabled yet
   // eslint-disable-next-line import/no-unresolved
-  return await import('MobileInventory/ProductDetailsScreen');
+  // registerRemotes([
+  //   {
+  //     name: remoteName,
+  //     entry: remoteEntry,
+  //   },
+  // ]);
+
+  return loadRemote('MobileInventory/ProductDetailsScreen');
 });
 
 type Props = ProductDetailsNavigationProps;
