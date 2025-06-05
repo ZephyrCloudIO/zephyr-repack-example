@@ -11,16 +11,22 @@ const remoteEntry =
   'http://lois-10-mobileinventory-zephyr-repack-example-zep-1d1b5315b-ze.zephyr.local/MobileInventory.container.js.bundle';
 
 // @ts-ignore
-const HomeScreen = React.lazy(() => {
+const HomeScreen = React.lazy(async () => {
   // @ts-ignore federated dts not enabled yet
-  // eslint-disable-next-line import/no-unresolved
-  // registerRemotes([
-  //   {
-  //     name: remoteName,
-  //     entry: remoteEntry,
-  //   },
-  // ]);
-  return loadRemote('MobileInventory/HomeScreen');
+  try {
+    // eslint-disable-next-line import/no-unresolved
+    // registerRemotes([
+    //   {
+    //     name: remoteName,
+    //     entry: remoteEntry,
+    //   },
+    // ]);
+    // @ts-ignore
+    return await import('MobileInventory/HomeScreen');
+  } catch (error) {
+    console.error(error);
+    return null;
+  }
 });
 
 const LazyLoadedHomeScreen = () => {

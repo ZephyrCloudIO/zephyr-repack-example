@@ -8,15 +8,22 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-
+import {ActivityIndicator} from 'mobile-core';
 type Props = {
   onUpdate: () => void;
   interval?: number;
+  updateStep: {step: number; remoteName: string};
 };
 
-export function UpdateNotificationBar({onUpdate, interval = 60000}: Props) {
+export function UpdateNotificationBar({
+  onUpdate,
+  interval = 1000,
+  updateStep,
+}: Props) {
   const [isVisible, setIsVisible] = useState(false);
   const [slideAnim] = useState(new Animated.Value(-100));
+  const name = String(updateStep.remoteName).replace('Mobile', '');
+  // @ts-ignore react native can't recognise this
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -67,9 +74,22 @@ export function UpdateNotificationBar({onUpdate, interval = 60000}: Props) {
         },
       ]}>
       <View style={styles.content}>
-        <Text style={styles.message}>New update available</Text>
+        {updateStep.step === 1 && (
+          <ActivityIndicator size="small" color="#FFFFFF" />
+        )}
+        <Text style={styles.message}>
+          {updateStep.step === 0
+            ? 'Check for application updates'
+            : updateStep.step === 1
+              ? `Checking for updates...`
+              : updateStep.step === 2
+                ? `Module ${name} has a new update - exit the app to update it now? `
+                : ''}
+        </Text>
         <TouchableOpacity style={styles.updateButton} onPress={handleUpdate}>
-          <Text style={styles.updateButtonText}>UPDATE</Text>
+          <Text style={styles.updateButtonText}>
+            {updateStep.step === 0 ? 'CHECK' : 'EXIT'}
+          </Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.closeButton} onPress={hideNotification}>
           <Text style={styles.closeButtonText}>×</Text>

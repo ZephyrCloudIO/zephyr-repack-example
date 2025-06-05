@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { StyleSheet, View } from 'react-native';
+import React, {useState} from 'react';
+import {StyleSheet, View} from 'react-native';
 
 import {
   colors,
@@ -26,8 +26,8 @@ export default function AddToCart({
   const styles = useStyles();
   const theme = useTheme();
   const [quantity, setQuantity] = useState(1);
-  const { addItem } = useCartStore();
-  const { showSnackbar } = useSnackbar();
+  const {addItem} = useCartStore();
+  const {showSnackbar} = useSnackbar();
 
   const onAddToCart = () => {
     addItem({
@@ -42,7 +42,7 @@ export default function AddToCart({
   return (
     <ModuleBoundary
       badgeText="CartModule/AddToCart"
-      badgePosition={{ bottom: '80%', left: '30%' }}
+      badgePosition={{bottom: '80%', left: '30%'}}
       color={colors.moduleBoundaries.cart}>
       <View style={styles.addToCartOverlay}>
         <View style={styles.priceContainer}>
@@ -60,7 +60,7 @@ export default function AddToCart({
               setQuantity(q => q - 1);
             }}
           />
-          <Text style={{ color: theme.colors.onPrimaryContainer }}>
+          <Text style={{color: theme.colors.onPrimaryContainer}}>
             {quantity}
           </Text>
           <IconButton
@@ -97,7 +97,7 @@ const useStyles = () => {
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'space-between',
-      backgroundColor: theme.colors.primaryContainer,
+      backgroundColor: 'black',
       margin: 12,
       paddingHorizontal: 16,
     },

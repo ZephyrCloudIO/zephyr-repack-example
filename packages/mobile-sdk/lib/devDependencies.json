@@ -24,6 +24,11 @@
     "version": "0.79.0",
     "devOnly": true
   },
+  "@callstack/repack-plugin-reanimated": {
+    "name": "@callstack/repack-plugin-reanimated",
+    "version": "5.1.1",
+    "devOnly": true
+  },
   "@react-native/eslint-config": {
     "name": "@react-native/eslint-config",
     "version": "0.79.0",

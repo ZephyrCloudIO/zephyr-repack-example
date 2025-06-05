@@ -215,5 +215,6 @@ const styles = StyleSheet.create({
   },
   login: {
     textTransform: 'uppercase',
+    backgroundColor: 'black',
   },
 });

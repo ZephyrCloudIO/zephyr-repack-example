@@ -127,6 +127,9 @@ importers:
       '@callstack/repack':
         specifier: 5.1.1
         version: 5.1.1(@babel/core@7.27.4)(@module-federation/enhanced@0.13.1(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.79.0(patch_hash=7c29844848c420207e715c2f562037c028834b0b2ad766de14b441795699dfcc)(@babel/core@7.27.4)(@types/react@18.3.18)(react@19.0.0))
+      '@callstack/repack-plugin-reanimated':
+        specifier: 5.1.1
+        version: 5.1.1(@babel/core@7.27.4)(@callstack/repack@5.1.1(@babel/core@7.27.4)(@module-federation/enhanced@0.13.1(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.79.0(patch_hash=7c29844848c420207e715c2f562037c028834b0b2ad766de14b441795699dfcc)(@babel/core@7.27.4)(@types/react@18.3.18)(react@19.0.0)))
       '@react-native/babel-preset':
         specifier: 0.79.0
         version: 0.79.0(@babel/core@7.27.4)
@@ -257,6 +260,9 @@ importers:
       '@callstack/repack':
         specifier: 5.1.1
         version: 5.1.1(@babel/core@7.27.4)(@module-federation/enhanced@0.13.1(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.79.0(patch_hash=7c29844848c420207e715c2f562037c028834b0b2ad766de14b441795699dfcc)(@babel/core@7.27.4)(@types/react@18.3.18)(react@19.0.0))
+      '@callstack/repack-plugin-reanimated':
+        specifier: 5.1.1
+        version: 5.1.1(@babel/core@7.27.4)(@callstack/repack@5.1.1(@babel/core@7.27.4)(@module-federation/enhanced@0.13.1(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.79.0(patch_hash=7c29844848c420207e715c2f562037c028834b0b2ad766de14b441795699dfcc)(@babel/core@7.27.4)(@types/react@18.3.18)(react@19.0.0)))
       '@react-native/babel-preset':
         specifier: 0.79.0
         version: 0.79.0(@babel/core@7.27.4)
@@ -407,6 +413,9 @@ importers:
       '@callstack/repack':
         specifier: 5.1.1
         version: 5.1.1(@babel/core@7.27.4)(@module-federation/enhanced@0.13.1(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.79.0(patch_hash=7c29844848c420207e715c2f562037c028834b0b2ad766de14b441795699dfcc)(@babel/core@7.27.4)(@types/react@18.3.18)(react@19.0.0))
+      '@callstack/repack-plugin-reanimated':
+        specifier: 5.1.1
+        version: 5.1.1(@babel/core@7.27.4)(@callstack/repack@5.1.1(@babel/core@7.27.4)(@module-federation/enhanced@0.13.1(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.79.0(patch_hash=7c29844848c420207e715c2f562037c028834b0b2ad766de14b441795699dfcc)(@babel/core@7.27.4)(@types/react@18.3.18)(react@19.0.0)))
       '@react-native/babel-plugin-codegen':
         specifier: 0.76.5
         version: 0.76.5(@babel/preset-env@7.27.2(@babel/core@7.27.4))
@@ -549,6 +558,9 @@ importers:
       '@callstack/repack':
         specifier: 5.1.1
         version: 5.1.1(@babel/core@7.27.4)(@module-federation/enhanced@0.13.1(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.79.0(patch_hash=7c29844848c420207e715c2f562037c028834b0b2ad766de14b441795699dfcc)(@babel/core@7.27.4)(@types/react@18.3.18)(react@19.0.0))
+      '@callstack/repack-plugin-reanimated':
+        specifier: 5.1.1
+        version: 5.1.1(@babel/core@7.27.4)(@callstack/repack@5.1.1(@babel/core@7.27.4)(@module-federation/enhanced@0.13.1(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.79.0(patch_hash=7c29844848c420207e715c2f562037c028834b0b2ad766de14b441795699dfcc)(@babel/core@7.27.4)(@types/react@18.3.18)(react@19.0.0)))
       '@react-native/babel-preset':
         specifier: 0.79.0
         version: 0.79.0(@babel/core@7.27.4)
@@ -679,6 +691,9 @@ importers:
       '@callstack/repack':
         specifier: 5.1.1
         version: 5.1.1(@babel/core@7.27.4)(@module-federation/enhanced@0.13.1(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.79.0(patch_hash=7c29844848c420207e715c2f562037c028834b0b2ad766de14b441795699dfcc)(@babel/core@7.27.4)(@types/react@18.3.18)(react@19.0.0))
+      '@callstack/repack-plugin-reanimated':
+        specifier: 5.1.1
+        version: 5.1.1(@babel/core@7.27.4)(@callstack/repack@5.1.1(@babel/core@7.27.4)(@module-federation/enhanced@0.13.1(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.79.0(patch_hash=7c29844848c420207e715c2f562037c028834b0b2ad766de14b441795699dfcc)(@babel/core@7.27.4)(@types/react@18.3.18)(react@19.0.0)))
       '@react-native/babel-preset':
         specifier: 0.79.0
         version: 0.79.0(@babel/core@7.27.4)
@@ -1861,6 +1876,13 @@ packages:
   '@callstack/repack-dev-server@5.1.1':
     resolution: {integrity: sha512-0E5/N7yHvRX+Q8Yf5oXZYM2PG+ZgpQqErcLDDOSUdlrSwVJ1MbdaI//90+D5X11fy84st5XCL9mbO4B3sS4DfQ==}
     engines: {node: '>=18'}
+
+  '@callstack/repack-plugin-reanimated@5.1.1':
+    resolution: {integrity: sha512-9yehOxflu24PkJK0x618PJO6W/Nr3gdo0BE9H/Cb+8rsmd/9Cj2FnL4gHaoTHuz0Awlkt+VqzHPFcX1Azvhm+Q==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@babel/core': ^7.20
+      '@callstack/repack': 5.1.1
 
   '@callstack/repack@5.1.1':
     resolution: {integrity: sha512-GuJcDi4gr5gru3z8lVFNNBUicgg8ibi9FTwJ+XEwyPRKMPWPYwsh7mTEaYzCefzBTIRmxExQN+KTbFQzzL4qsQ==}
@@ -4407,6 +4429,7 @@ packages:
     resolution: {integrity: sha512-NXeHXtFLZd6QGbS5af9tiwIoI+BVptHUcGkkF/ouvEPa+ZiZvK0xek4Yh6cd5jNDEg8P+tIA5xxB2ZC/RnqXyw==}
     peerDependencies:
       eslint: '>= 5'
+    bundledDependencies: []
 
   eslint-plugin-eslint-comments@3.2.0:
     resolution: {integrity: sha512-0jkOl0hfojIHHmEHgmNdqv4fmh7300NdpA9FFpF7zaoLvB/QeXOGNLIo86oAveJFrfB1p05kC8hpEMHM8DwWVQ==}
@@ -8990,6 +9013,11 @@ snapshots:
       - bufferutil
       - supports-color
       - utf-8-validate
+
+  '@callstack/repack-plugin-reanimated@5.1.1(@babel/core@7.27.4)(@callstack/repack@5.1.1(@babel/core@7.27.4)(@module-federation/enhanced@0.13.1(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.79.0(patch_hash=7c29844848c420207e715c2f562037c028834b0b2ad766de14b441795699dfcc)(@babel/core@7.27.4)(@types/react@18.3.18)(react@19.0.0)))':
+    dependencies:
+      '@babel/core': 7.27.4
+      '@callstack/repack': 5.1.1(@babel/core@7.27.4)(@module-federation/enhanced@0.13.1(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.79.0(patch_hash=7c29844848c420207e715c2f562037c028834b0b2ad766de14b441795699dfcc)(@babel/core@7.27.4)(@types/react@18.3.18)(react@19.0.0))
 
   '@callstack/repack@5.1.1(@babel/core@7.27.4)(@module-federation/enhanced@0.13.1(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.79.0(patch_hash=7c29844848c420207e715c2f562037c028834b0b2ad766de14b441795699dfcc)(@babel/core@7.27.4)(@types/react@18.3.18)(react@19.0.0))':
     dependencies:

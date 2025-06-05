@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "rnef run:android",
+    "android": "ZE_API=http://localhost:3333 ZE_API_GATE=http://zeapi.zephyr.local ZC=1 DEBUG=zephyr:* rnef run:android",
     "ios": "ZE_API=http://localhost:3333 ZE_API_GATE=http://zeapi.zephyr.local ZC=1 DEBUG=zephyr:* rnef run:ios",
     "start": "rnef start",
-    "start:ios": "ZE_API=http://localhost:3333 ZE_API_GATE=http://zeapi.zephyr.local ZC=1 DEBUG=zephyr:* STANDALONE=1 react-native start --port 8081 --platform ios",
+    "start:ios": "ZE_API=http://localhost:3333 ZE_API_GATE=http://zeapi.zephyr.local ZC=1 STANDALONE=1 react-native start --port 8081 --platform ios",
     "start:android": "ZE_API=http://localhost:3333 ZE_API_GATE=http://zeapi.zephyr.local ZC=1 DEBUG=zephyr:* STANDALONE=1 react-native start --port 8081 --platform android",
     "test": "nx jest:test --passWithNoTests",
     "lint": "nx eslint:lint --ext .js,.jsx,.ts,.tsx",
@@ -36,8 +36,8 @@
     "react-native-paper": "5.12.5",
     "react-native-safe-area-context": "5.4.0",
     "react-native-screen-corner-radius": "0.2.2",
-    "react-native-vector-icons": "10.2.0",
-    "react-native-screens": "4.10.0"
+    "react-native-screens": "4.10.0",
+    "react-native-vector-icons": "10.2.0"
   },
   "dependenciesMeta": {
     "mobile-core": {
@@ -52,6 +52,7 @@
     "@babel/runtime": "^7.26.10",
     "@callstack/eslint-config": "^15.0.0",
     "@callstack/repack": "5.1.1",
+    "@callstack/repack-plugin-reanimated": "5.1.1",
     "@react-native/babel-plugin-codegen": "0.76.5",
     "@react-native/babel-preset": "0.79.0",
     "@react-native/eslint-config": "0.79.0",

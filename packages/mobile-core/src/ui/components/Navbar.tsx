@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   banner: {
-    height: Platform.select({ios: 50, android: 60}),
+    height: Platform.select({ios: 90, android: 60}),
     width: 500,
   },
   leftSection: {

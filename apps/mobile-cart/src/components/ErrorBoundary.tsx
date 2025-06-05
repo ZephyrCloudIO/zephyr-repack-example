@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 24,
-    color: MD3Colors.primary20,
+    color: MD3Colors.neutralVariant0,
     textAlign: 'center',
   },
 });

@@ -17,17 +17,23 @@ const remoteEntry =
   'http://lois-10-mobileinventory-zephyr-repack-example-zep-1d1b5315b-ze.zephyr.local/MobileInventory.container.js.bundle';
 
 // @ts-ignore
-const ProductDetailsScreen = React.lazy(() => {
-  // @ts-ignore federated dts not enabled yet
-  // eslint-disable-next-line import/no-unresolved
-  // registerRemotes([
-  //   {
-  //     name: remoteName,
-  //     entry: remoteEntry,
-  //   },
-  // ]);
+const ProductDetailsScreen = React.lazy(async () => {
+  try {
+    // @ts-ignore federated dts not enabled yet
+    // eslint-disable-next-line import/no-unresolved
+    // registerRemotes([
+    //   {
+    //     name: remoteName,
+    //     entry: remoteEntry,
+    //   },
+    // ]);
 
-  return loadRemote('MobileInventory/ProductDetailsScreen');
+    // @ts-ignore
+    return await import('MobileInventory/ProductDetailsScreen');
+  } catch (error) {
+    console.error(error);
+    return null;
+  }
 });
 
 type Props = ProductDetailsNavigationProps;

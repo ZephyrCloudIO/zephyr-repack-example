@@ -50,7 +50,7 @@ const config = env => {
         dts: false,
         remotes: {
           MobileCart: `MobileCart@http://localhost:9000/${platform}/MobileCart.container.js.bundle`,
-          //MobileInventory: `MobileInventory@http://localhost:9001/${platform}/MobileInventory.container.js.bundle`,
+          MobileInventory: `MobileInventory@http://localhost:9001/${platform}/MobileInventory.container.js.bundle`,
           MobileCheckout: `MobileCheckout@http://localhost:9002/${platform}/MobileCheckout.container.js.bundle`,
           MobileOrders: `MobileOrders@http://localhost:9003/${platform}/MobileOrders.container.js.bundle`,
         },
