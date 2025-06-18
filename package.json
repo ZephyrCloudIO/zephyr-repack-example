@@ -2,7 +2,7 @@
   "name": "zephyr-shop-example",
   "version": "0.0.1",
   "private": true,
-  "packageManager": "pnpm@9.9.0",
+  "packageManager": "pnpm@10.10.0",
   "engines": {
     "node": ">=22"
   },
@@ -44,15 +44,14 @@
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
-    "@nx/eslint": "20.7.0",
-    "@nx/eslint-plugin": "20.7.0",
-    "@nx/jest": "20.7.0",
-    "@nx/js": "20.7.0",
-    "@nx/plugin": "20.7.0",
+    "@nx/eslint": "21.0.2",
+    "@nx/eslint-plugin": "21.0.2",
+    "@nx/jest": "21.0.2",
+    "@nx/plugin": "21.0.2",
     "eslint": "~8.57.1",
     "husky": "^9.1.7",
     "mprocs": "^0.7.1",
-    "nx": "20.7.0",
+    "nx": "21.0.2",
     "prettier": "^3.4.2"
   },
   "pnpm": {
@@ -70,15 +69,24 @@
         }
       }
     },
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "webpack"
+      ]
+    },
     "allowedDeprecatedVersions": {
       "eslint": "8"
     },
     "overrides": {
-      "esbuild": "^0.25.0",
-      "@babel/runtime": "^7.26.10",
-      "@babel/helpers": "^7.26.10",
+      "image-size": ">=1.2.1",
       "zephyr-repack-plugin": "link:../../repos/zephyr-packages/libs/zephyr-repack-plugin",
+      "@babel/helpers": "^7.26.10",
       "@react-native/dev-middleware": "^0.76.6"
     }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }

@@ -19,7 +19,7 @@ const LazyLoadedProductDetailsScreen = ({navigation, route}: Props) => {
 
   const goToCart = () => {
     // @ts-ignore
-    navigation.navigate('CartNavigator');
+    navigation.navigate('Main', {screen: 'CartNavigator'});
   };
 
   const productId = route.params.productId;

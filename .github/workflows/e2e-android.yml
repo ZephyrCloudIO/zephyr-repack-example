@@ -22,6 +22,7 @@ jobs:
       ANDROID_EMULATOR_TARGET: default
       ANDROID_EMULATOR_ARCH: x86
       ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL: 120
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -68,15 +69,19 @@ jobs:
       - name: Build Zephyr Repack Plugin locally
         if: ${{ inputs.build-zephyr-repack-plugin-locally }}
         uses: ./.github/actions/build-zephyr-repack-plugin
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: callstackincubator/android@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          variant: 'Release'
+          working-directory: './apps/mobile-host'
 
       - name: Run Android E2E Tests on Release Mode
         uses: reactivecircus/android-emulator-runner@v2
         env:
           ZC: 1
           ZE_SECRET_TOKEN: ${{ secrets.ZE_SECRET_TOKEN }}
-          MODE: 'release'
+          MODE: 'Release'
         with:
           api-level: ${{ env.ANDROID_EMULATOR_API_LEVEL }}
           target: ${{ env.ANDROID_EMULATOR_TARGET }}

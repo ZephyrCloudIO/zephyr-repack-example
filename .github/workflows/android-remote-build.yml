@@ -1,0 +1,29 @@
+name: Build remote android
+
+on:
+  pull_request:
+    branches:
+      - main
+
+# Needed for nx-set-shas when run on the main branch
+permissions:
+  actions: read
+  pull-requests: write
+  contents: read
+
+jobs:
+  build-remote-android:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60 # Set a timeout for the job to prevent it from running indefinitely
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: ./.github/actions/setup-dependencies
+      - uses: callstackincubator/android@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          variant: 'Debug'
+          rnef-build-extra-params: '--active-arch-only'
+          working-directory: './apps/mobile-host'
+
