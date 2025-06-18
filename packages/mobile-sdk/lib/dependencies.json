@@ -5,7 +5,7 @@
   },
   "react-native": {
     "name": "react-native",
-    "version": "0.79.0"
+    "version": "0.79.4"
   },
   "@react-navigation/native": {
     "name": "@react-navigation/native",
