@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "zephyr:dependencies": {
-    "MobileCart": "workspace:*",
-    "MobileCheckout": "workspace:*",
-    "MobileInventory": "workspace:*",
-    "MobileOrders": "workspace:*"
+    "MobileCart": "zephyr:MobileCart.zephyr-repack-example.zephyrcloudio@^1.0.0",
+    "MobileCheckout": "zephyr:MobileCheckout.zephyr-repack-example.zephyrcloudio@^1.0.0",
+    "MobileInventory": "zephyr:MobileInventory.zephyr-repack-example.zephyrcloudio@^1.0.0",
+    "MobileOrders": "zephyr:MobileOrders.zephyr-repack-example.zephyrcloudio@^1.0.0"
   },
   "scripts": {
     "android": "rnef run:android",
@@ -40,7 +40,8 @@
     "react-native-safe-area-context": "5.4.0",
     "react-native-screen-corner-radius": "0.2.2",
     "react-native-screens": "4.10.0",
-    "react-native-vector-icons": "10.2.0"
+    "react-native-vector-icons": "10.2.0",
+    "react-native-zephyr-sdk": "*"
   },
   "dependenciesMeta": {
     "mobile-core": {

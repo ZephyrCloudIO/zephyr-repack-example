@@ -79,6 +79,7 @@
     "overrides": {
       "image-size": ">=1.2.1",
       "zephyr-repack-plugin": "link:../../repos/zephyr-packages/libs/zephyr-repack-plugin",
+      "react-native-zephyr-sdk": "link:../../repos/react-native-zephyr-sdk",
       "@babel/helpers": "^7.26.10",
       "@react-native/dev-middleware": "^0.76.6"
     }

@@ -7,6 +7,7 @@ settings:
 overrides:
   image-size: '>=1.2.1'
   zephyr-repack-plugin: link:../../repos/zephyr-packages/libs/zephyr-repack-plugin
+  react-native-zephyr-sdk: link:../../repos/react-native-zephyr-sdk
   '@babel/helpers': ^7.26.10
   '@react-native/dev-middleware': ^0.76.6
 
@@ -373,6 +374,9 @@ importers:
       react-native-vector-icons:
         specifier: 10.2.0
         version: 10.2.0
+      react-native-zephyr-sdk:
+        specifier: link:../../../react-native-zephyr-sdk
+        version: link:../../../react-native-zephyr-sdk
     dependenciesMeta:
       mobile-core:
         injected: true
@@ -753,7 +757,10 @@ importers:
         version: 7.56.2(react@18.3.1)
       react-i18next:
         specifier: 15.1.2
-        version: 15.1.2(i18next@24.0.2(typescript@5.8.3))(react-native@0.76.6(patch_hash=7c29844848c420207e715c2f562037c028834b0b2ad766de14b441795699dfcc)(@babel/core@7.27.1)(@babel/preset-env@7.27.2(@babel/core@7.27.1))(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)
+        version: 15.1.2(i18next@24.0.2(typescript@5.8.3))(react-native@0.76.6(@babel/core@7.27.1)(@babel/preset-env@7.27.2(@babel/core@7.27.1))(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)
+      react-native-device-info:
+        specifier: ^14.0.4
+        version: 14.0.4(react-native@0.76.6(@babel/core@7.27.1)(@babel/preset-env@7.27.2(@babel/core@7.27.1))(@types/react@18.3.21)(react@18.3.1))
       react-native-localize:
         specifier: 3.3.0
         version: 3.3.0(react-native@0.76.6(@babel/core@7.27.1)(@babel/preset-env@7.27.2(@babel/core@7.27.1))(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)
@@ -2407,24 +2414,8 @@ packages:
     resolution: {integrity: sha512-kP97xMQjiANi5/lmf8MakS7d8FTJl+BqYHQMqyvNiY+eeWyKnhqW2GL2v3eEUBAuyPBgJGivuuO4RvjZujduJg==}
     engines: {node: '>=18'}
 
-  '@react-native/debugger-frontend@0.78.2':
-    resolution: {integrity: sha512-qNJT679OU/cdAKmZxfBFjqTG+ZC5i/4sLyvbcQjFFypunGSOaWl3mMQFQQdCBIQN+DFDPVSUXTPZQK1uI2j/ow==}
-    engines: {node: '>=18'}
-
-  '@react-native/debugger-frontend@0.79.0':
-    resolution: {integrity: sha512-chwKEWAmQMkOKZWwBra+utquuJ/2uFqh+ZgZbJfNX+U0YsBx6AQ3dVbfAaXW3bSLYEJyf9Wb3Opsal4fmcD9Ww==}
-    engines: {node: '>=18'}
-
   '@react-native/dev-middleware@0.76.6':
     resolution: {integrity: sha512-1bAyd2/X48Nzb45s5l2omM75vy764odx/UnDs4sJfFCuK+cupU4nRPgl0XWIqgdM/2+fbQ3E4QsVS/WIKTFxvQ==}
-    engines: {node: '>=18'}
-
-  '@react-native/dev-middleware@0.78.2':
-    resolution: {integrity: sha512-/u0pGiWVgvx09cYNO4/Okj8v1ZNt4K941pQJPhdwg5AHYuggVHNJjROukXJzZiElYFcJhMfOuxwksiIyx/GAkA==}
-    engines: {node: '>=18'}
-
-  '@react-native/dev-middleware@0.79.0':
-    resolution: {integrity: sha512-8Mh5L8zJXis2qhgkfXnWMbSmcvb07wrbxQe8KIgIO7C1rS97idg7BBtoPEtmARsaQgmbSGu/wdE7UWFkGYp0OQ==}
     engines: {node: '>=18'}
 
   '@react-native/eslint-config@0.76.6':
@@ -5752,11 +5743,6 @@ packages:
   node-dir@0.1.17:
     resolution: {integrity: sha512-tmPX422rYgofd4epzrNoOXiE8XFZYOcCq1vD7MAXCDO+O+zndlA2ztdKKMa+EeuBG5tHETpr4ml4RGgpqDCCAg==}
     engines: {node: '>= 0.10.5'}
-
-  node-domexception@1.0.0:
-    resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
-    engines: {node: '>=10.5.0'}
-    deprecated: Use your platform's native DOMException instead
 
   node-fetch@2.7.0:
     resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
@@ -9582,7 +9568,7 @@ snapshots:
 
   '@react-native/community-cli-plugin@0.79.4':
     dependencies:
-      '@react-native/dev-middleware': 0.79.0
+      '@react-native/dev-middleware': 0.76.6
       chalk: 4.1.2
       debug: 2.6.9
       invariant: 2.2.4
@@ -9597,10 +9583,6 @@ snapshots:
 
   '@react-native/debugger-frontend@0.76.6': {}
 
-  '@react-native/debugger-frontend@0.78.2': {}
-
-  '@react-native/debugger-frontend@0.79.0': {}
-
   '@react-native/dev-middleware@0.76.6':
     dependencies:
       '@isaacs/ttlcache': 1.4.1
@@ -9612,43 +9594,6 @@ snapshots:
       nullthrows: 1.1.1
       open: 7.4.2
       selfsigned: 2.4.1
-      serve-static: 1.16.2
-      ws: 6.2.3
-    transitivePeerDependencies:
-      - bufferutil
-      - supports-color
-      - utf-8-validate
-
-  '@react-native/dev-middleware@0.78.2':
-    dependencies:
-      '@isaacs/ttlcache': 1.4.1
-      '@react-native/debugger-frontend': 0.78.2
-      chrome-launcher: 0.15.2
-      chromium-edge-launcher: 0.2.0
-      connect: 3.7.0
-      debug: 2.6.9
-      invariant: 2.2.4
-      nullthrows: 1.1.1
-      open: 7.4.2
-      selfsigned: 2.4.1
-      serve-static: 1.16.2
-      ws: 6.2.3
-    transitivePeerDependencies:
-      - bufferutil
-      - supports-color
-      - utf-8-validate
-
-  '@react-native/dev-middleware@0.79.0':
-    dependencies:
-      '@isaacs/ttlcache': 1.4.1
-      '@react-native/debugger-frontend': 0.79.0
-      chrome-launcher: 0.15.2
-      chromium-edge-launcher: 0.2.0
-      connect: 3.7.0
-      debug: 2.6.9
-      invariant: 2.2.4
-      nullthrows: 1.1.1
-      open: 7.4.2
       serve-static: 1.16.2
       ws: 6.2.3
     transitivePeerDependencies:
@@ -13735,11 +13680,12 @@ snapshots:
       react-i18next: 15.1.2(i18next@24.0.2(typescript@5.8.3))(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
       react-native: 0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0)
       react-native-config: 1.5.3
-      react-native-localize: 3.3.0(react-native@0.79.0(patch_hash=7c29844848c420207e715c2f562037c028834b0b2ad766de14b441795699dfcc)(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
-      react-native-mmkv: 3.1.0(react-native@0.79.0(patch_hash=7c29844848c420207e715c2f562037c028834b0b2ad766de14b441795699dfcc)(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
-      react-native-paper: 5.12.5(patch_hash=ccda531988e013648880183e6712e5bcd757513df646155833c7b23c9889296a)(react-native-safe-area-context@5.4.0(react-native@0.79.0(patch_hash=7c29844848c420207e715c2f562037c028834b0b2ad766de14b441795699dfcc)(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native-vector-icons@10.2.0)(react-native@0.79.0(patch_hash=7c29844848c420207e715c2f562037c028834b0b2ad766de14b441795699dfcc)(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
-      react-native-safe-area-context: 4.12.0(react-native@0.79.0(patch_hash=7c29844848c420207e715c2f562037c028834b0b2ad766de14b441795699dfcc)(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
-      react-native-screen-corner-radius: 0.2.2(react-native@0.79.0(patch_hash=7c29844848c420207e715c2f562037c028834b0b2ad766de14b441795699dfcc)(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
+      react-native-device-info: 14.0.4(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))
+      react-native-localize: 3.3.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
+      react-native-mmkv: 3.1.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
+      react-native-paper: 5.12.5(patch_hash=ccda531988e013648880183e6712e5bcd757513df646155833c7b23c9889296a)(react-native-safe-area-context@5.4.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native-vector-icons@10.2.0)(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
+      react-native-safe-area-context: 4.12.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
+      react-native-screen-corner-radius: 0.2.2(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
       react-native-vector-icons: 10.2.0
       zephyr-edge-contract: 0.0.38
       zustand: 5.0.4(@types/react@18.3.21)(react@19.0.0)(use-sync-external-store@1.5.0(react@19.0.0))
@@ -14339,7 +14285,15 @@ snapshots:
 
   react-native-config@1.5.3: {}
 
-  react-native-is-edge-to-edge@1.1.7(react-native@0.79.0(patch_hash=7c29844848c420207e715c2f562037c028834b0b2ad766de14b441795699dfcc)(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0):
+  react-native-device-info@14.0.4(react-native@0.76.6(@babel/core@7.27.1)(@babel/preset-env@7.27.2(@babel/core@7.27.1))(@types/react@18.3.21)(react@18.3.1)):
+    dependencies:
+      react-native: 0.76.6(@babel/core@7.27.1)(@babel/preset-env@7.27.2(@babel/core@7.27.1))(@types/react@18.3.21)(react@18.3.1)
+
+  react-native-device-info@14.0.4(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0)):
+    dependencies:
+      react-native: 0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0)
+
+  react-native-is-edge-to-edge@1.1.7(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0):
     dependencies:
       react: 19.0.0
       react-native: 0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0)
