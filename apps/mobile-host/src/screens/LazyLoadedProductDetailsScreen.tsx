@@ -3,6 +3,22 @@ import React from 'react';
 import ErrorBoundary from '../components/ErrorBoundary';
 import Placeholder from '../components/Placeholder';
 import {ProductDetailsNavigationProps} from '../navigation/types';
+// import {
+//   registerRemotes,
+//   loadRemote,
+//   preloadRemote,
+// } from '@module-federation/enhanced/runtime';
+// import {ScriptManager} from '@callstack/repack/client';
+// import {ReactNativeZephyrSdk} from 'react-native-zephyr-sdk';
+// import Config from 'react-native-config';
+
+// const zeSDK = new ReactNativeZephyrSdk({
+//   apiKey: Config.ZE_API_KEY as string,
+// });
+
+// ScriptManager.shared.on('prefetching', script => {
+//   console.log('prefetching', script);
+// });
 
 const ProductDetailsScreen = React.lazy(async () => {
   // @ts-ignore federated dts not enabled yet

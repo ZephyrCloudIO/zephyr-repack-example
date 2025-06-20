@@ -8,6 +8,7 @@ export {
   ThemeProvider,
   VStack,
   ZephyrLogo,
+  UpdateNotificationBar,
 } from './components';
 export {useResponsiveSizes, useTheme} from './hooks';
 export {default as colors} from './theme/colors';

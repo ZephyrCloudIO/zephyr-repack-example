@@ -30,7 +30,9 @@
     "react-native-screen-corner-radius": "0.2.2",
     "react-native-vector-icons": "10.2.0",
     "zephyr-edge-contract": "^0.0.38",
-    "zustand": "^5.0.3"
+    "zustand": "^5.0.3",
+    "react-native-zephyr-sdk": "*",
+    "@callstack/repack": "5.1.1"
   },
   "peerDependencies": {
     "react": "18.3.1",

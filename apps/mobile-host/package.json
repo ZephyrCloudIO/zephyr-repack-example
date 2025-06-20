@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "zephyr:dependencies": {
-    "MobileCart": "zephyr:MobileCart.zephyr-repack-example.zephyrcloudio@^1.0.0",
-    "MobileCheckout": "zephyr:MobileCheckout.zephyr-repack-example.zephyrcloudio@^1.0.0",
-    "MobileInventory": "zephyr:MobileInventory.zephyr-repack-example.zephyrcloudio@^1.0.0",
-    "MobileOrders": "zephyr:MobileOrders.zephyr-repack-example.zephyrcloudio@^1.0.0"
+    "MobileCart": "zephyr:MobileCart.zephyr-repack-example.zephyrcloudio@0.0.2",
+    "MobileCheckout": "zephyr:MobileCheckout.zephyr-repack-example.zephyrcloudio@0.0.2",
+    "MobileInventory": "zephyr:MobileInventory.zephyr-repack-example.zephyrcloudio@0.0.2",
+    "MobileOrders": "zephyr:MobileOrders.zephyr-repack-example.zephyrcloudio@0.0.2"
   },
   "scripts": {
     "android": "rnef run:android",

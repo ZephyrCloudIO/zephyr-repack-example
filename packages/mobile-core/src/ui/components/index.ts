@@ -7,3 +7,4 @@ export {Navbar} from './Navbar';
 export {ThemeProvider} from './ThemeProvider';
 export {VStack} from './VStack';
 export {ZephyrLogo} from './ZephyrLogo';
+export {UpdateNotificationBar} from './UpdateNotificationBar';
