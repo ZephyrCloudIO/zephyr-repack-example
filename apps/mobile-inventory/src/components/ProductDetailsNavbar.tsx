@@ -13,14 +13,14 @@ export default function ProductDetailsNavbar({goBack, goToCart}: Props) {
   return (
     <Navbar
       leftSection={() => (
-        <IconButton icon="chevron-left" iconColor="white" onPress={goBack} />
+        <IconButton icon="chevron-left" iconColor="black" onPress={goBack} />
       )}
       rightSection={() => (
         <>
           <IconButton
             testID="productDetailsScreen.cartButton"
             icon="cart-outline"
-            iconColor="white"
+            iconColor="blacks"
             onPress={goToCart}
           />
           <Badge size={16} style={styles.badge}>

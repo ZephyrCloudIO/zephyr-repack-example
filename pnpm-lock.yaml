@@ -8,8 +8,12 @@ overrides:
   image-size: '>=1.2.1'
   zephyr-repack-plugin: link:../../repos/zephyr-packages/libs/zephyr-repack-plugin
   react-native-zephyr-sdk: link:../../repos/react-native-zephyr-sdk
+  zephyr-edge-contract: link:../../repos/zephyr-packages/libs/zephyr-edge-contract
+  zephyr-agent: link:../../repos/zephyr-packages/libs/zephyr-agent
+  zephyr-xpack-internal: link:../../repos/zephyr-packages/libs/zephyr-xpack-internal
   '@babel/helpers': ^7.26.10
   '@react-native/dev-middleware': ^0.76.6
+  react-native-mmkv: ^3.3.0
 
 packageExtensionsChecksum: sha256-fOO9T7WLFam5EcEQH1JtKUN17BpnPTGxUwRUPnueV3A=
 
@@ -89,8 +93,8 @@ importers:
         specifier: 3.3.0
         version: 3.3.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
       react-native-mmkv:
-        specifier: 3.1.0
-        version: 3.1.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
+        specifier: ^3.3.0
+        version: 3.3.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
       react-native-paper:
         specifier: 5.12.5
         version: 5.12.5(patch_hash=ccda531988e013648880183e6712e5bcd757513df646155833c7b23c9889296a)(react-native-safe-area-context@5.4.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native-vector-icons@10.2.0)(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
@@ -219,8 +223,8 @@ importers:
         specifier: 3.3.0
         version: 3.3.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
       react-native-mmkv:
-        specifier: 3.1.0
-        version: 3.1.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
+        specifier: ^3.3.0
+        version: 3.3.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
       react-native-paper:
         specifier: 5.12.5
         version: 5.12.5(patch_hash=ccda531988e013648880183e6712e5bcd757513df646155833c7b23c9889296a)(react-native-safe-area-context@5.4.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native-vector-icons@10.2.0)(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
@@ -340,7 +344,7 @@ importers:
         version: 7.2.2(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
       mobile-core:
         specifier: 0.0.1
-        version: file:packages/mobile-core(@babel/core@7.27.1)(@module-federation/enhanced@0.13.1(@rspack/core@1.3.10(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.8.3))(@rspack/core@1.3.10(@swc/helpers@0.5.15))(@types/react@18.3.21)(react-native-config@1.5.3)(react-native-mmkv@3.1.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native-paper@5.12.5(patch_hash=ccda531988e013648880183e6712e5bcd757513df646155833c7b23c9889296a)(react-native-safe-area-context@5.4.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native-vector-icons@10.2.0)(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)(typescript@5.8.3)(use-sync-external-store@1.5.0(react@19.0.0))
+        version: file:packages/mobile-core(@babel/core@7.27.1)(@module-federation/enhanced@0.13.1(@rspack/core@1.3.10(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.8.3))(@rspack/core@1.3.10(@swc/helpers@0.5.15))(@types/react@18.3.21)(react-native-config@1.5.3)(react-native-mmkv@3.3.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native-paper@5.12.5(patch_hash=ccda531988e013648880183e6712e5bcd757513df646155833c7b23c9889296a)(react-native-safe-area-context@5.4.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native-vector-icons@10.2.0)(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)(typescript@5.8.3)(use-sync-external-store@1.5.0(react@19.0.0))
       react:
         specifier: 19.0.0
         version: 19.0.0
@@ -357,8 +361,8 @@ importers:
         specifier: 3.3.0
         version: 3.3.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
       react-native-mmkv:
-        specifier: 3.1.0
-        version: 3.1.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
+        specifier: ^3.3.0
+        version: 3.3.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
       react-native-paper:
         specifier: 5.12.5
         version: 5.12.5(patch_hash=ccda531988e013648880183e6712e5bcd757513df646155833c7b23c9889296a)(react-native-safe-area-context@5.4.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native-vector-icons@10.2.0)(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
@@ -494,7 +498,7 @@ importers:
         version: 7.2.2(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
       mobile-core:
         specifier: 0.0.1
-        version: file:packages/mobile-core(@babel/core@7.27.1)(@module-federation/enhanced@0.13.1(@rspack/core@1.3.10(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.8.3))(@rspack/core@1.3.10(@swc/helpers@0.5.15))(@types/react@18.3.21)(react-native-config@1.5.3)(react-native-mmkv@3.1.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native-paper@5.12.5(patch_hash=ccda531988e013648880183e6712e5bcd757513df646155833c7b23c9889296a)(react-native-safe-area-context@5.4.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native-vector-icons@10.2.0)(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)(typescript@5.8.3)(use-sync-external-store@1.5.0(react@19.0.0))
+        version: file:packages/mobile-core(@babel/core@7.27.1)(@module-federation/enhanced@0.13.1(@rspack/core@1.3.10(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.8.3))(@rspack/core@1.3.10(@swc/helpers@0.5.15))(@types/react@18.3.21)(react-native-config@1.5.3)(react-native-mmkv@3.3.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native-paper@5.12.5(patch_hash=ccda531988e013648880183e6712e5bcd757513df646155833c7b23c9889296a)(react-native-safe-area-context@5.4.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native-vector-icons@10.2.0)(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)(typescript@5.8.3)(use-sync-external-store@1.5.0(react@19.0.0))
       react:
         specifier: 19.0.0
         version: 19.0.0
@@ -508,8 +512,8 @@ importers:
         specifier: 3.3.0
         version: 3.3.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
       react-native-mmkv:
-        specifier: 3.1.0
-        version: 3.1.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
+        specifier: ^3.3.0
+        version: 3.3.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
       react-native-paper:
         specifier: 5.12.5
         version: 5.12.5(patch_hash=ccda531988e013648880183e6712e5bcd757513df646155833c7b23c9889296a)(react-native-safe-area-context@5.4.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native-vector-icons@10.2.0)(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
@@ -641,8 +645,8 @@ importers:
         specifier: 3.3.0
         version: 3.3.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
       react-native-mmkv:
-        specifier: 3.1.0
-        version: 3.1.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
+        specifier: ^3.3.0
+        version: 3.3.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
       react-native-paper:
         specifier: 5.12.5
         version: 5.12.5(patch_hash=ccda531988e013648880183e6712e5bcd757513df646155833c7b23c9889296a)(react-native-safe-area-context@5.4.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native-vector-icons@10.2.0)(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
@@ -745,13 +749,16 @@ importers:
     dependencies:
       '@callstack/repack':
         specifier: 5.1.1
-        version: 5.1.1(@babel/core@7.27.1)(@module-federation/enhanced@0.13.1(@rspack/core@1.3.10(@swc/helpers@0.5.13))(react@18.3.1)(typescript@5.8.3))(@rspack/core@1.3.10(@swc/helpers@0.5.13))(react-native@0.76.6(@babel/core@7.27.1)(@babel/preset-env@7.27.2(@babel/core@7.27.1))(@types/react@18.3.21)(react@18.3.1))
+        version: 5.1.1(@babel/core@7.27.1)(@module-federation/enhanced@0.13.1(@rspack/core@1.3.10(@swc/helpers@0.5.13))(debug@4.4.0)(react@18.3.1)(typescript@5.8.3))(@rspack/core@1.3.10(@swc/helpers@0.5.13))(react-native@0.76.6(@babel/core@7.27.1)(@babel/preset-env@7.27.2(@babel/core@7.27.1))(@types/react@18.3.21)(react@18.3.1))
       '@tanstack/react-query':
         specifier: ^5.64.2
         version: 5.75.5(react@18.3.1)
       axios:
         specifier: ^1.7.9
-        version: 1.9.0
+        version: 1.9.0(debug@4.4.0)
+      debug:
+        specifier: ^4.1.12
+        version: 4.4.0
       i18next:
         specifier: 24.0.2
         version: 24.0.2(typescript@5.8.3)
@@ -780,8 +787,8 @@ importers:
         specifier: link:../../../react-native-zephyr-sdk
         version: link:../../../react-native-zephyr-sdk
       zephyr-edge-contract:
-        specifier: ^0.0.38
-        version: 0.0.38
+        specifier: link:../../../zephyr-packages/libs/zephyr-edge-contract
+        version: link:../../../zephyr-packages/libs/zephyr-edge-contract
       zustand:
         specifier: ^5.0.3
         version: 5.0.4(@types/react@18.3.21)(react@18.3.1)(use-sync-external-store@1.5.0(react@18.3.1))
@@ -804,6 +811,9 @@ importers:
       '@swc/helpers':
         specifier: 0.5.13
         version: 0.5.13
+      '@types/debug':
+        specifier: ^4.1.12
+        version: 4.1.12
       '@types/jest':
         specifier: ^29.5.14
         version: 29.5.14
@@ -838,8 +848,8 @@ importers:
         specifier: 1.5.3
         version: 1.5.3
       react-native-mmkv:
-        specifier: 3.1.0
-        version: 3.1.0(react-native@0.76.6(@babel/core@7.27.1)(@babel/preset-env@7.27.2(@babel/core@7.27.1))(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)
+        specifier: ^3.3.0
+        version: 3.3.0(react-native@0.76.6(@babel/core@7.27.1)(@babel/preset-env@7.27.2(@babel/core@7.27.1))(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)
       react-native-paper:
         specifier: 5.12.5
         version: 5.12.5(patch_hash=ccda531988e013648880183e6712e5bcd757513df646155833c7b23c9889296a)(react-native-safe-area-context@4.12.0(react-native@0.76.6(@babel/core@7.27.1)(@babel/preset-env@7.27.2(@babel/core@7.27.1))(@types/react@18.3.21)(react@18.3.1))(react@18.3.1))(react-native-vector-icons@10.2.0)(react-native@0.76.6(@babel/core@7.27.1)(@babel/preset-env@7.27.2(@babel/core@7.27.1))(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)
@@ -2736,6 +2746,9 @@ packages:
   '@types/cors@2.8.17':
     resolution: {integrity: sha512-8CGDvrBj1zgo2qE+oS3pOCyYNqCPryMWY2bGfwA0dcfopWGgxs+78df0Rs3rc9THP4JkOhLsAa+15VdpAqkcUA==}
 
+  '@types/debug@4.1.12':
+    resolution: {integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==}
+
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
 
@@ -2768,6 +2781,9 @@ packages:
 
   '@types/jsonfile@6.1.4':
     resolution: {integrity: sha512-D5qGUYwjvnNNextdU59/+fI+spnwtTFmyQP0h+PfIOSkNfpU6AOICUOkm4i0OnSk+NyjdPJrxCDro0sJsWlRpQ==}
+
+  '@types/ms@2.1.0':
+    resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
 
   '@types/node-forge@1.3.11':
     resolution: {integrity: sha512-FQx220y22OKNTqaByeBGqHWYz4cl94tpcxeFdvBo3wjG6XPBuZ0BNgNZRV5J5TFmmcsJ4IzsLkmGRiQbnYsBEQ==}
@@ -5699,7 +5715,7 @@ packages:
       react: 18.3.1
       react-native: 0.76.6
       react-native-config: 1.5.3
-      react-native-mmkv: 3.1.0
+      react-native-mmkv: ^3.3.0
       react-native-paper: 5.12.5
 
   mprocs@0.7.2:
@@ -6231,8 +6247,8 @@ packages:
       react-native-macos:
         optional: true
 
-  react-native-mmkv@3.1.0:
-    resolution: {integrity: sha512-HDh89nYVSufHMweZ3TVNUHQp2lsEh1ApaoV08bUOU1nrlmGgC3I7tGUn1Uy40Hs7yRMPKx5NWKE5Dh86jTVrwg==}
+  react-native-mmkv@3.3.0:
+    resolution: {integrity: sha512-2iPjIJ+IAODXN35wm53EN6nv+hR/0NXLLiLWOdPA/0gXDB2dYVrr6MqvoiFpxhLhdj0B8fkf5ARNVavJaSvuuQ==}
     peerDependencies:
       react: '*'
       react-native: '*'
@@ -7311,9 +7327,6 @@ packages:
     resolution: {integrity: sha512-AyeEbWOu/TAXdxlV9wmGcR0+yh2j3vYPGOECcIj2S7MkrLyC7ne+oye2BKTItt0ii2PHk4cDy+95+LshzbXnGg==}
     engines: {node: '>=12.20'}
 
-  zephyr-edge-contract@0.0.38:
-    resolution: {integrity: sha512-R8aOKrsKjUYLfdWa0YiV71cneV13Oii6TT4COvVpVd7n8yLUgSLqfvDnNCrUi9equaYLh4YA0wYlO5JtiWquNw==}
-
   zustand@5.0.4:
     resolution: {integrity: sha512-39VFTN5InDtMd28ZhjLyuTnlytDr9HfwO512Ai4I8ZABCoyAj4F1+sr7sD1jP/+p7k77Iko0Pb5NhgBFDCX0kQ==}
     engines: {node: '>=12.20.0'}
@@ -8290,7 +8303,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@callstack/repack@5.1.1(@babel/core@7.27.1)(@module-federation/enhanced@0.13.1(@rspack/core@1.3.10(@swc/helpers@0.5.13))(react@18.3.1)(typescript@5.8.3))(@rspack/core@1.3.10(@swc/helpers@0.5.13))(react-native@0.76.6(@babel/core@7.27.1)(@babel/preset-env@7.27.2(@babel/core@7.27.1))(@types/react@18.3.21)(react@18.3.1))':
+  '@callstack/repack@5.1.1(@babel/core@7.27.1)(@module-federation/enhanced@0.13.1(@rspack/core@1.3.10(@swc/helpers@0.5.13))(debug@4.4.0)(react@18.3.1)(typescript@5.8.3))(@rspack/core@1.3.10(@swc/helpers@0.5.13))(react-native@0.76.6(@babel/core@7.27.1)(@babel/preset-env@7.27.2(@babel/core@7.27.1))(@types/react@18.3.21)(react@18.3.1))':
     dependencies:
       '@callstack/repack-dev-server': 5.1.1
       '@discoveryjs/json-ext': 0.5.7
@@ -8317,7 +8330,7 @@ snapshots:
       throttleit: 2.1.0
       webpack-merge: 6.0.1
     optionalDependencies:
-      '@module-federation/enhanced': 0.13.1(@rspack/core@1.3.10(@swc/helpers@0.5.13))(react@18.3.1)(typescript@5.8.3)
+      '@module-federation/enhanced': 0.13.1(@rspack/core@1.3.10(@swc/helpers@0.5.13))(debug@4.4.0)(react@18.3.1)(typescript@5.8.3)
       '@rspack/core': 1.3.10(@swc/helpers@0.5.13)
     transitivePeerDependencies:
       - '@babel/core'
@@ -8955,10 +8968,10 @@ snapshots:
       '@types/semver': 7.5.8
       semver: 7.6.3
 
-  '@module-federation/cli@0.13.1(typescript@5.8.3)':
+  '@module-federation/cli@0.13.1(debug@4.4.0)(typescript@5.8.3)':
     dependencies:
       '@modern-js/node-bundle-require': 2.65.1
-      '@module-federation/dts-plugin': 0.13.1(typescript@5.8.3)
+      '@module-federation/dts-plugin': 0.13.1(debug@4.4.0)(typescript@5.8.3)
       '@module-federation/sdk': 0.13.1
       chalk: 3.0.0
       commander: 11.1.0
@@ -8987,7 +9000,7 @@ snapshots:
       fs-extra: 9.1.0
       react: 19.0.0
 
-  '@module-federation/dts-plugin@0.13.1(typescript@5.8.3)':
+  '@module-federation/dts-plugin@0.13.1(debug@4.4.0)(typescript@5.8.3)':
     dependencies:
       '@module-federation/error-codes': 0.13.1
       '@module-federation/managers': 0.13.1
@@ -8995,7 +9008,7 @@ snapshots:
       '@module-federation/third-party-dts-extractor': 0.13.1
       adm-zip: 0.5.16
       ansi-colors: 4.1.3
-      axios: 1.9.0
+      axios: 1.9.0(debug@4.4.0)
       chalk: 3.0.0
       fs-extra: 9.1.0
       isomorphic-ws: 5.0.0(ws@8.18.0)
@@ -9012,17 +9025,17 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@module-federation/enhanced@0.13.1(@rspack/core@1.3.10(@swc/helpers@0.5.13))(react@18.3.1)(typescript@5.8.3)':
+  '@module-federation/enhanced@0.13.1(@rspack/core@1.3.10(@swc/helpers@0.5.13))(debug@4.4.0)(react@18.3.1)(typescript@5.8.3)':
     dependencies:
       '@module-federation/bridge-react-webpack-plugin': 0.13.1
-      '@module-federation/cli': 0.13.1(typescript@5.8.3)
+      '@module-federation/cli': 0.13.1(debug@4.4.0)(typescript@5.8.3)
       '@module-federation/data-prefetch': 0.13.1(react@18.3.1)
-      '@module-federation/dts-plugin': 0.13.1(typescript@5.8.3)
+      '@module-federation/dts-plugin': 0.13.1(debug@4.4.0)(typescript@5.8.3)
       '@module-federation/error-codes': 0.13.1
       '@module-federation/inject-external-runtime-core-plugin': 0.13.1(@module-federation/runtime-tools@0.13.1)
       '@module-federation/managers': 0.13.1
-      '@module-federation/manifest': 0.13.1(typescript@5.8.3)
-      '@module-federation/rspack': 0.13.1(@rspack/core@1.3.10(@swc/helpers@0.5.13))(typescript@5.8.3)
+      '@module-federation/manifest': 0.13.1(debug@4.4.0)(typescript@5.8.3)
+      '@module-federation/rspack': 0.13.1(@rspack/core@1.3.10(@swc/helpers@0.5.13))(debug@4.4.0)(typescript@5.8.3)
       '@module-federation/runtime-tools': 0.13.1
       '@module-federation/sdk': 0.13.1
       btoa: 1.2.1
@@ -9043,13 +9056,13 @@ snapshots:
   '@module-federation/enhanced@0.13.1(@rspack/core@1.3.10(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.8.3)':
     dependencies:
       '@module-federation/bridge-react-webpack-plugin': 0.13.1
-      '@module-federation/cli': 0.13.1(typescript@5.8.3)
+      '@module-federation/cli': 0.13.1(debug@4.4.0)(typescript@5.8.3)
       '@module-federation/data-prefetch': 0.13.1(react@19.0.0)
-      '@module-federation/dts-plugin': 0.13.1(typescript@5.8.3)
+      '@module-federation/dts-plugin': 0.13.1(debug@4.4.0)(typescript@5.8.3)
       '@module-federation/error-codes': 0.13.1
       '@module-federation/inject-external-runtime-core-plugin': 0.13.1(@module-federation/runtime-tools@0.13.1)
       '@module-federation/managers': 0.13.1
-      '@module-federation/manifest': 0.13.1(typescript@5.8.3)
+      '@module-federation/manifest': 0.13.1(debug@4.4.0)(typescript@5.8.3)
       '@module-federation/rspack': 0.13.1(@rspack/core@1.3.10(@swc/helpers@0.5.15))(typescript@5.8.3)
       '@module-federation/runtime-tools': 0.13.1
       '@module-federation/sdk': 0.13.1
@@ -9079,9 +9092,9 @@ snapshots:
       find-pkg: 2.0.0
       fs-extra: 9.1.0
 
-  '@module-federation/manifest@0.13.1(typescript@5.8.3)':
+  '@module-federation/manifest@0.13.1(debug@4.4.0)(typescript@5.8.3)':
     dependencies:
-      '@module-federation/dts-plugin': 0.13.1(typescript@5.8.3)
+      '@module-federation/dts-plugin': 0.13.1(debug@4.4.0)(typescript@5.8.3)
       '@module-federation/managers': 0.13.1
       '@module-federation/sdk': 0.13.1
       chalk: 3.0.0
@@ -9094,13 +9107,13 @@ snapshots:
       - utf-8-validate
       - vue-tsc
 
-  '@module-federation/rspack@0.13.1(@rspack/core@1.3.10(@swc/helpers@0.5.13))(typescript@5.8.3)':
+  '@module-federation/rspack@0.13.1(@rspack/core@1.3.10(@swc/helpers@0.5.13))(debug@4.4.0)(typescript@5.8.3)':
     dependencies:
       '@module-federation/bridge-react-webpack-plugin': 0.13.1
-      '@module-federation/dts-plugin': 0.13.1(typescript@5.8.3)
+      '@module-federation/dts-plugin': 0.13.1(debug@4.4.0)(typescript@5.8.3)
       '@module-federation/inject-external-runtime-core-plugin': 0.13.1(@module-federation/runtime-tools@0.13.1)
       '@module-federation/managers': 0.13.1
-      '@module-federation/manifest': 0.13.1(typescript@5.8.3)
+      '@module-federation/manifest': 0.13.1(debug@4.4.0)(typescript@5.8.3)
       '@module-federation/runtime-tools': 0.13.1
       '@module-federation/sdk': 0.13.1
       '@rspack/core': 1.3.10(@swc/helpers@0.5.13)
@@ -9117,10 +9130,10 @@ snapshots:
   '@module-federation/rspack@0.13.1(@rspack/core@1.3.10(@swc/helpers@0.5.15))(typescript@5.8.3)':
     dependencies:
       '@module-federation/bridge-react-webpack-plugin': 0.13.1
-      '@module-federation/dts-plugin': 0.13.1(typescript@5.8.3)
+      '@module-federation/dts-plugin': 0.13.1(debug@4.4.0)(typescript@5.8.3)
       '@module-federation/inject-external-runtime-core-plugin': 0.13.1(@module-federation/runtime-tools@0.13.1)
       '@module-federation/managers': 0.13.1
-      '@module-federation/manifest': 0.13.1(typescript@5.8.3)
+      '@module-federation/manifest': 0.13.1(debug@4.4.0)(typescript@5.8.3)
       '@module-federation/runtime-tools': 0.13.1
       '@module-federation/sdk': 0.13.1
       '@rspack/core': 1.3.10(@swc/helpers@0.5.15)
@@ -9927,7 +9940,7 @@ snapshots:
       '@rsdoctor/sdk': 0.4.13(@rspack/core@1.3.10(@swc/helpers@0.5.15))
       '@rsdoctor/types': 0.4.13(@rspack/core@1.3.10(@swc/helpers@0.5.15))
       '@rsdoctor/utils': 0.4.13(@rspack/core@1.3.10(@swc/helpers@0.5.15))
-      axios: 1.9.0
+      axios: 1.9.0(debug@4.4.0)
       enhanced-resolve: 5.12.0
       filesize: 10.1.6
       fs-extra: 11.3.0
@@ -10184,6 +10197,10 @@ snapshots:
     dependencies:
       '@types/node': 22.15.14
 
+  '@types/debug@4.1.12':
+    dependencies:
+      '@types/ms': 2.1.0
+
   '@types/estree@1.0.5': {}
 
   '@types/fs-extra@11.0.4':
@@ -10221,6 +10238,8 @@ snapshots:
   '@types/jsonfile@6.1.4':
     dependencies:
       '@types/node': 22.15.14
+
+  '@types/ms@2.1.0': {}
 
   '@types/node-forge@1.3.11':
     dependencies:
@@ -10686,7 +10705,7 @@ snapshots:
       '@fastify/error': 3.4.1
       fastq: 1.19.1
 
-  axios@1.9.0:
+  axios@1.9.0(debug@4.4.0):
     dependencies:
       follow-redirects: 1.15.9(debug@4.4.0)
       form-data: 4.0.2
@@ -13777,11 +13796,12 @@ snapshots:
 
   mkdirp@3.0.1: {}
 
-  mobile-core@file:packages/mobile-core(@babel/core@7.27.1)(@module-federation/enhanced@0.13.1(@rspack/core@1.3.10(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.8.3))(@rspack/core@1.3.10(@swc/helpers@0.5.15))(@types/react@18.3.21)(react-native-config@1.5.3)(react-native-mmkv@3.1.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native-paper@5.12.5(patch_hash=ccda531988e013648880183e6712e5bcd757513df646155833c7b23c9889296a)(react-native-safe-area-context@5.4.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native-vector-icons@10.2.0)(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)(typescript@5.8.3)(use-sync-external-store@1.5.0(react@19.0.0)):
+  mobile-core@file:packages/mobile-core(@babel/core@7.27.1)(@module-federation/enhanced@0.13.1(@rspack/core@1.3.10(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.8.3))(@rspack/core@1.3.10(@swc/helpers@0.5.15))(@types/react@18.3.21)(react-native-config@1.5.3)(react-native-mmkv@3.3.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native-paper@5.12.5(patch_hash=ccda531988e013648880183e6712e5bcd757513df646155833c7b23c9889296a)(react-native-safe-area-context@5.4.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native-vector-icons@10.2.0)(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)(typescript@5.8.3)(use-sync-external-store@1.5.0(react@19.0.0)):
     dependencies:
       '@callstack/repack': 5.1.1(@babel/core@7.27.1)(@module-federation/enhanced@0.13.1(@rspack/core@1.3.10(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.8.3))(@rspack/core@1.3.10(@swc/helpers@0.5.15))(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))
       '@tanstack/react-query': 5.75.5(react@19.0.0)
-      axios: 1.9.0
+      axios: 1.9.0(debug@4.4.0)
+      debug: 4.4.0
       i18next: 24.0.2(typescript@5.8.3)
       react: 19.0.0
       react-hook-form: 7.56.2(react@19.0.0)
@@ -13790,13 +13810,13 @@ snapshots:
       react-native-config: 1.5.3
       react-native-device-info: 14.0.4(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))
       react-native-localize: 3.3.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
-      react-native-mmkv: 3.1.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
+      react-native-mmkv: 3.3.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
       react-native-paper: 5.12.5(patch_hash=ccda531988e013648880183e6712e5bcd757513df646155833c7b23c9889296a)(react-native-safe-area-context@5.4.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0))(react-native-vector-icons@10.2.0)(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
       react-native-safe-area-context: 4.12.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
       react-native-screen-corner-radius: 0.2.2(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0)
       react-native-vector-icons: 10.2.0
       react-native-zephyr-sdk: link:../react-native-zephyr-sdk
-      zephyr-edge-contract: 0.0.38
+      zephyr-edge-contract: link:../zephyr-packages/libs/zephyr-edge-contract
       zustand: 5.0.4(@types/react@18.3.21)(react@19.0.0)(use-sync-external-store@1.5.0(react@19.0.0))
     transitivePeerDependencies:
       - '@babel/core'
@@ -13804,7 +13824,6 @@ snapshots:
       - '@rspack/core'
       - '@types/react'
       - bufferutil
-      - debug
       - immer
       - react-dom
       - react-native-macos
@@ -13894,7 +13913,7 @@ snapshots:
       '@yarnpkg/lockfile': 1.1.0
       '@yarnpkg/parsers': 3.0.2
       '@zkochan/js-yaml': 0.0.7
-      axios: 1.9.0
+      axios: 1.9.0(debug@4.4.0)
       chalk: 4.1.2
       cli-cursor: 3.1.0
       cli-spinners: 2.6.1
@@ -14424,12 +14443,12 @@ snapshots:
       react: 19.0.0
       react-native: 0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0)
 
-  react-native-mmkv@3.1.0(react-native@0.76.6(@babel/core@7.27.1)(@babel/preset-env@7.27.2(@babel/core@7.27.1))(@types/react@18.3.21)(react@18.3.1))(react@18.3.1):
+  react-native-mmkv@3.3.0(react-native@0.76.6(@babel/core@7.27.1)(@babel/preset-env@7.27.2(@babel/core@7.27.1))(@types/react@18.3.21)(react@18.3.1))(react@18.3.1):
     dependencies:
       react: 18.3.1
       react-native: 0.76.6(@babel/core@7.27.1)(@babel/preset-env@7.27.2(@babel/core@7.27.1))(@types/react@18.3.21)(react@18.3.1)
 
-  react-native-mmkv@3.1.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0):
+  react-native-mmkv@3.3.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0))(react@19.0.0):
     dependencies:
       react: 19.0.0
       react-native: 0.79.4(@babel/core@7.27.1)(@types/react@18.3.21)(react@19.0.0)
@@ -15636,10 +15655,6 @@ snapshots:
   yocto-queue@0.1.0: {}
 
   yocto-queue@1.2.1: {}
-
-  zephyr-edge-contract@0.0.38:
-    dependencies:
-      tslib: 2.8.1
 
   zustand@5.0.4(@types/react@18.3.21)(react@18.3.1)(use-sync-external-store@1.5.0(react@18.3.1)):
     optionalDependencies:

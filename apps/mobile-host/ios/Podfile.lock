@@ -1389,7 +1389,7 @@ PODS:
     - react-native-config/App (= 1.5.3)
   - react-native-config/App (1.5.3):
     - React-Core
-  - react-native-mmkv (3.1.0):
+  - react-native-mmkv (3.3.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2244,7 +2244,7 @@ SPEC CHECKSUMS:
   React-Mapbuffer: a0ee08ac29b8a2c08692aa0d51cefa1c88860e17
   React-microtasksnativemodule: ef2292ca147fa8793305e4693586ad0caf3afad3
   react-native-config: ea75335a7cca1d3326de1da384227e580a7c082e
-  react-native-mmkv: e653f0100f078487aad95be73f08a644e2cefdee
+  react-native-mmkv: fb6fdab2e83b892959e32586b7814078fe6c1a6a
   react-native-netinfo: cec9c4e86083cb5b6aba0e0711f563e2fbbff187
   react-native-safe-area-context: 562163222d999b79a51577eda2ea8ad2c32b4d06
   react-native-screen-corner-radius: 81229df69e6f990502b813b92a0e8267c64d9dd9

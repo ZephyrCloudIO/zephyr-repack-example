@@ -31,6 +31,9 @@ const config = env => {
     mode,
     context: __dirname,
     entry: './index.js',
+    output: {
+      dir: path.resolve(__dirname, 'dist'),
+    },
     resolve: {
       ...Repack.getResolveOptions(),
     },

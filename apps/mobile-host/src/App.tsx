@@ -17,7 +17,7 @@ import {
   UpdateNotificationBar,
 } from 'mobile-core';
 import {DeviceEventEmitter, BackHandler} from 'react-native';
-
+import {zeSdk} from 'mobile-core';
 import AnimatedBootSplash from './components/AnimatedBootSplash';
 import MainNavigator from './navigation/MainNavigator';
 
@@ -39,6 +39,10 @@ const App = () => {
   const handleUpdate = async () => {
     if (updateStep.step === 0) {
       setUpdateStep({step: 1, remoteName: ''});
+      // console.log('handleUpdate.1');
+
+      await zeSdk.checkAllRemoteUpdates();
+      //  console.log('res', res);
 
       // once user click on exit, and we confirmed there is an update on one of the remote, we exit the app to allow on foreground event and preloading the new remote
       DeviceEventEmitter.emit('update-app', {
@@ -46,7 +50,7 @@ const App = () => {
       });
     }
 
-    if (updateStep.step === 1 && updateStep.remoteName) {
+    if (updateStep.step === 1 && updateStep.remoteName.length >= 1) {
       BackHandler.exitApp();
     }
   };

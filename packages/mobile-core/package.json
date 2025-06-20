@@ -19,8 +19,10 @@
     "test": "jest --passWithNoTests"
   },
   "dependencies": {
+    "@callstack/repack": "5.1.1",
     "@tanstack/react-query": "^5.64.2",
     "axios": "^1.7.9",
+    "debug": "^4.1.12",
     "i18next": "24.0.2",
     "react-hook-form": "^7.54.2",
     "react-i18next": "15.1.2",
@@ -29,16 +31,15 @@
     "react-native-safe-area-context": "4.12.0",
     "react-native-screen-corner-radius": "0.2.2",
     "react-native-vector-icons": "10.2.0",
-    "zephyr-edge-contract": "^0.0.38",
-    "zustand": "^5.0.3",
     "react-native-zephyr-sdk": "*",
-    "@callstack/repack": "5.1.1"
+    "zephyr-edge-contract": "^0.0.38",
+    "zustand": "^5.0.3"
   },
   "peerDependencies": {
     "react": "18.3.1",
     "react-native": "0.76.6",
     "react-native-config": "1.5.3",
-    "react-native-mmkv": "3.1.0",
+    "react-native-mmkv": "3.2.0",
     "react-native-paper": "5.12.5"
   },
   "devDependencies": {
@@ -48,6 +49,7 @@
     "@react-native/eslint-config": "0.76.6",
     "@react-native/typescript-config": "0.76.6",
     "@swc/helpers": "0.5.13",
+    "@types/debug": "^4.1.12",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.10.7",
     "@types/react": "^18.3.18",
