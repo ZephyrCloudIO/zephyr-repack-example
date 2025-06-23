@@ -35,7 +35,7 @@
     "react-native-bootsplash": "^6.3.1",
     "react-native-config": "1.5.3",
     "react-native-localize": "3.3.0",
-    "react-native-mmkv": "3.1.0",
+    "react-native-mmkv": "3.3.0",
     "react-native-paper": "5.12.5",
     "react-native-safe-area-context": "5.4.0",
     "react-native-screen-corner-radius": "0.2.2",

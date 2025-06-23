@@ -11,10 +11,6 @@
     "name": "@react-navigation/native",
     "version": "7.1.8"
   },
-  "react-native-zephyr-sdk": {
-    "name": "react-native-zephyr-sdk",
-    "version": "link:../../repos/react-native-zephyr-sdk"
-  },
   "@react-navigation/native-stack": {
     "name": "@react-navigation/native-stack",
     "version": "7.3.12"
@@ -41,7 +37,7 @@
   },
   "react-native-mmkv": {
     "name": "react-native-mmkv",
-    "version": "3.1.0"
+    "version": "3.3.0"
   },
   "react-native-localize": {
     "name": "react-native-localize",

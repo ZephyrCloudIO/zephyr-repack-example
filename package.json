@@ -85,7 +85,11 @@
       "zephyr-xpack-internal": "link:../../repos/zephyr-packages/libs/zephyr-xpack-internal",
       "@babel/helpers": "^7.26.10",
       "@react-native/dev-middleware": "^0.79.4",
-      "react-native-mmkv": "^3.3.0"
+      "react-native-mmkv": "^3.3.0",
+      "react": "19.0.0",
+      "@types/react": "^19.0.0",
+      "react-native": "0.79.4",
+      "@react-native/typescript-config": "0.79.4"
     }
   },
   "commitlint": {
