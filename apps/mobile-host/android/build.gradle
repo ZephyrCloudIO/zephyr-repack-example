@@ -18,3 +18,8 @@ buildscript {
     }
 }
 apply plugin: "com.facebook.react.rootproject"
+
+// Load environment properties from the .env file
+// This is necessary because react-native-config loads environment variables from the .env file in the app project,
+// which means they are not yet available here in the root build.gradle file
+apply from: "../node_modules/mobile-core/src/gradle/loadEnvProperties.gradle"

@@ -84,7 +84,7 @@
       "zephyr-agent": "link:../../repos/zephyr-packages/libs/zephyr-agent",
       "zephyr-xpack-internal": "link:../../repos/zephyr-packages/libs/zephyr-xpack-internal",
       "@babel/helpers": "^7.26.10",
-      "@react-native/dev-middleware": "^0.76.6",
+      "@react-native/dev-middleware": "^0.79.4",
       "react-native-mmkv": "^3.3.0"
     }
   },

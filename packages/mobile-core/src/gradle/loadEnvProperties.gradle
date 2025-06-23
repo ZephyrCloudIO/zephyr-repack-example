@@ -1,0 +1,31 @@
+// Function to load environment properties from the .env file
+def loadEnvProperties() {
+
+  // log the rootProject.projectDir
+  println "loadEnvProperties: rootProject.projectDir: ${rootProject.projectDir}"
+    // Define the path to the .env file relative to the root project directory
+
+    def envFile = file("${rootProject.projectDir}/../.env")
+    
+    
+    // Check if the .env file exists
+    if (envFile.exists()) {
+        // Create a Properties object to hold the environment variables
+        def Properties properties = new Properties()
+        
+        // Load the environment variables from the .env file into the Properties object
+        envFile.withInputStream { stream ->
+            properties.load(stream)
+        }
+        
+        // Return the loaded properties
+        return properties
+    }
+    
+    // Return null if the .env file does not exist
+    return null
+}
+
+// Export the loaded environment properties as reactNativeEnvs in the ext block, so then they can be used like this:
+// reactNativeEnvs.get("ANY_ENV_VARIABLE") or project.ext.reactNativeEnvs.get("ANY_ENV_VARIABLE")
+ext.reactNativeEnvs = loadEnvProperties()

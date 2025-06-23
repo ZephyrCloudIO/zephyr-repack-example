@@ -16,4 +16,3 @@ export * from './types';
 export * from './ui';
 /* eslint-enable barrel-files/avoid-re-export-all */
 
-export {zeSdk} from './remote/zephyr';

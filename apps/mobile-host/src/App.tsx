@@ -17,7 +17,7 @@ import {
   UpdateNotificationBar,
 } from 'mobile-core';
 import {DeviceEventEmitter, BackHandler} from 'react-native';
-import {zeSdk} from 'mobile-core';
+import {zeSdk} from './config/zephyr';
 import AnimatedBootSplash from './components/AnimatedBootSplash';
 import MainNavigator from './navigation/MainNavigator';
 
