@@ -7,7 +7,6 @@ settings:
 overrides:
   image-size: '>=1.2.1'
   zephyr-repack-plugin: link:../../repos/zephyr-packages/libs/zephyr-repack-plugin
-  react-native-zephyr-sdk: link:../../repos/react-native-zephyr-sdk
   zephyr-edge-contract: link:../../repos/zephyr-packages/libs/zephyr-edge-contract
   zephyr-agent: link:../../repos/zephyr-packages/libs/zephyr-agent
   zephyr-xpack-internal: link:../../repos/zephyr-packages/libs/zephyr-xpack-internal
@@ -32,6 +31,9 @@ patchedDependencies:
 importers:
 
   .:
+    dependenciesMeta:
+      react-native-zephyr-sdk:
+        injected: true
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.6.1
@@ -114,9 +116,6 @@ importers:
       react-native-vector-icons:
         specifier: 10.2.0
         version: 10.2.0
-      react-native-zephyr-sdk:
-        specifier: link:../../../react-native-zephyr-sdk
-        version: link:../../../react-native-zephyr-sdk
     devDependencies:
       '@babel/core':
         specifier: ^7.26.10
@@ -247,9 +246,6 @@ importers:
       react-native-vector-icons:
         specifier: 10.2.0
         version: 10.2.0
-      react-native-zephyr-sdk:
-        specifier: link:../../../react-native-zephyr-sdk
-        version: link:../../../react-native-zephyr-sdk
     devDependencies:
       '@babel/core':
         specifier: ^7.26.10
@@ -389,8 +385,8 @@ importers:
         specifier: 10.2.0
         version: 10.2.0
       react-native-zephyr-sdk:
-        specifier: link:../../../react-native-zephyr-sdk
-        version: link:../../../react-native-zephyr-sdk
+        specifier: file:../../../../repos/react-native-zephyr-sdk
+        version: file:../react-native-zephyr-sdk(react-native-mmkv@3.3.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@19.1.8)(react@19.0.0))(react@19.0.0))(react-native@0.79.4(@babel/core@7.27.1)(@types/react@19.1.8)(react@19.0.0))(react@19.0.0)
     dependenciesMeta:
       mobile-core:
         injected: true
@@ -539,9 +535,6 @@ importers:
       react-native-vector-icons:
         specifier: 10.2.0
         version: 10.2.0
-      react-native-zephyr-sdk:
-        specifier: link:../../../react-native-zephyr-sdk
-        version: link:../../../react-native-zephyr-sdk
     dependenciesMeta:
       mobile-core:
         injected: true
@@ -675,9 +668,6 @@ importers:
       react-native-vector-icons:
         specifier: 10.2.0
         version: 10.2.0
-      react-native-zephyr-sdk:
-        specifier: link:../../../react-native-zephyr-sdk
-        version: link:../../../react-native-zephyr-sdk
     devDependencies:
       '@babel/core':
         specifier: ^7.26.10
@@ -800,14 +790,17 @@ importers:
         specifier: 10.2.0
         version: 10.2.0
       react-native-zephyr-sdk:
-        specifier: link:../../../react-native-zephyr-sdk
-        version: link:../../../react-native-zephyr-sdk
+        specifier: '*'
+        version: 0.0.3(@babel/core@7.27.1)(@types/react@19.1.8)(react@19.0.0)(use-sync-external-store@1.5.0(react@19.0.0))
       zephyr-edge-contract:
         specifier: link:../../../zephyr-packages/libs/zephyr-edge-contract
         version: link:../../../zephyr-packages/libs/zephyr-edge-contract
       zustand:
         specifier: ^5.0.3
         version: 5.0.4(@types/react@19.1.8)(react@19.0.0)(use-sync-external-store@1.5.0(react@19.0.0))
+    dependenciesMeta:
+      react-native-zephyr-sdk:
+        injected: true
     devDependencies:
       '@callstack/eslint-config':
         specifier: ^15.0.0
@@ -3597,6 +3590,10 @@ packages:
     resolution: {integrity: sha512-wAV9QHOsNbwnWdNW2FYvE1P56wtgSbM+3SZcdGiWQILwVjACCXDCI3Ai8QlCjMDB8YK5zySiXZYBiwGmNY3lnw==}
     engines: {node: '>=12'}
 
+  data-uri-to-buffer@4.0.1:
+    resolution: {integrity: sha512-0R9ikRb668HB7QDxT1vkpuUBtqc53YyAwMwGeUFKRojY/NWKvdZ+9UYtRfGmhqNbRkTSVpMbmyhXipFFv2cb/A==}
+    engines: {node: '>= 12'}
+
   data-view-buffer@1.0.2:
     resolution: {integrity: sha512-EmKO5V3OLXh1rtK2wgXRansaK1/mtVdTUEiEI0W8RkvgT05kfxaH29PliLnpLP73yYO6142Q72QNa8Wx/A5CqQ==}
     engines: {node: '>= 0.4'}
@@ -4338,6 +4335,10 @@ packages:
       picomatch:
         optional: true
 
+  fetch-blob@3.2.0:
+    resolution: {integrity: sha512-7yAQpD2UMJzLi1Dqv7qFYnPbaPx7ZfFK6PiIxQ4PfkGPyNyl2Ugx+a/umUonmKqjhM4DnfbMvdX6otXq83soQQ==}
+    engines: {node: ^12.20 || >= 14.13}
+
   figures@3.2.0:
     resolution: {integrity: sha512-yaduQFRKLXYOGgEn6AZau90j3ggSOyiqXU0F9JZfeXYhNa+Jk4X+s45A2zg5jns87GAFa34BBm2kXw4XpNcbdg==}
     engines: {node: '>=8'}
@@ -4448,6 +4449,10 @@ packages:
   form-data@4.0.2:
     resolution: {integrity: sha512-hGfm/slu0ZabnNt4oaRZ6uREyfCj6P4fT/n6A1rGV+Z0VdGXjfOhVUpkn6qVQONHGIFwmveGXyDs75+nr6FM8w==}
     engines: {node: '>= 6'}
+
+  formdata-polyfill@4.0.10:
+    resolution: {integrity: sha512-buewHzMvYL29jdeQTVILecSaZKnt/RJWjoZCF5OW60Z67/GmSLBkOFM7qh1PI3zFNtJbaZL5eQu1vLfazOwj4g==}
+    engines: {node: '>=12.20.0'}
 
   forwarded@0.2.0:
     resolution: {integrity: sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==}
@@ -5656,6 +5661,15 @@ packages:
     resolution: {integrity: sha512-tmPX422rYgofd4epzrNoOXiE8XFZYOcCq1vD7MAXCDO+O+zndlA2ztdKKMa+EeuBG5tHETpr4ml4RGgpqDCCAg==}
     engines: {node: '>= 0.10.5'}
 
+  node-domexception@1.0.0:
+    resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
+    engines: {node: '>=10.5.0'}
+    deprecated: Use your platform's native DOMException instead
+
+  node-fetch@3.3.2:
+    resolution: {integrity: sha512-dRB78srN/l6gqWulah9SrxeYnxeddIG30+GOqK/9OlLVyLg3HPnr6SqOWTWOXKRwC2eGYCkZ59NNuSgvSrpgOA==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+
   node-html-parser@7.0.1:
     resolution: {integrity: sha512-KGtmPY2kS0thCWGK0VuPyOS+pBKhhe8gXztzA2ilAOhbUbxa9homF1bOyKvhGzMLXUoRds9IOmr/v5lr/lqNmA==}
 
@@ -6158,6 +6172,16 @@ packages:
   react-native-vector-icons@10.2.0:
     resolution: {integrity: sha512-n5HGcxUuVaTf9QJPs/W22xQpC2Z9u0nb0KgLPnVltP8vdUvOp6+R26gF55kilP/fV4eL4vsAHUqUjewppJMBOQ==}
     hasBin: true
+
+  react-native-zephyr-sdk@0.0.3:
+    resolution: {integrity: sha512-wzFtlAwvO6DzL87/182mTE2kv/3l8zRak7HvDPix+QWPFGpIWnal9tGK+hdd4Sxa63iX1z2h4CO6/IOuatt4jg==}
+
+  react-native-zephyr-sdk@file:../react-native-zephyr-sdk:
+    resolution: {directory: ../react-native-zephyr-sdk, type: directory}
+    peerDependencies:
+      react: 19.0.0
+      react-native: 0.79.4
+      react-native-mmkv: ^3.3.0
 
   react-native@0.79.4:
     resolution: {integrity: sha512-CfxYMuszvnO/33Q5rB//7cU1u9P8rSOvzhE2053Phdb8+6bof9NLayCllU2nmPrm8n9o6RU1Fz5H0yquLQ0DAw==}
@@ -6969,6 +6993,10 @@ packages:
 
   wcwidth@1.0.1:
     resolution: {integrity: sha512-XHPEwS0q6TaxcvG85+8EYkbiCux2XtWG2mkc47Ng2A77BQu9+DqIOJldST4HgPkuea7dvKSj5VgX3P1d4rW8Tg==}
+
+  web-streams-polyfill@3.3.3:
+    resolution: {integrity: sha512-d2JWLCivmZYTSIoge9MsgFCZrt571BikcWGYkjC1khllbTeDlGqZ2D8vD8E/lJa8WGWbb7Plm8/XJYV7IJHZZw==}
+    engines: {node: '>= 8'}
 
   webpack-bundle-analyzer@4.10.2:
     resolution: {integrity: sha512-vJptkMm9pk5si4Bv922ZbKLV8UTT4zib4FPgXMhgzUny0bfDDkLXAVQs3ly3fS4/TN9ROFtb0NFrm04UXFE/Vw==}
@@ -10933,6 +10961,8 @@ snapshots:
 
   dargs@8.1.0: {}
 
+  data-uri-to-buffer@4.0.1: {}
+
   data-view-buffer@1.0.2:
     dependencies:
       call-bound: 1.0.4
@@ -11727,6 +11757,11 @@ snapshots:
     optionalDependencies:
       picomatch: 4.0.2
 
+  fetch-blob@3.2.0:
+    dependencies:
+      node-domexception: 1.0.0
+      web-streams-polyfill: 3.3.3
+
   figures@3.2.0:
     dependencies:
       escape-string-regexp: 1.0.5
@@ -11848,6 +11883,10 @@ snapshots:
       combined-stream: 1.0.8
       es-set-tostringtag: 2.1.0
       mime-types: 2.1.35
+
+  formdata-polyfill@4.0.10:
+    dependencies:
+      fetch-blob: 3.2.0
 
   forwarded@0.2.0: {}
 
@@ -13326,12 +13365,13 @@ snapshots:
       react-native-safe-area-context: 4.12.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@19.1.8)(react@19.0.0))(react@19.0.0)
       react-native-screen-corner-radius: 0.2.2(react-native@0.79.4(@babel/core@7.27.1)(@types/react@19.1.8)(react@19.0.0))(react@19.0.0)
       react-native-vector-icons: 10.2.0
-      react-native-zephyr-sdk: link:../react-native-zephyr-sdk
+      react-native-zephyr-sdk: 0.0.3(@babel/core@7.27.1)(@types/react@19.1.8)(react@19.0.0)(use-sync-external-store@1.5.0(react@19.0.0))
       zephyr-edge-contract: link:../zephyr-packages/libs/zephyr-edge-contract
       zustand: 5.0.4(@types/react@19.1.8)(react@19.0.0)(use-sync-external-store@1.5.0(react@19.0.0))
     transitivePeerDependencies:
       - '@babel/core'
       - '@module-federation/enhanced'
+      - '@react-native-community/cli'
       - '@rspack/core'
       - '@types/react'
       - bufferutil
@@ -13373,6 +13413,14 @@ snapshots:
   node-dir@0.1.17:
     dependencies:
       minimatch: 3.1.2
+
+  node-domexception@1.0.0: {}
+
+  node-fetch@3.3.2:
+    dependencies:
+      data-uri-to-buffer: 4.0.1
+      fetch-blob: 3.2.0
+      formdata-polyfill: 4.0.10
 
   node-html-parser@7.0.1:
     dependencies:
@@ -13965,6 +14013,37 @@ snapshots:
     dependencies:
       prop-types: 15.8.1
       yargs: 16.2.0
+
+  react-native-zephyr-sdk@0.0.3(@babel/core@7.27.1)(@types/react@19.1.8)(react@19.0.0)(use-sync-external-store@1.5.0(react@19.0.0)):
+    dependencies:
+      axios: 1.9.0(debug@4.4.0)
+      debug: 4.4.0
+      node-fetch: 3.3.2
+      react-native: 0.79.4(@babel/core@7.27.1)(@types/react@19.1.8)(react@19.0.0)
+      react-native-mmkv: 3.3.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@19.1.8)(react@19.0.0))(react@19.0.0)
+      tslib: 2.8.1
+      zephyr-agent: link:../zephyr-packages/libs/zephyr-agent
+      zephyr-edge-contract: link:../zephyr-packages/libs/zephyr-edge-contract
+      zustand: 5.0.4(@types/react@19.1.8)(react@19.0.0)(use-sync-external-store@1.5.0(react@19.0.0))
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@react-native-community/cli'
+      - '@types/react'
+      - bufferutil
+      - immer
+      - react
+      - supports-color
+      - use-sync-external-store
+      - utf-8-validate
+
+  react-native-zephyr-sdk@file:../react-native-zephyr-sdk(react-native-mmkv@3.3.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@19.1.8)(react@19.0.0))(react@19.0.0))(react-native@0.79.4(@babel/core@7.27.1)(@types/react@19.1.8)(react@19.0.0))(react@19.0.0):
+    dependencies:
+      debug: 4.4.0
+      react: 19.0.0
+      react-native: 0.79.4(@babel/core@7.27.1)(@types/react@19.1.8)(react@19.0.0)
+      react-native-mmkv: 3.3.0(react-native@0.79.4(@babel/core@7.27.1)(@types/react@19.1.8)(react@19.0.0))(react@19.0.0)
+    transitivePeerDependencies:
+      - supports-color
 
   react-native@0.79.4(@babel/core@7.27.1)(@types/react@19.1.8)(react@19.0.0):
     dependencies:
@@ -14850,6 +14929,8 @@ snapshots:
   wcwidth@1.0.1:
     dependencies:
       defaults: 1.0.4
+
+  web-streams-polyfill@3.3.3: {}
 
   webpack-bundle-analyzer@4.10.2(patch_hash=2de248ef1d62d55f306d38dd4394a7ef0dada4f6013d4490e273574a5dbff607):
     dependencies:

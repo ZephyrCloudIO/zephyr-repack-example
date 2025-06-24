@@ -2,7 +2,7 @@ import {Config} from 'react-native-config';
 import {ReactNativeZephyrSdk} from 'react-native-zephyr-sdk';
 import {storage} from 'mobile-core';
 
-console.log('Config.ZE_API_KEY', Config.ZE_API_KEY);
+// console.log('Config.ZE_API_KEY', Config.ZE_API_KEY);
 
 export const zeSdk = new ReactNativeZephyrSdk({
   apiKey:

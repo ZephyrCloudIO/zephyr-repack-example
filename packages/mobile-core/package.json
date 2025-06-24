@@ -18,6 +18,11 @@
     "typecheck": "tsc",
     "test": "jest --passWithNoTests"
   },
+  "dependenciesMeta": {
+    "react-native-zephyr-sdk": {
+      "injected": true
+    }
+  },
   "dependencies": {
     "@callstack/repack": "5.1.1",
     "@tanstack/react-query": "^5.64.2",

@@ -54,6 +54,11 @@
     "nx": "21.0.2",
     "prettier": "^3.4.2"
   },
+  "dependenciesMeta": {
+    "react-native-zephyr-sdk": {
+      "injected": true
+    }
+  },
   "pnpm": {
     "patchedDependencies": {
       "react-native-paper": "patches/react-native-paper.patch",
@@ -79,7 +84,6 @@
     "overrides": {
       "image-size": ">=1.2.1",
       "zephyr-repack-plugin": "link:../../repos/zephyr-packages/libs/zephyr-repack-plugin",
-      "react-native-zephyr-sdk": "link:../../repos/react-native-zephyr-sdk",
       "zephyr-edge-contract": "link:../../repos/zephyr-packages/libs/zephyr-edge-contract",
       "zephyr-agent": "link:../../repos/zephyr-packages/libs/zephyr-agent",
       "zephyr-xpack-internal": "link:../../repos/zephyr-packages/libs/zephyr-xpack-internal",
