@@ -64,7 +64,7 @@
     "mobile-eslint-config": "workspace:^",
     "mobile-sdk": "0.0.1",
     "typescript": "^5.6.3",
-    "zephyr-repack-plugin": "0.0.54"
+    "zephyr-repack-plugin": "0.0.59"
   },
   "rnx-kit": {
     "kitType": "app",
