@@ -22,8 +22,8 @@
   },
   "dependencies": {
     "@module-federation/enhanced": "0.13.1",
-    "@react-navigation/native": "7.1.8",
-    "@react-navigation/native-stack": "7.3.12",
+    "@react-navigation/native": "7.1.25",
+    "@react-navigation/native-stack": "7.8.6",
     "lottie-react-native": "7.2.2",
     "mobile-core": "0.0.1",
     "react": "19.0.0",
