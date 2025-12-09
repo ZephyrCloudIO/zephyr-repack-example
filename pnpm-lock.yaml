@@ -387,8 +387,8 @@ importers:
         specifier: ^7.26.10
         version: 7.28.5
       '@babel/plugin-syntax-typescript':
-        specifier: 7.25.9
-        version: 7.25.9(@babel/core@7.28.5)
+        specifier: 7.27.1
+        version: 7.27.1(@babel/core@7.28.5)
       '@babel/plugin-transform-react-jsx':
         specifier: ^7.25.9
         version: 7.27.1(@babel/core@7.28.5)
@@ -1191,12 +1191,6 @@ packages:
 
   '@babel/plugin-syntax-top-level-await@7.14.5':
     resolution: {integrity: sha512-hx++upLv5U1rgYfwe1xBQUhRmU41NEvpUvrp8jkrSCdvGSnM5/qdRMtylJ6PG5OFkBaHkbTAKTnd3/YyESRHFw==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-
-  '@babel/plugin-syntax-typescript@7.25.9':
-    resolution: {integrity: sha512-hjMgRy5hb8uJJjUcdWunWVcoi9bGpJp8p5Ol1229PoN6aytsLwNMgmdftO23wnCLMfVmTwZDWMPNq/D1SY60JQ==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -8147,11 +8141,6 @@ snapshots:
       '@babel/core': 7.28.5
       '@babel/helper-plugin-utils': 7.27.1
 
-  '@babel/plugin-syntax-typescript@7.25.9(@babel/core@7.28.5)':
-    dependencies:
-      '@babel/core': 7.28.5
-      '@babel/helper-plugin-utils': 7.27.1
-
   '@babel/plugin-syntax-typescript@7.27.1(@babel/core@7.28.5)':
     dependencies:
       '@babel/core': 7.28.5
@@ -11387,7 +11376,7 @@ snapshots:
     dependencies:
       '@babel/core': 7.28.5
       '@babel/helper-plugin-utils': 7.27.1
-      '@babel/plugin-syntax-typescript': 7.25.9(@babel/core@7.28.5)
+      '@babel/plugin-syntax-typescript': 7.27.1(@babel/core@7.28.5)
       '@babel/traverse': 7.28.5
     transitivePeerDependencies:
       - supports-color
@@ -13803,7 +13792,7 @@ snapshots:
       '@babel/core': 7.28.5
       '@babel/generator': 7.28.5
       '@babel/plugin-syntax-jsx': 7.27.1(@babel/core@7.28.5)
-      '@babel/plugin-syntax-typescript': 7.25.9(@babel/core@7.28.5)
+      '@babel/plugin-syntax-typescript': 7.27.1(@babel/core@7.28.5)
       '@babel/types': 7.28.5
       '@jest/expect-utils': 29.7.0
       '@jest/transform': 29.7.0
