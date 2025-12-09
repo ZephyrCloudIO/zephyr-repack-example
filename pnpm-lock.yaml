@@ -68,7 +68,7 @@ importers:
     dependencies:
       '@module-federation/enhanced':
         specifier: 0.13.1
-        version: 0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3)
+        version: 0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react@19.0.0)(typescript@5.9.3)
       '@react-navigation/native':
         specifier: 7.1.8
         version: 7.1.8(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
@@ -126,7 +126,7 @@ importers:
         version: 15.0.0(eslint@8.57.1)(jest@29.7.0(@types/node@24.10.1)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       '@callstack/repack':
         specifier: 5.1.1
-        version: 5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))
+        version: 5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))
       '@react-native/babel-preset':
         specifier: 0.79.4
         version: 0.79.4(@babel/core@7.28.5)
@@ -147,19 +147,19 @@ importers:
         version: 0.7.28(typescript@5.9.3)
       '@rnef/plugin-repack':
         specifier: ^0.7.5
-        version: 0.7.28(@callstack/repack@5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0)))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(@swc/helpers@0.5.15)
+        version: 0.7.28(@callstack/repack@5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0)))(@rspack/core@1.6.5(@swc/helpers@0.5.17))(@swc/helpers@0.5.17)
       '@rnx-kit/align-deps':
         specifier: ^2.5.5
         version: 2.5.5
       '@rsdoctor/rspack-plugin':
         specifier: ^0.4.13
-        version: 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
+        version: 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))
       '@rspack/core':
         specifier: ^1.2.2
-        version: 1.6.5(@swc/helpers@0.5.15)
+        version: 1.6.5(@swc/helpers@0.5.17)
       '@swc/helpers':
-        specifier: 0.5.15
-        version: 0.5.15
+        specifier: 0.5.17
+        version: 0.5.17
       '@types/jest':
         specifier: ^29.5.14
         version: 29.5.14
@@ -198,7 +198,7 @@ importers:
     dependencies:
       '@module-federation/enhanced':
         specifier: 0.13.1
-        version: 0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3)
+        version: 0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react@19.0.0)(typescript@5.9.3)
       '@react-navigation/native':
         specifier: 7.1.8
         version: 7.1.8(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
@@ -256,7 +256,7 @@ importers:
         version: 15.0.0(eslint@8.57.1)(jest@29.7.0(@types/node@24.10.1)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       '@callstack/repack':
         specifier: 5.1.1
-        version: 5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))
+        version: 5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))
       '@react-native/babel-preset':
         specifier: 0.79.4
         version: 0.79.4(@babel/core@7.28.5)
@@ -277,19 +277,19 @@ importers:
         version: 0.7.28(typescript@5.9.3)
       '@rnef/plugin-repack':
         specifier: ^0.7.5
-        version: 0.7.28(@callstack/repack@5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0)))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(@swc/helpers@0.5.15)
+        version: 0.7.28(@callstack/repack@5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0)))(@rspack/core@1.6.5(@swc/helpers@0.5.17))(@swc/helpers@0.5.17)
       '@rnx-kit/align-deps':
         specifier: ^2.5.5
         version: 2.5.5
       '@rsdoctor/rspack-plugin':
         specifier: ^0.4.13
-        version: 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
+        version: 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))
       '@rspack/core':
         specifier: ^1.2.2
-        version: 1.6.5(@swc/helpers@0.5.15)
+        version: 1.6.5(@swc/helpers@0.5.17)
       '@swc/helpers':
-        specifier: 0.5.15
-        version: 0.5.15
+        specifier: 0.5.17
+        version: 0.5.17
       '@types/jest':
         specifier: ^29.5.14
         version: 29.5.14
@@ -330,7 +330,7 @@ importers:
     dependencies:
       '@module-federation/enhanced':
         specifier: 0.13.1
-        version: 0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3)
+        version: 0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react@19.0.0)(typescript@5.9.3)
       '@react-native-community/netinfo':
         specifier: 11.4.1
         version: 11.4.1(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))
@@ -403,7 +403,7 @@ importers:
         version: 15.0.0(eslint@8.57.1)(jest@29.7.0(@types/node@24.10.1)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       '@callstack/repack':
         specifier: 5.1.1
-        version: 5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))
+        version: 5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))
       '@react-native/babel-plugin-codegen':
         specifier: 0.76.5
         version: 0.76.5(@babel/preset-env@7.28.5(@babel/core@7.28.5))
@@ -427,19 +427,19 @@ importers:
         version: 0.7.28(typescript@5.9.3)
       '@rnef/plugin-repack':
         specifier: ^0.7.5
-        version: 0.7.28(@callstack/repack@5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0)))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(@swc/helpers@0.5.15)
+        version: 0.7.28(@callstack/repack@5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0)))(@rspack/core@1.6.5(@swc/helpers@0.5.17))(@swc/helpers@0.5.17)
       '@rnx-kit/align-deps':
         specifier: ^2.5.5
         version: 2.5.5
       '@rsdoctor/rspack-plugin':
         specifier: ^0.4.13
-        version: 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
+        version: 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))
       '@rspack/core':
         specifier: ^1.2.2
-        version: 1.6.5(@swc/helpers@0.5.15)
+        version: 1.6.5(@swc/helpers@0.5.17)
       '@swc/helpers':
-        specifier: 0.5.15
-        version: 0.5.15
+        specifier: 0.5.17
+        version: 0.5.17
       '@types/jest':
         specifier: ^29.5.14
         version: 29.5.14
@@ -484,7 +484,7 @@ importers:
     dependencies:
       '@module-federation/enhanced':
         specifier: 0.13.1
-        version: 0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3)
+        version: 0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react@19.0.0)(typescript@5.9.3)
       '@react-navigation/native':
         specifier: 7.1.8
         version: 7.1.8(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
@@ -545,7 +545,7 @@ importers:
         version: 15.0.0(eslint@8.57.1)(jest@29.7.0(@types/node@24.10.1)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       '@callstack/repack':
         specifier: 5.1.1
-        version: 5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))
+        version: 5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))
       '@react-native/babel-preset':
         specifier: 0.79.4
         version: 0.79.4(@babel/core@7.28.5)
@@ -566,19 +566,19 @@ importers:
         version: 0.7.28(typescript@5.9.3)
       '@rnef/plugin-repack':
         specifier: ^0.7.5
-        version: 0.7.28(@callstack/repack@5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0)))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(@swc/helpers@0.5.15)
+        version: 0.7.28(@callstack/repack@5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0)))(@rspack/core@1.6.5(@swc/helpers@0.5.17))(@swc/helpers@0.5.17)
       '@rnx-kit/align-deps':
         specifier: ^2.5.5
         version: 2.5.5
       '@rsdoctor/rspack-plugin':
         specifier: ^0.4.13
-        version: 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
+        version: 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))
       '@rspack/core':
         specifier: ^1.2.2
-        version: 1.6.5(@swc/helpers@0.5.15)
+        version: 1.6.5(@swc/helpers@0.5.17)
       '@swc/helpers':
-        specifier: 0.5.15
-        version: 0.5.15
+        specifier: 0.5.17
+        version: 0.5.17
       '@types/jest':
         specifier: ^29.5.14
         version: 29.5.14
@@ -617,7 +617,7 @@ importers:
     dependencies:
       '@module-federation/enhanced':
         specifier: 0.13.1
-        version: 0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3)
+        version: 0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react@19.0.0)(typescript@5.9.3)
       '@react-navigation/native':
         specifier: 7.1.8
         version: 7.1.8(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
@@ -675,7 +675,7 @@ importers:
         version: 15.0.0(eslint@8.57.1)(jest@29.7.0(@types/node@24.10.1)(babel-plugin-macros@3.1.0))(typescript@5.9.3)
       '@callstack/repack':
         specifier: 5.1.1
-        version: 5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))
+        version: 5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))
       '@react-native/babel-preset':
         specifier: 0.79.4
         version: 0.79.4(@babel/core@7.28.5)
@@ -696,19 +696,19 @@ importers:
         version: 0.7.28(typescript@5.9.3)
       '@rnef/plugin-repack':
         specifier: ^0.7.5
-        version: 0.7.28(@callstack/repack@5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0)))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(@swc/helpers@0.5.15)
+        version: 0.7.28(@callstack/repack@5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0)))(@rspack/core@1.6.5(@swc/helpers@0.5.17))(@swc/helpers@0.5.17)
       '@rnx-kit/align-deps':
         specifier: ^2.5.5
         version: 2.5.5
       '@rsdoctor/rspack-plugin':
         specifier: ^0.4.13
-        version: 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
+        version: 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))
       '@rspack/core':
         specifier: ^1.2.2
-        version: 1.6.5(@swc/helpers@0.5.15)
+        version: 1.6.5(@swc/helpers@0.5.17)
       '@swc/helpers':
-        specifier: 0.5.15
-        version: 0.5.15
+        specifier: 0.5.17
+        version: 0.5.17
       '@types/jest':
         specifier: ^29.5.14
         version: 29.5.14
@@ -786,8 +786,8 @@ importers:
         specifier: 0.76.6
         version: 0.76.6
       '@swc/helpers':
-        specifier: 0.5.13
-        version: 0.5.13
+        specifier: 0.5.17
+        version: 0.5.17
       '@types/jest':
         specifier: ^29.5.14
         version: 29.5.14
@@ -2880,8 +2880,8 @@ packages:
   '@swc/helpers@0.5.13':
     resolution: {integrity: sha512-UoKGxQ3r5kYI9dALKJapMmuK+1zWM/H17Z1+iwnNmzcJRnfFuevZs375TA5rW31pu4BS4NoSy1fRsexDXfWn5w==}
 
-  '@swc/helpers@0.5.15':
-    resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
+  '@swc/helpers@0.5.17':
+    resolution: {integrity: sha512-5IKx/Y13RsYd+sauPb2x+U/xZikHjolzfuDgTAl/Tdf3Q8rslRvC19NKDLgAJQ6wsqADk10ntlv08nPFw/gO/A==}
 
   '@tanstack/query-core@5.90.10':
     resolution: {integrity: sha512-EhZVFu9rl7GfRNuJLJ3Y7wtbTnENsvzp+YpcAV7kCYiXni1v8qZh++lpw4ch4rrwC0u/EZRnBHIehzCGzwXDSQ==}
@@ -8876,7 +8876,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@callstack/repack@5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))':
+  '@callstack/repack@5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))':
     dependencies:
       '@callstack/repack-dev-server': 5.1.1
       '@discoveryjs/json-ext': 0.5.7
@@ -8903,8 +8903,8 @@ snapshots:
       throttleit: 2.1.0
       webpack-merge: 6.0.1
     optionalDependencies:
-      '@module-federation/enhanced': 0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3)
-      '@rspack/core': 1.6.5(@swc/helpers@0.5.15)
+      '@module-federation/enhanced': 0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react@19.0.0)(typescript@5.9.3)
+      '@rspack/core': 1.6.5(@swc/helpers@0.5.17)
     transitivePeerDependencies:
       - '@babel/core'
       - bufferutil
@@ -9587,7 +9587,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3)':
+  '@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react@19.0.0)(typescript@5.9.3)':
     dependencies:
       '@module-federation/bridge-react-webpack-plugin': 0.13.1
       '@module-federation/cli': 0.13.1(typescript@5.9.3)
@@ -9597,7 +9597,7 @@ snapshots:
       '@module-federation/inject-external-runtime-core-plugin': 0.13.1(@module-federation/runtime-tools@0.13.1)
       '@module-federation/managers': 0.13.1
       '@module-federation/manifest': 0.13.1(typescript@5.9.3)
-      '@module-federation/rspack': 0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(typescript@5.9.3)
+      '@module-federation/rspack': 0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.17))(typescript@5.9.3)
       '@module-federation/runtime-tools': 0.13.1
       '@module-federation/sdk': 0.13.1
       btoa: 1.2.1
@@ -9643,7 +9643,7 @@ snapshots:
       - utf-8-validate
       - vue-tsc
 
-  '@module-federation/rspack@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(typescript@5.9.3)':
+  '@module-federation/rspack@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.17))(typescript@5.9.3)':
     dependencies:
       '@module-federation/bridge-react-webpack-plugin': 0.13.1
       '@module-federation/dts-plugin': 0.13.1(typescript@5.9.3)
@@ -9652,7 +9652,7 @@ snapshots:
       '@module-federation/manifest': 0.13.1(typescript@5.9.3)
       '@module-federation/runtime-tools': 0.13.1
       '@module-federation/sdk': 0.13.1
-      '@rspack/core': 1.6.5(@swc/helpers@0.5.15)
+      '@rspack/core': 1.6.5(@swc/helpers@0.5.17)
       btoa: 1.2.1
     optionalDependencies:
       typescript: 5.9.3
@@ -10514,12 +10514,12 @@ snapshots:
       - supports-color
       - typescript
 
-  '@rnef/plugin-repack@0.7.28(@callstack/repack@5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0)))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(@swc/helpers@0.5.15)':
+  '@rnef/plugin-repack@0.7.28(@callstack/repack@5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0)))(@rspack/core@1.6.5(@swc/helpers@0.5.17))(@swc/helpers@0.5.17)':
     dependencies:
-      '@callstack/repack': 5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))
+      '@callstack/repack': 5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))
       '@rnef/tools': 0.7.28
-      '@rspack/core': 1.6.5(@swc/helpers@0.5.15)
-      '@swc/helpers': 0.5.15
+      '@rspack/core': 1.6.5(@swc/helpers@0.5.17)
+      '@swc/helpers': 0.5.17
       tslib: 2.8.1
     transitivePeerDependencies:
       - supports-color
@@ -10553,12 +10553,12 @@ snapshots:
 
   '@rsdoctor/client@0.4.13': {}
 
-  '@rsdoctor/core@0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))':
+  '@rsdoctor/core@0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))':
     dependencies:
-      '@rsdoctor/graph': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
-      '@rsdoctor/sdk': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
-      '@rsdoctor/types': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
-      '@rsdoctor/utils': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
+      '@rsdoctor/graph': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))
+      '@rsdoctor/sdk': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))
+      '@rsdoctor/types': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))
+      '@rsdoctor/utils': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))
       axios: 1.13.2(debug@4.4.3)
       enhanced-resolve: 5.12.0
       filesize: 10.1.6
@@ -10576,10 +10576,10 @@ snapshots:
       - utf-8-validate
       - webpack
 
-  '@rsdoctor/graph@0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))':
+  '@rsdoctor/graph@0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))':
     dependencies:
-      '@rsdoctor/types': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
-      '@rsdoctor/utils': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
+      '@rsdoctor/types': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))
+      '@rsdoctor/utils': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))
       lodash.unionby: 4.8.0
       socket.io: 4.8.1
       source-map: 0.7.4
@@ -10590,14 +10590,14 @@ snapshots:
       - utf-8-validate
       - webpack
 
-  '@rsdoctor/rspack-plugin@0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))':
+  '@rsdoctor/rspack-plugin@0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))':
     dependencies:
-      '@rsdoctor/core': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
-      '@rsdoctor/graph': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
-      '@rsdoctor/sdk': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
-      '@rsdoctor/types': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
-      '@rsdoctor/utils': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
-      '@rspack/core': 1.6.5(@swc/helpers@0.5.15)
+      '@rsdoctor/core': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))
+      '@rsdoctor/graph': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))
+      '@rsdoctor/sdk': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))
+      '@rsdoctor/types': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))
+      '@rsdoctor/utils': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))
+      '@rspack/core': 1.6.5(@swc/helpers@0.5.17)
       lodash: 4.17.21
     transitivePeerDependencies:
       - bufferutil
@@ -10606,12 +10606,12 @@ snapshots:
       - utf-8-validate
       - webpack
 
-  '@rsdoctor/sdk@0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))':
+  '@rsdoctor/sdk@0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))':
     dependencies:
       '@rsdoctor/client': 0.4.13
-      '@rsdoctor/graph': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
-      '@rsdoctor/types': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
-      '@rsdoctor/utils': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
+      '@rsdoctor/graph': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))
+      '@rsdoctor/types': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))
+      '@rsdoctor/utils': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))
       '@types/fs-extra': 11.0.4
       body-parser: 1.20.3
       cors: 2.8.5
@@ -10631,19 +10631,19 @@ snapshots:
       - utf-8-validate
       - webpack
 
-  '@rsdoctor/types@0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))':
+  '@rsdoctor/types@0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))':
     dependencies:
       '@types/connect': 3.4.38
       '@types/estree': 1.0.5
       '@types/tapable': 2.2.7
       source-map: 0.7.4
     optionalDependencies:
-      '@rspack/core': 1.6.5(@swc/helpers@0.5.15)
+      '@rspack/core': 1.6.5(@swc/helpers@0.5.17)
 
-  '@rsdoctor/utils@0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))':
+  '@rsdoctor/utils@0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))':
     dependencies:
       '@babel/code-frame': 7.25.7
-      '@rsdoctor/types': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
+      '@rsdoctor/types': 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.17))
       '@types/estree': 1.0.5
       acorn: 8.14.1
       acorn-import-assertions: 1.9.0(acorn@8.14.1)
@@ -10709,13 +10709,13 @@ snapshots:
       '@rspack/binding-win32-ia32-msvc': 1.6.5
       '@rspack/binding-win32-x64-msvc': 1.6.5
 
-  '@rspack/core@1.6.5(@swc/helpers@0.5.15)':
+  '@rspack/core@1.6.5(@swc/helpers@0.5.17)':
     dependencies:
       '@module-federation/runtime-tools': 0.21.4
       '@rspack/binding': 1.6.5
       '@rspack/lite-tapable': 1.1.0
     optionalDependencies:
-      '@swc/helpers': 0.5.15
+      '@swc/helpers': 0.5.17
 
   '@rspack/lite-tapable@1.1.0': {}
 
@@ -10754,7 +10754,7 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@swc/helpers@0.5.15':
+  '@swc/helpers@0.5.17':
     dependencies:
       tslib: 2.8.1
 

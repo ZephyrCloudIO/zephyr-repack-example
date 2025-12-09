@@ -61,7 +61,7 @@
     "@rnx-kit/align-deps": "^2.5.5",
     "@rsdoctor/rspack-plugin": "^0.4.13",
     "@rspack/core": "^1.2.2",
-    "@swc/helpers": "0.5.15",
+    "@swc/helpers": "0.5.17",
     "@types/jest": "^29.5.14",
     "@types/react": "^18.2.6",
     "@types/react-native-vector-icons": "^6.4.12",
