@@ -103,8 +103,8 @@ importers:
         specifier: 5.4.0
         version: 5.4.0(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
       react-native-screen-corner-radius:
-        specifier: 0.2.2
-        version: 0.2.2(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
+        specifier: 0.2.3
+        version: 0.2.3(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
       react-native-screens:
         specifier: 4.10.0
         version: 4.10.0(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
@@ -233,8 +233,8 @@ importers:
         specifier: 5.4.0
         version: 5.4.0(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
       react-native-screen-corner-radius:
-        specifier: 0.2.2
-        version: 0.2.2(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
+        specifier: 0.2.3
+        version: 0.2.3(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
       react-native-screens:
         specifier: 4.10.0
         version: 4.10.0(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
@@ -371,8 +371,8 @@ importers:
         specifier: 5.4.0
         version: 5.4.0(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
       react-native-screen-corner-radius:
-        specifier: 0.2.2
-        version: 0.2.2(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
+        specifier: 0.2.3
+        version: 0.2.3(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
       react-native-screens:
         specifier: 4.10.0
         version: 4.10.0(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
@@ -519,8 +519,8 @@ importers:
         specifier: 5.4.0
         version: 5.4.0(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
       react-native-screen-corner-radius:
-        specifier: 0.2.2
-        version: 0.2.2(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
+        specifier: 0.2.3
+        version: 0.2.3(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
       react-native-screens:
         specifier: 4.10.0
         version: 4.10.0(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
@@ -652,8 +652,8 @@ importers:
         specifier: 5.4.0
         version: 5.4.0(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
       react-native-screen-corner-radius:
-        specifier: 0.2.2
-        version: 0.2.2(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
+        specifier: 0.2.3
+        version: 0.2.3(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
       react-native-screens:
         specifier: 4.10.0
         version: 4.10.0(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
@@ -767,8 +767,8 @@ importers:
         specifier: 4.12.0
         version: 4.12.0(react-native@0.76.6(@babel/core@7.28.5)(@babel/preset-env@7.28.5(@babel/core@7.28.5))(@types/react@18.3.27)(react@18.3.1))(react@18.3.1)
       react-native-screen-corner-radius:
-        specifier: 0.2.2
-        version: 0.2.2(react-native@0.76.6(@babel/core@7.28.5)(@babel/preset-env@7.28.5(@babel/core@7.28.5))(@types/react@18.3.27)(react@18.3.1))(react@18.3.1)
+        specifier: 0.2.3
+        version: 0.2.3(react-native@0.76.6(@babel/core@7.28.5)(@babel/preset-env@7.28.5(@babel/core@7.28.5))(@types/react@18.3.27)(react@18.3.1))(react@18.3.1)
       react-native-vector-icons:
         specifier: 10.2.0
         version: 10.2.0
@@ -6552,8 +6552,8 @@ packages:
       react: '*'
       react-native: '*'
 
-  react-native-screen-corner-radius@0.2.2:
-    resolution: {integrity: sha512-q1M91oUfPyE9s0sfpKD0qkfCrA3DnBq4DMgMn8Xr1FeP+GLGNtuoi4Cl9zilPMvEHX232683d714EzmOaoiO0Q==}
+  react-native-screen-corner-radius@0.2.3:
+    resolution: {integrity: sha512-8JgiHI/S2Xf6swquEjopHW//wI4a/nV/dEImJMR8YXQVWVdnjbhcMi0NGk1s1cW8xuunwlFT173PozsS3Gvgxg==}
     peerDependencies:
       react: '*'
       react-native: '*'
@@ -14644,7 +14644,7 @@ snapshots:
       react-native-mmkv: 3.1.0(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
       react-native-paper: 5.12.5(patch_hash=ccda531988e013648880183e6712e5bcd757513df646155833c7b23c9889296a)(react-native-safe-area-context@5.4.0(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0))(react-native-vector-icons@10.2.0)(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
       react-native-safe-area-context: 4.12.0(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
-      react-native-screen-corner-radius: 0.2.2(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
+      react-native-screen-corner-radius: 0.2.3(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0)
       react-native-vector-icons: 10.2.0
       zustand: 5.0.8(@types/react@18.3.27)(react@19.0.0)(use-sync-external-store@1.5.0(react@19.0.0))
     transitivePeerDependencies:
@@ -15331,12 +15331,12 @@ snapshots:
       react: 19.0.0
       react-native: 0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0)
 
-  react-native-screen-corner-radius@0.2.2(react-native@0.76.6(@babel/core@7.28.5)(@babel/preset-env@7.28.5(@babel/core@7.28.5))(@types/react@18.3.27)(react@18.3.1))(react@18.3.1):
+  react-native-screen-corner-radius@0.2.3(react-native@0.76.6(@babel/core@7.28.5)(@babel/preset-env@7.28.5(@babel/core@7.28.5))(@types/react@18.3.27)(react@18.3.1))(react@18.3.1):
     dependencies:
       react: 18.3.1
       react-native: 0.76.6(@babel/core@7.28.5)(@babel/preset-env@7.28.5(@babel/core@7.28.5))(@types/react@18.3.27)(react@18.3.1)
 
-  react-native-screen-corner-radius@0.2.2(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0):
+  react-native-screen-corner-radius@0.2.3(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0))(react@19.0.0):
     dependencies:
       react: 19.0.0
       react-native: 0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0)
