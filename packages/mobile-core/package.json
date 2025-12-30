@@ -14,7 +14,7 @@
     "src"
   ],
   "scripts": {
-    "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "lint": "eslint . --ext .js,.ts,.tsx",
     "typecheck": "tsc",
     "test": "jest --passWithNoTests"
   },
