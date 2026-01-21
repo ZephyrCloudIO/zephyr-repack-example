@@ -16,7 +16,7 @@ jobs:
     runs-on: macos-latest
     timeout-minutes: 60 # Set a timeout for the job to prevent it from running indefinitely
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 2
       - uses: ./.github/actions/setup-dependencies
