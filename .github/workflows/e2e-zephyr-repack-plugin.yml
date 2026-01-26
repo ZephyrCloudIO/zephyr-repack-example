@@ -80,7 +80,7 @@ jobs:
           echo "ANDROID_TESTS_LOGS=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/job/${ANDROID_TESTS_JOB_ID}" >> $GITHUB_ENV
 
       - name: Report Results to `zephyr-packages`
-        uses: actions/github-script@v6
+        uses: actions/github-script@v8
         with:
           github-token: ${{ secrets.GH_TOKEN }}
           script: |
