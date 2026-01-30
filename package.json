@@ -48,7 +48,7 @@
     "@nx/eslint-plugin": "21.0.2",
     "@nx/jest": "21.0.2",
     "@nx/plugin": "21.0.2",
-    "eslint": "~8.57.1",
+    "eslint": "~9.26.0",
     "husky": "^9.1.7",
     "mprocs": "^0.7.1",
     "nx": "21.0.2",
