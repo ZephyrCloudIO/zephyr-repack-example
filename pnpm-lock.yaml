@@ -156,8 +156,8 @@ importers:
         specifier: ^0.7.5
         version: 0.7.28(@callstack/repack@5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0)))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(@swc/helpers@0.5.15)
       '@rnx-kit/align-deps':
-        specifier: ^2.5.5
-        version: 2.5.5
+        specifier: ^3.0.0
+        version: 3.4.2
       '@rsdoctor/rspack-plugin':
         specifier: ^0.4.13
         version: 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
@@ -286,8 +286,8 @@ importers:
         specifier: ^0.7.5
         version: 0.7.28(@callstack/repack@5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0)))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(@swc/helpers@0.5.15)
       '@rnx-kit/align-deps':
-        specifier: ^2.5.5
-        version: 2.5.5
+        specifier: ^3.0.0
+        version: 3.4.2
       '@rsdoctor/rspack-plugin':
         specifier: ^0.4.13
         version: 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
@@ -436,8 +436,8 @@ importers:
         specifier: ^0.7.5
         version: 0.7.28(@callstack/repack@5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0)))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(@swc/helpers@0.5.15)
       '@rnx-kit/align-deps':
-        specifier: ^2.5.5
-        version: 2.5.5
+        specifier: ^3.0.0
+        version: 3.4.2
       '@rsdoctor/rspack-plugin':
         specifier: ^0.4.13
         version: 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
@@ -575,8 +575,8 @@ importers:
         specifier: ^0.7.5
         version: 0.7.28(@callstack/repack@5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0)))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(@swc/helpers@0.5.15)
       '@rnx-kit/align-deps':
-        specifier: ^2.5.5
-        version: 2.5.5
+        specifier: ^3.0.0
+        version: 3.4.2
       '@rsdoctor/rspack-plugin':
         specifier: ^0.4.13
         version: 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
@@ -705,8 +705,8 @@ importers:
         specifier: ^0.7.5
         version: 0.7.28(@callstack/repack@5.1.1(@babel/core@7.28.5)(@module-federation/enhanced@0.13.1(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react@19.0.0)(typescript@5.9.3))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(react-native@0.79.4(@babel/core@7.28.5)(@types/react@18.3.27)(react@19.0.0)))(@rspack/core@1.6.5(@swc/helpers@0.5.15))(@swc/helpers@0.5.15)
       '@rnx-kit/align-deps':
-        specifier: ^2.5.5
-        version: 2.5.5
+        specifier: ^3.0.0
+        version: 3.4.2
       '@rsdoctor/rspack-plugin':
         specifier: ^0.4.13
         version: 0.4.13(@rspack/core@1.6.5(@swc/helpers@0.5.15))
@@ -2754,10 +2754,48 @@ packages:
   '@rnef/tools@0.7.28':
     resolution: {integrity: sha512-a4MumqUhmCRTdBZZHMHWR6dvy2JwNCHYYmBY2Jif9aj9F7pBrYfqMDCkwbVSZkYqu5vgBHAKzdRH8vCzKWLflw==}
 
-  '@rnx-kit/align-deps@2.5.5':
-    resolution: {integrity: sha512-7OXzLZ/4bR7/2gaAVr8u4dSsjKdMbL9E0WBxAoao6JBxkIwHuHGflxwAHVL2+eoYhZd9bdnvBLDTjsBe77xfNg==}
-    engines: {node: '>=12.13'}
+  '@rnx-kit/align-deps@3.4.2':
+    resolution: {integrity: sha512-cwxkFNu942XFTHUHhVMYkKOWkNmKWFhF1TRfGb9CRcmDycLAjNbZ91qyICGXlrYhmdf9o4bpR5qb3uNijmionQ==}
+    engines: {node: '>=16.17'}
     hasBin: true
+
+  '@rnx-kit/types-bundle-config@1.0.0':
+    resolution: {integrity: sha512-nM5EEWr1pvi1bxKLBfHyj5LB5tv5cpRP0e4Pms8OIhIBMdhRJg6JWYDJSZTL57ZB7FigrAXESBYTWi8CjyqTog==}
+    engines: {node: '>=18.12'}
+    peerDependencies:
+      metro: '>=0.83.0'
+    peerDependenciesMeta:
+      metro:
+        optional: true
+
+  '@rnx-kit/types-kit-config@1.0.0':
+    resolution: {integrity: sha512-2ZeAWxgqbnK5rUdty0OeUHn6R9sc8fxSYzjQsa3OYxCwY2ASfKb/8zMr8M7KH2maAU2AQofFi8ud90WPoP9CQQ==}
+    engines: {node: '>=18.12'}
+
+  '@rnx-kit/types-metro-serializer-esbuild@1.0.0':
+    resolution: {integrity: sha512-Di28VHO+y6q5Y4oij0hwhyAb7kT+AUB1aANXNgAzVrWo8rH7jjDXiELMVdwIL8uUuQd0oVo5a0/USsPWpHKTOQ==}
+    engines: {node: '>=18.12'}
+    peerDependencies:
+      esbuild: ^0.27.0
+    peerDependenciesMeta:
+      esbuild:
+        optional: true
+
+  '@rnx-kit/types-node@1.0.0':
+    resolution: {integrity: sha512-MSSb47OqfpcboyLQfSN/UfDk5zeUP7mMGBDbBIGXyhBwkKfHKEhSj/rY32uv8B0qIsxLaQ7o6+QLx2kLKGOd3Q==}
+    engines: {node: '>=18.12'}
+
+  '@rnx-kit/types-plugin-cyclic-dependencies@1.0.0':
+    resolution: {integrity: sha512-L/Gi2OzKHYJxqe+w9mOnXBu9uhsLi5LvdCf1Xu/xSWOlHFG/M20qt22iaAiIlWnHSoDKkNQEmHTrBpKZd43HIQ==}
+    engines: {node: '>=18.12'}
+
+  '@rnx-kit/types-plugin-duplicates-checker@1.0.0':
+    resolution: {integrity: sha512-y3JjElRuDe9+jdUQxalLb1nQlhaTpId39Qr4vdXjdOR4Z3/NEi9SUcmxWzgtsIh5rwaq/1AXDsSx7llEEASEjg==}
+    engines: {node: '>=18.12'}
+
+  '@rnx-kit/types-plugin-typescript@1.0.0':
+    resolution: {integrity: sha512-5zFk5wPiAEinfT5XH+t7Ka5I/CUnRf/fqnCS7LDj21ReOgGfdrUQ1wXVsV7EoClCNCgUHvWFDdWkbNOFeFa60A==}
+    engines: {node: '>=18.12'}
 
   '@rsdoctor/client@0.4.13':
     resolution: {integrity: sha512-8d3om2dK+GjEi3L8rI79k6JHtz7IIbIRe3+e4z5iIgqYz/nU1TC8iwUMJ7Wanokqu+88sa2tpOTqUoEk4GfWrA==}
@@ -4310,7 +4348,6 @@ packages:
     resolution: {integrity: sha512-X41YRfKkVCooILai2N0aN0Q5O0imu+MbNt894QWU683A82xJJXIR01dEqxwYJ91M6IdExtyFB3GCOJb4eBMBMQ==}
     peerDependencies:
       eslint: '>= 5'
-    bundledDependencies: []
 
   eslint-plugin-eslint-comments@3.2.0:
     resolution: {integrity: sha512-0jkOl0hfojIHHmEHgmNdqv4fmh7300NdpA9FFpF7zaoLvB/QeXOGNLIo86oAveJFrfB1p05kC8hpEMHM8DwWVQ==}
@@ -6321,6 +6358,7 @@ packages:
   prebuild-install@7.1.3:
     resolution: {integrity: sha512-8Mf2cbV7x1cXPUILADGI3wuhfqWvtiLA1iclTDbFRZkgRQS0NqsPZphna9V+HyTEadheuPmjaJMsbzKQFOzLug==}
     engines: {node: '>=10'}
+    deprecated: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.
     hasBin: true
 
   prelude-ls@1.2.1:
@@ -7086,6 +7124,7 @@ packages:
   tar@7.5.7:
     resolution: {integrity: sha512-fov56fJiRuThVFXD6o6/Q354S7pnWMJIVlDBYijsTNx6jKSE4pvrDTs6lUnmGvNyfJwFQQwWy3owKz1ucIhveQ==}
     engines: {node: '>=18'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   temp@0.8.4:
     resolution: {integrity: sha512-s0ZZzd0BzYv5tLSptZooSjK8oj6C+c19p7Vqta9+6NPOf7r+fxq0cJe6/oN4LTC79sy5NY8ucOJNgwsKCSbfqg==}
@@ -10502,7 +10541,44 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@rnx-kit/align-deps@2.5.5': {}
+  '@rnx-kit/align-deps@3.4.2':
+    dependencies:
+      '@rnx-kit/types-kit-config': 1.0.0
+      '@rnx-kit/types-node': 1.0.0
+    transitivePeerDependencies:
+      - esbuild
+      - metro
+
+  '@rnx-kit/types-bundle-config@1.0.0':
+    dependencies:
+      '@rnx-kit/types-metro-serializer-esbuild': 1.0.0
+      '@rnx-kit/types-plugin-cyclic-dependencies': 1.0.0
+      '@rnx-kit/types-plugin-duplicates-checker': 1.0.0
+      '@rnx-kit/types-plugin-typescript': 1.0.0
+    transitivePeerDependencies:
+      - esbuild
+
+  '@rnx-kit/types-kit-config@1.0.0':
+    dependencies:
+      '@rnx-kit/types-bundle-config': 1.0.0
+    transitivePeerDependencies:
+      - esbuild
+      - metro
+
+  '@rnx-kit/types-metro-serializer-esbuild@1.0.0': {}
+
+  '@rnx-kit/types-node@1.0.0':
+    dependencies:
+      '@rnx-kit/types-kit-config': 1.0.0
+    transitivePeerDependencies:
+      - esbuild
+      - metro
+
+  '@rnx-kit/types-plugin-cyclic-dependencies@1.0.0': {}
+
+  '@rnx-kit/types-plugin-duplicates-checker@1.0.0': {}
+
+  '@rnx-kit/types-plugin-typescript@1.0.0': {}
 
   '@rsdoctor/client@0.4.13': {}
 
