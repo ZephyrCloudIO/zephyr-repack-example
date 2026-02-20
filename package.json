@@ -2,7 +2,7 @@
   "name": "zephyr-shop-example",
   "version": "0.0.1",
   "private": true,
-  "packageManager": "pnpm@10.10.0",
+  "packageManager": "pnpm@10.30.1",
   "engines": {
     "node": ">=22"
   },
@@ -44,14 +44,14 @@
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
-    "@nx/eslint": "21.0.2",
-    "@nx/eslint-plugin": "21.0.2",
-    "@nx/jest": "21.0.2",
-    "@nx/plugin": "21.0.2",
+    "@nx/eslint": "21.6.10",
+    "@nx/eslint-plugin": "21.6.10",
+    "@nx/jest": "21.6.10",
+    "@nx/plugin": "21.6.10",
     "eslint": "~8.57.1",
     "husky": "^9.1.7",
-    "mprocs": "^0.7.1",
-    "nx": "21.0.2",
+    "mprocs": "^0.8.0",
+    "nx": "21.6.10",
     "prettier": "^3.4.2"
   },
   "pnpm": {
