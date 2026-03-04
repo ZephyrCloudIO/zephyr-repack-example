@@ -70,7 +70,7 @@ jobs:
         if: ${{ inputs.build-zephyr-repack-plugin-locally }}
         uses: ./.github/actions/build-zephyr-repack-plugin
 
-      - uses: callstackincubator/android@v1
+      - uses: callstackincubator/android@v3
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           variant: 'Release'
