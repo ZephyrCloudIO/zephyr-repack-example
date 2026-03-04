@@ -95,7 +95,8 @@
       "tar@<=7.5.3": ">=7.5.4",
       "@fastify/middie@<=9.0.3": ">=9.0.4",
       "fastify": ">=5.7.3",
-      "fast-xml-parser": ">=5.3.5"
+      "fast-xml-parser": ">=5.3.5",
+      "@isaacs/brace-expansion": ">=5.0.1"
     }
   },
   "commitlint": {
