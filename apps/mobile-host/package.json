@@ -63,7 +63,7 @@
     "@rnef/platform-android": "^0.7.5",
     "@rnef/platform-ios": "^0.7.5",
     "@rnef/plugin-repack": "^0.7.5",
-    "@rnx-kit/align-deps": "^2.5.5",
+    "@rnx-kit/align-deps": "^3.0.0",
     "@rsdoctor/rspack-plugin": "^0.4.13",
     "@rspack/core": "^1.2.2",
     "@swc/helpers": "0.5.15",
