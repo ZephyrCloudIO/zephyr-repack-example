@@ -20,7 +20,7 @@ jobs:
         with:
           fetch-depth: 2
       - uses: ./.github/actions/setup-dependencies
-      - uses: callstackincubator/ios@v1
+      - uses: callstackincubator/ios@7c072d8d6acaa7cc3b038f9f6c5a81bb54da10c7 # v3
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           destination: 'simulator' # or 'device'
