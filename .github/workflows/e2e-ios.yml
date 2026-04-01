@@ -23,7 +23,7 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -41,7 +41,7 @@ jobs:
         uses: ./.github/actions/setup-dependencies
 
       - name: Cache Pods
-        uses: actions/cache@v3
+        uses: actions/cache@6f8efc29b200d32929f49075959781ed54ec270c # v3
         with:
           path: apps/mobile-host/ios/Pods
           key: ${{ runner.os }}-pods-${{ hashFiles('apps/mobile-host/ios/Podfile.lock') }}
@@ -57,7 +57,7 @@ jobs:
       - name: Install Pods
         run: pnpm --filter MobileHost pods
 
-      - uses: callstackincubator/ios@v1
+      - uses: callstackincubator/ios@78ed46313dac4ed09cb5cc73b9b1b9193d59d863 # v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           destination: 'simulator' # or 'device'
@@ -76,7 +76,7 @@ jobs:
 
       - name: Upload Maestro Logs on Failure
         if: failure() # Runs only if any of the previous steps fail
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: maestro-logs-ios
           path: ~/.maestro/tests/

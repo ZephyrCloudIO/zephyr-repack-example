@@ -42,17 +42,17 @@
     "commitlint": "commitlint --edit"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.6.1",
-    "@commitlint/config-conventional": "^19.6.0",
+    "@commitlint/cli": "19.8.1",
+    "@commitlint/config-conventional": "19.8.1",
     "@nx/eslint": "21.0.2",
     "@nx/eslint-plugin": "21.0.2",
     "@nx/jest": "21.0.2",
     "@nx/plugin": "21.0.2",
-    "eslint": "~8.57.1",
-    "husky": "^9.1.7",
-    "mprocs": "^0.7.1",
+    "eslint": "8.57.1",
+    "husky": "9.1.7",
+    "mprocs": "0.7.3",
     "nx": "21.0.2",
-    "prettier": "^3.4.2"
+    "prettier": "3.6.2"
   },
   "pnpm": {
     "patchedDependencies": {
